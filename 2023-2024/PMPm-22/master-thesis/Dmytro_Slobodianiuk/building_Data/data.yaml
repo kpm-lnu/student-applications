@@ -1,0 +1,7 @@
+names:
+- b_1
+- b_2
+nc: 2
+test: D:/LNU/6.2/diploma/program/building_Data/test/images
+train: D:/LNU/6.2/diploma/program/building_Data/train/images
+val: D:/LNU/6.2/diploma/program/building_Data/valid/images

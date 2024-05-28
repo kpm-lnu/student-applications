@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Каталог - Інтернет-магазин комп'ютерів</title>
+    <link rel="stylesheet" type="text/css" href="style_catalog.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Каталог</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="goToHomePage()">Головна</a></li>
+                <li><a href="#" onclick="goToContactsPage()">Контакти</a></li>
+                <button id="cartButton" class="cart-button">
+                        <img src="../content/basket.jpg" alt="Кошик" class="cart-icon"></img>
+                </button>
+            </ul>
+        </nav>
+        <div id="content">
+            <section class="products">
+                <div class="product">
+                    <img src="../content/computer1.jpg" alt="Товар 1">
+                    <h3>Товар 1</h3>
+                    <p>Ціна: $999</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Hero Potter </h3>
+                        <p class="product-description">Характеристики:
+                            "Алохомора" це заклинання дозволить відкрити двері у світ геймінгу зі складанням .
+                            Цей доступний сетап дасть тобі можливість пірнути в магічний світ hogwarts legacy при
+                            дозволі
+                            Full HD. А все завдяки добре підібраній парі з процесора Intel Core i3 10100F та видюхи RX
+                            570 4Gb.
+                            Ти отримуєш все необхідне для швидкого старту в магічному світі. Залишилося тільки
+                            використати
+                            заклинання «Петріфікус Тоталус» і поставити на паузу навколо себе! Після промови «Протего»
+                            що б
+                            більше ніхто не завадив насолоджуватися найкрутішою новинкою в ігровій промисловості.</p>
+                        <button onclick="addToCart('Товар 1', 999, '../content/computer1.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer2.jpg" alt="Товар 2">
+                    <h3>Товар 2</h3>
+                    <p>Ціна: $1299</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Master Lord_voldemort</h3>
+                        <p class="product-description">Характеристики:
+                            "Діфіндо" - розріж стрічку, відкрий новий, магічний світ.
+                            Настав час серйозної магії! Завдяки процесору Intel Core i3 12100F та відеокарті RTX 3060 у
+                            складі комп'ютера ти можеш вибирати максимальні налаштування графіки!
+                            Така конфігурація може дати тобі і більше,
+                            забезпечуючи стабільний FPS при роздільній здатності QHD або 4K.</p>
+                        <button onclick="addToCart('Товар 2', 1299, '../content/computer2.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer3.jpg" alt="Товар 3">
+                    <h3>Товар 3</h3>
+                    <p>Ціна: $860</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Dominator Dambldor</h3>
+                        <p class="product-description">Характеристики:
+                            Всі кращі налаштування графіки в Hogwarts Legacy доступні тобі вже сьогодні!
+                            Сміливо включай трасування променів з роздільною здатністю 4K або вибирай багатомоніторну
+                            конфігурацію, щоб повністю поринати в магічний світ гри. Це стає можливим завдяки потужному
+                            залізу - процесору Intel Core i5 13600K та відеокарті RTX 3090. Вони являють собою
+                            непереможний
+                            тандем, який зробить тебе найкращим із найкращих магів всесвіту.</p>
+                        <button onclick="addToCart('Товар 3', 860, '../content/computer3.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer4.jpg" alt="Товар 4">
+                    <h3>Товар 4</h3>
+                    <p>Ціна: $900</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Hero Snape</h3>
+                        <p class="product-description">Характеристики:
+                            Твоя мрія — потрапити до магічного світу Hogwarts Legacy, про який тільки й чути у кожному
+                            паблику?
+                            Твоїм партнером у віртуальному світі стане комп'ютер . В основі цієї збірки - тандем із
+                            процесора AMD Ryzen 5 4500 та видюхи GTX 1660 Super.
+                            Цього буде достатньо, щоб вибирати середні чи навіть високі налаштування графіки!</p>
+                        <button onclick="addToCart('Товар 4', 900, '../content/computer4.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer5.jpg" alt="Товар 5">
+                    <h3>Товар 5</h3>
+                    <p>Ціна: $1350</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Hero Striker</h3>
+                        <p class="product-description">Характеристики:
+                            Вперед, час рятувати світ, а заразом збирати ачивки! Комп'ютер - твоя перепустка у
+                            світ сучасних ігор з реалістичною графікою, стабільним FPS і захоплюючим геймплеєм. Збираючи
+                            його, ми орієнтувалися на системні вимоги актуальних новинок - у тому числі рімейку Resident
+                            Evil 4. А це означає, що попереду у тебе десятки та сотні годин пригод. Процесор Intel Core
+                            i3 10100F та відеокарта RX 580 8Gb
+                            подбають про те, щоб вони були дійсно захоплюючими та незабутніми!</p>
+                        <button onclick="addToCart('Товар 5', 1350, '../content/computer5.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer6.jpg" alt="Товар 6">
+                    <h3>Товар 6</h3>
+                    <p>Ціна: $1280</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Hero Punisher</h3>
+                        <p class="product-description">Характеристики:
+                            Настав час знову рятувати світ від стародавнього зла! І головною зброєю у твоїй боротьбі
+                            стане комп'ютер . Ми вибирали його параметри під рімейк Resident Evil 4, що вийшов навесні
+                            2023 року. А це означає потужний процесор AMD Ryzen 3 4100 та відеокарту GTX 1660 Super.
+                            Разом
+                            вони дадуть тобі достатньо продуктивності,
+                            щоб ти міг розтрощити своїх ворогів і відновити справедливість.</p>
+                        <button onclick="addToCart('Товар 6', 1280, '../content/computer6.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer7.jpg" alt="Товар 7">
+                    <h3>Товар 7</h3>
+                    <p>Ціна: $1700</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер Hero Kennedy</h3>
+                        <p class="product-description">Характеристики:
+                            З компом можна і на порятунок дочки президента вирушити. Так-так, ми готували його
+                            спеціально
+                            для ремейку Resident Evil 4! Знаючи про високі системні вимоги гри, фахівці CompX підібрали
+                            процесор AMD Ryzen 5 4500 із частотою 3.6 Ghz (Turbo 4.1Ghz), що ідеально підходить для
+                            високих
+                            навантажень. А пару йому становить відеокарта RX 6600 із 8 Гб пам'яті.
+                            Це точно потужніше за всі пушки, які трапляться тобі в новій RE4!</p>
+                        <button onclick="addToCart('Товар 7', 1700, '../content/computer7.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer8.jpg" alt="Товар 8">
+                    <h3>Товар 8</h3>
+                    <p>Ціна: $660</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер CompX Master Iron Black</h3>
+                        <p class="product-description">Характеристики:
+                            "Діфіндо" - розріж стрічку, відкрий новий, магічний світ. Настав час серйозної
+                            магії! Завдяки процесору Intel Core i5 12600KF та відеокарті RTX 3060 у складі
+                            комп'ютера ти можеш вибирати максимальні налаштування графіки! Така конфігурація може дати
+                            тобі і
+                            більше, забезпечуючи стабільний FPS при роздільній здатності QHD або 4K.</p>
+                        <button onclick="addToCart('Товар 8', 660, '../content/computer8.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer9.jpg" alt="Товар 9">
+                    <h3>Товар 9</h3>
+                    <p>Ціна: $310</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер CompX Dominator Evil</h3>
+                        <p class="product-description">Характеристики:
+                            Давнє зло прокинулося! На щастя, ми маємо сучасні технології. Справжня гордість
+                            комп'ютера - відеокарта RTX 4070Ti з 12 Гб пам'яті, що дозволяє запускати рімейк Resident
+                            Evil 4
+                            на максималках. Та й будь-які інші ігри з рейтрейсингом теж, включаючи легендарний Cyberpunk
+                            2077,
+                            що змушує машини минулих поколінь закипати за лічені хвилини. Процесор підходить потужній
+                            видюсі -
+                            багатоядерний AMD Ryzen 7 5700X, що працює на вражаючій частоті 3.4 Ghz (Turbo 4.5Ghz). З
+                            такими
+                            характеристиками нема чого боятися —
+                            сміливо вирушай на пошуки пригод хоч на інший край світу, хоч у космос!</p>
+                        <button onclick="addToCart('Товар 9', 310, '../content/computer9.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="../content/computer10.jpg" alt="Товар 10">
+                    <h3>Товар 10</h3>
+                    <p>Ціна: $1699</p>
+                    <div class="product-info">
+                        <h3 class="product-title">Комп'ютер CompX Dominator Umbrella_WIN</h3>
+                        <p class="product-description">Характеристики:
+                            Готовий битися зі зловісною корпорацією Umbrella з Resident Evil? Твоєю
+                            зброєю буде топовий комп'ютер, створений нами за допомогою могутніх компаній з
+                            реального світу. Вони надали потужний процесор Intel Core i5 13600KF та ультрасучасну
+                            відеокарту RTX 4070Ti. Їх продуктивності вистачить не тільки для свіжого рімейку RE4, але і
+                            для найвибагливіших ігор сьогоднішнього дня, включаючи Cyberpunk 2077 та довгоочікувану
+                            Starfield. Це серйозний погляд на майбутнє, який допоможе тобі
+                            залишатися впевненим у своїх силах протягом кількох років.</p>
+                        <button onclick="addToCart('Товар 10', 1699, '../content/computer10.jpg')">Додати до
+                            корзини</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span id="closeButton" class="close">&times;</span>
+                <h2>Корзина</h2>
+                <div id="cartItems" class="cart-items"></div>
+                <p id="totalPrice" class="total-price"></p>
+                <button id="clearCartButton">Очистити корзину</button>
+                <button id="checkoutButton">Оформити замовлення</button>
+            </div>
+        </div>
+    </div>
+    <script src="script_catalog.js"></script>
+</body>
+
+</html>

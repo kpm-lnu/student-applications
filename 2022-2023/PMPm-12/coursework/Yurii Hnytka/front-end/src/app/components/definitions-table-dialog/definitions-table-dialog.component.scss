@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e0e0e0;
+        justify-content: space-between;
+        border-bottom-width: 1px;
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+        }
+    }
+
+    .body {
+        height: calc(100% - 80px);
+        overflow: auto;
+        padding: 20px;
+    }
+}

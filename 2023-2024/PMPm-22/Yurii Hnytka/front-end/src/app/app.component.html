@@ -1,0 +1,69 @@
+<div class="buttons-container top-left-buttons">
+    <app-workspaces-panel></app-workspaces-panel>
+
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        (click)="onDefinitionsTable()"
+    >
+        <mat-icon>tune</mat-icon>
+    </button>
+</div>
+
+<div class="buttons-container top-right-buttons">
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        (click)="onCompartmentAdd()"
+    >
+        <mat-icon>add</mat-icon>
+    </button>
+
+    <button mat-mini-fab class="button" color="primary" (click)="onLayout()">
+        <mat-icon>account_tree</mat-icon>
+    </button>
+
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        [disabled]="!selected"
+        (click)="onDelete()"
+    >
+        <mat-icon>delete</mat-icon>
+    </button>
+
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        [disabled]="!compartmentsCount"
+        (click)="onClear()"
+    >
+        <mat-icon>delete_forever</mat-icon>
+    </button>
+
+    <button mat-mini-fab class="button" color="primary" (click)="onImport()">
+        <mat-icon>upload</mat-icon>
+    </button>
+
+    <button mat-mini-fab class="button" color="primary" (click)="onExport()">
+        <mat-icon>download</mat-icon>
+    </button>
+</div>
+
+<div class="buttons-container bottom-left-buttons">
+    <button mat-mini-fab class="button" color="primary" (click)="onDashboard()">
+        <mat-icon>query_stats</mat-icon>
+    </button>
+</div>
+
+<div class="buttons-container bottom-right-buttons">
+    <button mat-mini-fab class="button" color="primary" (click)="onProcess()">
+        <mat-icon>memory</mat-icon>
+    </button>
+</div>
+
+<div #canvas class="canvas"></div>

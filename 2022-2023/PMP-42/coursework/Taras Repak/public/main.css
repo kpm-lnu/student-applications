@@ -1,0 +1,357 @@
+/* Загальні стилі */
+body {
+    font-family: 'Resize', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    height: 150vh;
+}
+
+.container {
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./content/picture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-shadow: 4px 4px rgb(8, 8, 8), 6px 6px #b1ac8c;
+    letter-spacing: .1em;
+    font-family: 'Lato', serif;
+    font-size: 50px;
+    position: relative;
+}
+
+.section {
+    height: 500px;
+    background-color: #fff;
+    color: #000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.scrolling-title {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Чорний фон з прозорістю */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+
+/* Стилі для навігації */
+nav {
+    font-family: "Trial", sans-serif;
+    /* Замініть на бажаний шрифт */
+    padding: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    /* Видалення підкреслення тексту */
+    color: inherit;
+    /* Наслідування кольору батьківського елемента */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a50d0d;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li::before {
+    content: "•";
+    font-size: 22px;
+    color: #0ad889;
+    transition: color 0.3s ease;
+    margin-right: 5px;
+}
+
+nav ul li:hover::before {
+    color: #fff;
+}
+
+nav:hover {
+    background-color: #080505;
+    transform: scale(1.1);
+    font-size: 20px;
+    color: #fff;
+    /* Білий колір при наведенні */
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+/* Стилі для банера */
+.banner {
+    text-align: center;
+    padding: 50px;
+    /* background-color: #111; */
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+    font-family: cursive;
+}
+
+.banner:hover {
+    background-color: #222;
+}
+
+.banner h2 {
+    color: #ff0000;
+    transition: color 0.3s ease;
+    font-size: 43px;
+}
+
+.banner p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.banner a {
+    text-decoration: none;
+    /* Видалення підкреслення тексту */
+    color: inherit;
+    font-size: 22px;
+    /* Наслідування кольору батьківського елемента */
+    text-decoration: none;
+    color: #5a328f;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.banner a:hover {
+    color: #fff;
+}
+
+
+.banner:hover h2 {
+    color: #6e0404;
+}
+
+.carousel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel h2 {
+    font-size: 60px;
+    color: #77b32a;
+    animation: mosaic 2s infinite;
+}
+
+/* Стилі для рекомендованих товарів */
+.featured-products {
+    text-align: center;
+    /* background-color: #222; */
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Стилі для кнопок Previous та Next */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: 20px;
+    background-color: rgba(90, 85, 85, 0.3);
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    margin: 0 auto;
+    /* Додатковий стиль для горизонтального вирівнювання зображення */
+
+}
+
+.product img:hover {
+    opacity: 0.8;
+}
+
+.product h3 {
+    color: #fff;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.product:hover h3 {
+    color: #ccc;
+}
+
+.product p {
+    color: #ccc;
+}
+
+.note {
+    background-color: rgba(90, 85, 85, 0.3);
+    border: 1px solid #111111;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.note p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.helpfull {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 4px 4px rgb(8, 8, 8), 6px 6px #b1ac8c;
+    color: #3a88bd;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Встановлюємо висоту контейнера, щоб відео займало весь екран */
+}
+
+
+
+
+
+/* Стилі для підвалу */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Додаткові стилі для збільшення картинок */
+.product img {
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.2);
+}
+
+body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+@keyframes mosaic {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

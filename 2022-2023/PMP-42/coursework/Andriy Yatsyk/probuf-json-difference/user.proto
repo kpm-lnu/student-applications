@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+message User {
+  int32 user_id = 1;
+  string username = 2;
+  string email = 3;
+  string date_joined = 4;
+  bool is_active = 5;
+  Profile profile = 6;
+  repeated Post posts = 7;
+}
+
+message Profile {
+  string full_name = 1;
+  int32 age = 2;
+  string address = 3;
+  string phone_number = 4;
+}
+
+message Post {
+  int32 post_id = 1;
+  string title = 2;
+  string content = 3;
+  string date_created = 4;
+  int32 likes = 5;
+  repeated string tags = 6;
+  repeated Comment comments = 7;
+}
+
+message Comment {
+  int32 comment_id = 1;
+  string author = 2;
+  string content = 3;
+  string date_created = 4;
+  int32 likes = 5;
+}
+
+message Person {
+  optional string name = 1;
+  optional int32 id = 2;
+  optional string email = 3;
+}
+

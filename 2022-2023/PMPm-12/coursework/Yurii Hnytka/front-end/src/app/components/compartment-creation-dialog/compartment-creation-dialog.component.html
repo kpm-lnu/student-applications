@@ -1,0 +1,51 @@
+<div class="header">
+    <p class="title">Compartment Creation</p>
+
+    <button mat-mini-fab class="close-button" color="primary" (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body" [formGroup]="formGroup">
+    <mat-form-field>
+        <mat-label>Compartment Name</mat-label>
+
+        <input
+            matInput
+            placeholder="Enter compartment name"
+            formControlName="id"
+        />
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Initial Value</mat-label>
+
+        <input
+            matInput
+            type="number"
+            placeholder="Enter initial value"
+            formControlName="value"
+        />
+    </mat-form-field>
+</div>
+
+<div class="footer">
+    <button
+        mat-raised-button
+        class="button"
+        color="accent"
+        (click)="closeDialog()"
+    >
+        Cancel
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        [disabled]="!formGroup.valid"
+        (click)="addCompartment()"
+    >
+        Add
+    </button>
+</div>

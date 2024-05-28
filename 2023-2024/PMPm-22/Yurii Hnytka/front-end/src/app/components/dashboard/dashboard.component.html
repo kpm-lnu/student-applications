@@ -1,0 +1,102 @@
+<div class="header">
+    <p class="title">Dashboard</p>
+
+    <div class="header-controls">
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-select [formControl]="control">
+                <mat-option *ngFor="let run of runsService.names" [value]="run">
+                    {{ run }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <button
+            mat-mini-fab
+            class="button"
+            color="primary"
+            [disabled]="runsService.names.length === 0"
+            (click)="remove()"
+        >
+            <mat-icon>delete</mat-icon>
+        </button>
+
+        <button mat-mini-fab class="button" color="primary" (click)="add()">
+            <mat-icon>upload</mat-icon>
+        </button>
+
+        <button
+            mat-mini-fab
+            class="button"
+            color="primary"
+            [disabled]="runsService.names.length === 0"
+            (click)="get()"
+        >
+            <mat-icon>download</mat-icon>
+        </button>
+
+        <button
+            mat-mini-fab
+            class="close-button"
+            color="primary"
+            (click)="onClose()"
+        >
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
+
+<as-split
+    class="content"
+    [gutterSize]="7"
+    [gutterDblClickDuration]="400"
+    (gutterDblClick)="onGutterDBClick($event)"
+>
+    <as-split-area class="split-area" [size]="70">
+        <div class="plots" [class.no-data]="!plotsData.length">
+            <ng-template #plots>
+                <plotly-plot
+                    *ngFor="let plotData of plotsData"
+                    [data]="plotData.data"
+                    [layout]="plotData.layout"
+                    [config]="plotsConfig"
+                    [style]="plotStyle"
+                    [useResizeHandler]="true"
+                ></plotly-plot>
+            </ng-template>
+
+            <ng-template #noData>
+                <p class="message">No Data</p>
+            </ng-template>
+
+            <ng-container
+                *ngIf="plotsData.length; then plots; else noData"
+            ></ng-container>
+        </div>
+    </as-split-area>
+
+    <as-split-area class="split-area" [size]="30">
+        <ng-container *ngIf="(runsService.current$ | async)!.data as data">
+            <app-simulation-info-panel
+                *ngIf="data.type === 'Simulation'"
+                class="panel"
+                [data]="data"
+            ></app-simulation-info-panel>
+
+            <app-optimal-control-info-panel
+                *ngIf="data.type === 'OptimalControl'"
+                class="panel"
+                [data]="data"
+            ></app-optimal-control-info-panel>
+
+            <app-parameters-identification-info-panel
+                *ngIf="data.type === 'PI'"
+                class="panel"
+                [data]="data"
+            ></app-parameters-identification-info-panel>
+
+            <div *ngIf="data.type === 'None'" class="no-data">
+                <p class="message">No Data</p>
+            </div>
+        </ng-container>
+    </as-split-area>
+</as-split>

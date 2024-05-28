@@ -1,0 +1,21 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    benchmark-ips (2.12.0)
+    google-protobuf (3.22.2-arm64-darwin)
+    google-protobuf (3.22.2-x86_64-linux)
+    oj (3.14.2)
+    yajl-ruby (1.4.3)
+
+PLATFORMS
+  arm64-darwin-22
+  x86_64-linux
+
+DEPENDENCIES
+  benchmark-ips
+  google-protobuf
+  oj
+  yajl-ruby
+
+BUNDLED WITH
+   2.4.6

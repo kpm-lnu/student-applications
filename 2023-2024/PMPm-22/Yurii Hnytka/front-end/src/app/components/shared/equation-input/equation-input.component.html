@@ -1,0 +1,72 @@
+<mat-form-field class="input" subscriptSizing="dynamic">
+    <mat-label>{{ title }}</mat-label>
+
+    <textarea
+        #input
+        #autosize="cdkTextareaAutosize"
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="10"
+        matInput
+        [placeholder]="placeholder"
+        [formControl]="control"
+    ></textarea>
+
+    <mat-error *ngIf="control.errors && control.errors['equation']">
+        <ng-container
+            *ngFor="let error of control.errors!['equation'] | keyvalue"
+        >
+            <p *ngIf="error.key !== 'required'" class="error-message">
+                {{ error.value }}
+            </p>
+        </ng-container>
+    </mat-error>
+</mat-form-field>
+
+<div class="keyboards">
+    <div>
+        <div class="title">Compartments</div>
+
+        <mat-chip-listbox *ngIf="compartments.length; else noContent">
+            <mat-chip
+                *ngFor="let compartment of compartments"
+                [disabled]="control.disabled"
+                (click)="onChipInput(compartment.name)"
+            >
+                {{ compartment.name }}
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <div>
+        <div class="title">Constants</div>
+
+        <mat-chip-listbox *ngIf="constants.length; else noContent">
+            <mat-chip
+                *ngFor="let constant of constants"
+                [disabled]="control.disabled"
+                (click)="onChipInput(constant.name)"
+            >
+                {{ constant.name }}
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <div>
+        <div class="title">Interventions</div>
+
+        <mat-chip-listbox *ngIf="interventions.length; else noContent">
+            <mat-chip
+                *ngFor="let intervention of interventions"
+                [disabled]="control.disabled"
+                (click)="onChipInput(intervention.name)"
+            >
+                {{ intervention.name }}
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <ng-template #noContent>
+        <p class="no-content-message">&lt; Nothing to show here yet &gt;</p>
+    </ng-template>
+</div>

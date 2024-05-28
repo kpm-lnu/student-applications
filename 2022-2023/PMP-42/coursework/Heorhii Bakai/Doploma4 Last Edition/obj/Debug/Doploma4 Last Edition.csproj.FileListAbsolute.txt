@@ -1,0 +1,11 @@
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\bin\Debug\Doploma4 Last Edition.exe.config
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\bin\Debug\Doploma4 Last Edition.exe
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\bin\Debug\Doploma4 Last Edition.pdb
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4 Last Edition.csproj.AssemblyReference.cache
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4 Last Edition.csproj.SuggestedBindingRedirects.cache
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4_Last_Edition.Form1.resources
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4_Last_Edition.Properties.Resources.resources
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4 Last Edition.csproj.GenerateResource.cache
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4 Last Edition.csproj.CoreCompileInputs.cache
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4 Last Edition.exe
+C:\Users\George\source\repos\Doploma4 Last Edition\Doploma4 Last Edition\obj\Debug\Doploma4 Last Edition.pdb

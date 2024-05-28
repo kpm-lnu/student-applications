@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../content/picture2.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+h1 {
+    font-size: 32px;
+    color: #810000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Видалення підкреслення тексту */
+    color: inherit;
+    font-size: 22px;
+    /* Наслідування кольору батьківського елемента */
+    text-decoration: none;
+    color: #5a328f;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-family: cursive;
+}
+
+a:hover {
+    color: #00ff2a;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+  .social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+.review-hidden {
+    display: none;
+}
+
+.showMoreButton,
+.hideButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.showMoreButton:hover,
+.hideButton:hover {
+  background-color: #45a049;
+}
+
+.contactSection {
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: #f2e9f7;
+}
+
+.contactSection h3 {
+    margin-top: 0;
+}
+
+.contactContent {
+    margin-top: 10px;
+}

@@ -1,0 +1,66 @@
+:host {
+    display: grid;
+    grid:
+        "header" auto
+        "content" 1fr
+        / 1fr;
+    width: 90vw;
+    height: 95vh;
+
+    .header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e0e0e0;
+        border-bottom-width: 1px;
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    .content {
+        grid-area: content;
+
+        .split-area {
+            overflow: auto;
+
+            .panel {
+                height: 100%;
+            }
+
+            .plots {
+                display: grid;
+                grid: repeat(2, calc(50% - 5px)) / auto-flow min-content;
+                gap: 10px;
+                height: 100%;
+                padding: 20px;
+            }
+
+            .no-data {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+
+                .message {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

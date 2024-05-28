@@ -1,0 +1,26 @@
+<div class="header">
+    <p class="title">{{ title }}</p>
+
+    <button mat-mini-fab class="close-button" color="primary" (click)="close()">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body">
+    <p class="message">{{ message }}</p>
+</div>
+
+<div class="footer">
+    <button mat-raised-button class="button" color="accent" (click)="cancel()">
+        {{ cancelText }}
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        (click)="confirm()"
+    >
+        {{ confirmText }}
+    </button>
+</div>

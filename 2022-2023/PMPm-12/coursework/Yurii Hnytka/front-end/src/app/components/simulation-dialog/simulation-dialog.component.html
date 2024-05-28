@@ -1,0 +1,71 @@
+<div class="header">
+    <p class="title">Model Simulation</p>
+
+    <button
+        mat-mini-fab
+        class="close-button"
+        color="primary"
+        (click)="closeDialog()"
+    >
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body" [formGroup]="formGroup">
+    <div class="simulation-config" formGroupName="simulationParameters">
+        <mat-form-field>
+            <mat-label>Simulation Time</mat-label>
+
+            <input
+                matInput
+                placeholder="Enter simulation time"
+                type="number"
+                formControlName="time"
+            />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Time Step</mat-label>
+
+            <input
+                matInput
+                type="number"
+                placeholder="Enter time step"
+                type="number"
+                formControlName="step"
+            />
+        </mat-form-field>
+    </div>
+
+    <mat-slide-toggle formControlName="isOptimalControlProblem">
+        Optimal control problem
+    </mat-slide-toggle>
+
+    <app-equation-input
+        class="cost-function-input"
+        [title]="'Cost Function'"
+        [placeholder]="'Enter cost function'"
+        formControlName="costFunction"
+    ></app-equation-input>
+</div>
+
+<div class="footer">
+    <button
+        mat-raised-button
+        class="button"
+        color="accent"
+        (click)="closeDialog()"
+    >
+        Cancel
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        [disabled]="!formGroup.valid"
+        (click)="simulate()"
+    >
+        Simulate
+    </button>
+</div>

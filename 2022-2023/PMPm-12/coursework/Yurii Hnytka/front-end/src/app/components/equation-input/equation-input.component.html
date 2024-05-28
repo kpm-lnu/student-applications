@@ -1,0 +1,75 @@
+<mat-form-field class="input">
+    <mat-label>{{ title }}</mat-label>
+
+    <textarea
+        #equationInput
+        #autosize="cdkTextareaAutosize"
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="10"
+        matInput
+        [placeholder]="placeholder"
+        [formControl]="equationFormControl"
+    ></textarea>
+
+    <mat-error *ngIf="equationFormControl.errors">
+        <ng-container
+            *ngFor="let error of equationFormControl.errors | keyvalue"
+        >
+            <p *ngIf="error.key !== 'required'" class="error-message">
+                {{ error.value }}
+            </p>
+        </ng-container>
+    </mat-error>
+</mat-form-field>
+
+<div *ngIf="definitionsTable" class="keyboards">
+    <div class="compartments">
+        <div class="title">Compartments</div>
+
+        <mat-chip-listbox
+            *ngIf="definitionsTable.compartments.length; else noContent"
+        >
+            <mat-chip
+                *ngFor="let compartment of definitionsTable.compartments"
+                (click)="onChipInput(compartment.id)"
+            >
+                {{ compartment.id }}
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <div class="constants">
+        <div class="title">Constants</div>
+
+        <mat-chip-listbox
+            *ngIf="definitionsTable.constants.length; else noContent"
+        >
+            <mat-chip
+                *ngFor="let constant of definitionsTable.constants"
+                (click)="onChipInput(constant.id)"
+            >
+                {{ constant.id }}
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <div class="interventions">
+        <div class="title">Interventions</div>
+
+        <mat-chip-listbox
+            *ngIf="definitionsTable.interventions.length; else noContent"
+        >
+            <mat-chip
+                *ngFor="let intervention of definitionsTable.interventions"
+                (click)="onChipInput(intervention.id)"
+            >
+                {{ intervention.id }}
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <ng-template #noContent>
+        <p class="no-content-message">&lt; Nothing to show here yet &gt;</p>
+    </ng-template>
+</div>

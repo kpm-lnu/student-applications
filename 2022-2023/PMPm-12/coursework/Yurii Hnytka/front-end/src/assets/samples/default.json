@@ -1,0 +1,241 @@
+{
+    "compartments": [
+        {
+            "id": "S",
+            "value": 35200000
+        },
+        {
+            "id": "E1",
+            "value": 0
+        },
+        {
+            "id": "E2",
+            "value": 0
+        },
+        {
+            "id": "I1",
+            "value": 3520000
+        },
+        {
+            "id": "I2",
+            "value": 5280000
+        },
+        {
+            "id": "Mild",
+            "value": 0
+        },
+        {
+            "id": "Severe",
+            "value": 0
+        },
+        {
+            "id": "Fatal",
+            "value": 0
+        },
+        {
+            "id": "Hosp_Severe",
+            "value": 0
+        },
+        {
+            "id": "Hosp_Fatal",
+            "value": 0
+        },
+        {
+            "id": "R1",
+            "value": 0
+        },
+        {
+            "id": "R2",
+            "value": 0
+        },
+        {
+            "id": "R3",
+            "value": 0
+        },
+        {
+            "id": "Death",
+            "value": 0
+        },
+        {
+            "id": "Immunity",
+            "value": 0
+        }
+    ],
+    "flows": [
+        {
+            "equation": "pAsym * (1 - u1 + (1 - alpha)*u1)^2 * (R0 * S*(I1 + I2))/(Tinf * N)",
+            "source": "S",
+            "target": "E1"
+        },
+        {
+            "equation": "(1 - pAsym) * (1 - u1 + (1 - alpha)*u1)^2 * (R0 * S*(I1 + I2))/(Tinf * N)",
+            "source": "S",
+            "target": "E2"
+        },
+        {
+            "equation": "u2 * S * beta / Tvaccine_lag",
+            "source": "S",
+            "target": "Immunity"
+        },
+        {
+            "equation": "E1 / Tinc",
+            "source": "E1",
+            "target": "I1"
+        },
+        {
+            "equation": "E2 / Tinc",
+            "source": "E2",
+            "target": "I2"
+        },
+        {
+            "equation": "I1 / Tinf",
+            "source": "I1",
+            "target": "R1"
+        },
+        {
+            "equation": "(pMild)/(1 - pAsym) * I2 / Tquar",
+            "source": "I2",
+            "target": "Mild"
+        },
+        {
+            "equation": "(pSevere)/(1 - pAsym) * I2 / Tquar",
+            "source": "I2",
+            "target": "Severe"
+        },
+        {
+            "equation": "(pFatal)/(1 - pAsym) * I2 / Tquar",
+            "source": "I2",
+            "target": "Fatal"
+        },
+        {
+            "equation": "Mild / Trecovery_mild",
+            "source": "Mild",
+            "target": "R2"
+        },
+        {
+            "equation": "Severe / Thospital_lag",
+            "source": "Severe",
+            "target": "Hosp_Severe"
+        },
+        {
+            "equation": "Fatal / Thospital_lag",
+            "source": "Fatal",
+            "target": "Hosp_Fatal"
+        },
+        {
+            "equation": "Hosp_Severe / Trecovery_severe",
+            "source": "Hosp_Severe",
+            "target": "R3"
+        },
+        {
+            "equation": "Hosp_Fatal / Tdeath",
+            "source": "Hosp_Fatal",
+            "target": "Death"
+        }
+    ],
+    "definitions": [
+        {
+            "id": "u1",
+            "type": "intervention"
+        },
+        {
+            "id": "u2",
+            "type": "intervention"
+        },
+        {
+            "id": "c",
+            "type": "constant",
+            "value": 10
+        },
+        {
+            "id": "d1",
+            "type": "constant",
+            "value": 3
+        },
+        {
+            "id": "d2",
+            "type": "constant",
+            "value": 10
+        },
+        {
+            "id": "alpha",
+            "type": "constant",
+            "value": 0.7
+        },
+        {
+            "id": "beta",
+            "type": "constant",
+            "value": 0.83
+        },
+        {
+            "id": "Tvaccine_lag",
+            "type": "constant",
+            "value": 28
+        },
+        {
+            "id": "R0",
+            "type": "constant",
+            "value": 2.25
+        },
+        {
+            "id": "N",
+            "type": "constant",
+            "value": 44e6
+        },
+        {
+            "id": "Tinf",
+            "type": "constant",
+            "value": 10
+        },
+        {
+            "id": "Tinc",
+            "type": "constant",
+            "value": 10
+        },
+        {
+            "id": "Tquar",
+            "type": "constant",
+            "value": 10
+        },
+        {
+            "id": "Trecovery_mild",
+            "type": "constant",
+            "value": 11
+        },
+        {
+            "id": "Trecovery_severe",
+            "type": "constant",
+            "value": 35
+        },
+        {
+            "id": "Thospital_lag",
+            "type": "constant",
+            "value": 30
+        },
+        {
+            "id": "Tdeath",
+            "type": "constant",
+            "value": 5
+        },
+        {
+            "id": "pAsym",
+            "type": "constant",
+            "value": 0.4
+        },
+        {
+            "id": "pMild",
+            "type": "constant",
+            "value": 0.43
+        },
+        {
+            "id": "pSevere",
+            "type": "constant",
+            "value": 0.15
+        },
+        {
+            "id": "pFatal",
+            "type": "constant",
+            "value": 0.02
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+names:
+- window
+nc: 1
+test: D:/LNU/6.2/diploma/program/windows_data/test/images
+train: D:/LNU/6.2/diploma/program/windows_data/train/images
+val: D:/LNU/6.2/diploma/program/windows_data/valid/images

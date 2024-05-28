@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0 20px;
+    background-color: #ffffffa9;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cae62d;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0; /* Розташовуємо навігацію з правого боку */
+    padding: 10px;
+    font-size: 30px;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    /* Видалення підкреслення тексту */
+    color: inherit;
+    /* Наслідування кольору батьківського елемента */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d5fa07;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+.cart-icon {
+    margin-right: 1px;
+    /* Простір між зображенням і текстом */
+}
+
+#cartButton {
+    cursor: pointer;
+    transform: scale(0.2);
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1700px;
+    /* Задайте ширину контейнера відповідно до вашого вибору */
+    margin: 0 auto;
+    background-image: url("../content/picture3.jpg");
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: #2a6b91;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.product:hover .product-info {
+    opacity: 1;
+}
+
+.read-more-button {
+    display: none;
+}
+
+.product:hover .read-more-button {
+    display: block;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    margin: 0 auto;
+    /* Додатковий стиль для горизонтального вирівнювання зображення */
+
+}
+
+.product img:hover {
+    opacity: 0.8;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+/* Стилі для модального вікна корзини */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.total-price {
+    font-weight: bold;
+    text-align: right;
+}

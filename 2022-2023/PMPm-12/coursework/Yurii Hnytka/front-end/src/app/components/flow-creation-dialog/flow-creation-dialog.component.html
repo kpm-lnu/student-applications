@@ -1,0 +1,38 @@
+<div class="header">
+    <p class="title">Flow Creation</p>
+
+    <button mat-mini-fab class="close-button" color="primary" (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body">
+    <app-equation-input
+        class="equation-input"
+        [title]="'Flow Equation'"
+        [placeholder]="'Enter flow equation'"
+        [formControl]="flowEquationFormControl"
+        (errorsChange)="onErrorsChange($event)"
+    ></app-equation-input>
+</div>
+
+<div class="footer">
+    <button
+        mat-raised-button
+        class="button"
+        color="accent"
+        (click)="closeDialog()"
+    >
+        Cancel
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        [disabled]="flowEquationFormControl.errors"
+        (click)="addCompartment()"
+    >
+        Add
+    </button>
+</div>

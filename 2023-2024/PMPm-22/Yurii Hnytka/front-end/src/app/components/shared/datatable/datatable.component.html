@@ -1,0 +1,147 @@
+<table class="table" mat-table [dataSource]="rows">
+    <ng-container *ngFor="let id of ids" [matColumnDef]="id">
+        <th mat-header-cell class="data-column" *matHeaderCellDef>
+            {{ rowScheme[id].name }}
+        </th>
+
+        <td mat-cell class="data-column" *matCellDef="let row">
+            <ng-template #cellDisplay [ngSwitch]="rowScheme[id].type">
+                <ng-container *ngSwitchCase="'number'">{{
+                    (row.data[id] | number) ?? "N/A"
+                }}</ng-container>
+
+                <ng-container *ngSwitchCase="'select'">{{
+                    row.data[id] ? getOptionLabel(id, row.data[id]) : "N/A"
+                }}</ng-container>
+
+                <ng-container *ngSwitchDefault>{{
+                    row.data[id] ?? "N/A"
+                }}</ng-container>
+            </ng-template>
+
+            <ng-template #cellEditing [formGroup]="control">
+                <mat-form-field subscriptSizing="dynamic">
+                    <mat-label>Value</mat-label>
+
+                    <ng-container [ngSwitch]="rowScheme[id].type">
+                        <mat-select
+                            *ngSwitchCase="'select'"
+                            [formControlName]="id"
+                        >
+                            <mat-option
+                                *ngFor="let option of getAvailableOptions(id)"
+                                [value]="option.value"
+                            >
+                                {{ option.label }}
+                            </mat-option>
+                        </mat-select>
+
+                        <input
+                            *ngSwitchDefault
+                            matInput
+                            [formControlName]="id"
+                            [type]="rowScheme[id].type"
+                        />
+                    </ng-container>
+
+                    <mat-error *ngIf="getErrors(id) as errors">
+                        {{ errors[0] | titlecase }}
+                    </mat-error>
+                </mat-form-field>
+            </ng-template>
+
+            <ng-container
+                *ngIf="
+                    (rowScheme[id].editable || adding) && row.editing;
+                    then cellEditing;
+                    else cellDisplay
+                "
+            ></ng-container>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="index" [sticky]="true">
+        <th mat-header-cell class="index-column" *matHeaderCellDef>#</th>
+
+        <td mat-cell class="index-column" *matCellDef="let row; index as index">
+            {{ index }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="placeholder">
+        <th mat-header-cell class="placeholder-column" *matHeaderCellDef></th>
+
+        <td mat-cell class="placeholder-column" *matCellDef="let row"></td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions" [stickyEnd]="true">
+        <th mat-header-cell class="actions-column" *matHeaderCellDef>
+            <button
+                mat-mini-fab
+                class="button"
+                [style.display]="rows.length < maxRows ? '' : 'none'"
+                [disabled]="editing"
+                (click)="onRowAdd()"
+            >
+                <mat-icon>add</mat-icon>
+            </button>
+        </th>
+
+        <td
+            mat-cell
+            class="actions-column"
+            *matCellDef="let row; index as index"
+        >
+            <ng-template #cellDisplay>
+                <button
+                    mat-icon-button
+                    *ngIf="editable"
+                    [disabled]="editing"
+                    (click)="onEdit(row)"
+                >
+                    <mat-icon>edit</mat-icon>
+                </button>
+
+                <button
+                    mat-icon-button
+                    [disabled]="editing"
+                    (click)="onDelete(index)"
+                >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </ng-template>
+
+            <ng-template #cellEditing>
+                <button
+                    mat-icon-button
+                    [disabled]="control.invalid || control.pristine"
+                    (click)="onSave(row)"
+                >
+                    <mat-icon>save</mat-icon>
+                </button>
+
+                <button mat-icon-button (click)="onCancel(row)">
+                    <mat-icon>cancel</mat-icon>
+                </button>
+            </ng-template>
+
+            <div class="buttons-container">
+                <ng-container
+                    *ngIf="row.editing; then cellEditing; else cellDisplay"
+                ></ng-container>
+            </div>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columns; sticky: true"></tr>
+    <tr
+        mat-row
+        class="data-row"
+        [class.is-editing]="row.editing"
+        *matRowDef="let row; columns: columns"
+    ></tr>
+
+    <tr *matNoDataRow>
+        <td class="no-data-cell" [attr.colspan]="columns.length">No data</td>
+    </tr>
+</table>

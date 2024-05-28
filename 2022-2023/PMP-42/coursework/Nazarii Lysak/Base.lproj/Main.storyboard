@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emotion_Recognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwG-hW-v8D">
+                                <rect key="frame" x="124.66666666666667" y="79" width="143.66666666666663" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fIl-uU-d0P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <color key="textColor" red="0.1105112806" green="0.2258517444" blue="0.33334934710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvj-YH-SDI">
+                                <rect key="frame" x="124" y="693" width="145" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="58j-nh-vz2"/>
+                                    <constraint firstAttribute="height" constant="45" id="7QP-tQ-pRA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load Image"/>
+                                <connections>
+                                    <action selector="onLoadImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sE6-EH-df5"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bsx-CY-qZy">
+                                <rect key="frame" x="10" y="129" width="373" height="549"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kvj-YH-SDI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ra-wh-9s5"/>
+                            <constraint firstItem="bsx-CY-qZy" firstAttribute="top" secondItem="CwG-hW-v8D" secondAttribute="bottom" constant="10" id="957-73-Rlk"/>
+                            <constraint firstItem="Kvj-YH-SDI" firstAttribute="top" secondItem="bsx-CY-qZy" secondAttribute="bottom" constant="15" id="G1R-oN-dSR"/>
+                            <constraint firstItem="bsx-CY-qZy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TaI-7F-we8"/>
+                            <constraint firstItem="CwG-hW-v8D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YPl-HS-1JY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bsx-CY-qZy" secondAttribute="trailing" constant="10" id="jCg-Js-bvD"/>
+                            <constraint firstItem="CwG-hW-v8D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQi-HC-M5M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kvj-YH-SDI" secondAttribute="bottom" constant="80" id="wUK-MX-iwU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emotionLabel" destination="CwG-hW-v8D" id="Fzz-Yd-ZbE"/>
+                        <outlet property="userImageView" destination="bsx-CY-qZy" id="adM-9v-bw4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

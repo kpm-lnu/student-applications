@@ -1,0 +1,71 @@
+<div class="buttons-container top-left-buttons">
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        (click)="openDefinitionsTableDialog()"
+    >
+        <mat-icon>tune</mat-icon>
+    </button>
+</div>
+
+<div class="buttons-container top-right-buttons">
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        (click)="openAddCompartmentDialog()"
+    >
+        <mat-icon>add</mat-icon>
+    </button>
+
+    <button mat-mini-fab class="button" color="primary" (click)="layout()">
+        <mat-icon>account_tree</mat-icon>
+    </button>
+
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        [disabled]="!elementSelected"
+        (click)="onDeleteElementDialog()"
+    >
+        <mat-icon>delete</mat-icon>
+    </button>
+
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        [disabled]="!compartmentsCount"
+        (click)="onClearCompartmentsDialog()"
+    >
+        <mat-icon>delete_forever</mat-icon>
+    </button>
+</div>
+
+<div class="buttons-container bottom-left-buttons">
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        [disabled]="!simulationResults"
+        (click)="onSimulationResultsDialog()"
+    >
+        <mat-icon>query_stats</mat-icon>
+    </button>
+</div>
+
+<div class="buttons-container bottom-right-buttons">
+    <button
+        mat-mini-fab
+        class="button"
+        color="primary"
+        [disabled]="!isModelValid"
+        (click)="onModelSimulateDialog()"
+    >
+        <mat-icon>memory</mat-icon>
+    </button>
+</div>
+
+<div #canvas class="canvas"></div>

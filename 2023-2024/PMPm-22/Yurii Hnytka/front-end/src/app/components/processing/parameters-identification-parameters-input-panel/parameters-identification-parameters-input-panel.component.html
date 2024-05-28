@@ -1,0 +1,40 @@
+<ng-container [formGroup]="control">
+    <mat-form-field class="input" subscriptSizing="dynamic">
+        <mat-label>Time Step</mat-label>
+
+        <input
+            matInput
+            placeholder="Enter value"
+            type="number"
+            formControlName="timeStep"
+        />
+    </mat-form-field>
+
+    <div class="datatable-input">
+        <div class="header">
+            <div class="title">Constants to identify</div>
+        </div>
+
+        <app-datatable
+            [formControl]="selectedConstantsControl"
+            [rowScheme]="constantsRowScheme"
+        ></app-datatable>
+    </div>
+
+    <div class="datatable-input">
+        <div class="header">
+            <div class="title">Solution Data</div>
+
+            <button mat-mini-fab (click)="onDataImport()">
+                <mat-icon>upload_file</mat-icon>
+            </button>
+        </div>
+
+        <app-datatable
+            [formControl]="dataControl"
+            [rowScheme]="dataRowScheme"
+            [rowValidators]="dataRowValidators"
+            [enumerate]="true"
+        ></app-datatable>
+    </div>
+</ng-container>

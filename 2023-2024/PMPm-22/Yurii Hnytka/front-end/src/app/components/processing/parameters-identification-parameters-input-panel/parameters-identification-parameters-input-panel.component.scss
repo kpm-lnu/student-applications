@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    .input {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .datatable-input {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        min-height: 185px;
+        overflow: hidden;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 0 0;
+
+            .title {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}

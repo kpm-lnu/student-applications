@@ -1,0 +1,355 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "clearpool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "collect",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "completepool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "config_j",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_claim_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fee",
+                    "type": "float32"
+                },
+                {
+                    "name": "pause",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "createpool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_owner",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "custompools_j",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "pool_owner",
+                    "type": "name"
+                },
+                {
+                    "name": "reward_tokens_contract",
+                    "type": "name"
+                },
+                {
+                    "name": "reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_staked_tokens",
+                    "type": "asset"
+                },
+                {
+                    "name": "min_stake_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "staked_tokens_contract",
+                    "type": "name"
+                },
+                {
+                    "name": "start_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "end_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "available",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "deleteconf",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "deletepool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "participants_j",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "participants",
+                    "type": "name[]"
+                }
+            ]
+        },
+        {
+            "name": "poolsetup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "start_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "end_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "min_claim_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fee",
+                    "type": "float32"
+                },
+                {
+                    "name": "pause",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "setminstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "min_stake_amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "unstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "updatepool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "userinfo_j",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "staked_tokens",
+                    "type": "asset"
+                },
+                {
+                    "name": "collected_rewards",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "clearpool",
+            "type": "clearpool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "collect",
+            "type": "collect",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "completepool",
+            "type": "completepool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createpool",
+            "type": "createpool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleteconf",
+            "type": "deleteconf",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deletepool",
+            "type": "deletepool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "poolsetup",
+            "type": "poolsetup",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setconfig",
+            "type": "setconfig",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setminstake",
+            "type": "setminstake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unstake",
+            "type": "unstake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatepool",
+            "type": "updatepool",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "config",
+            "type": "config_j",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "custompools",
+            "type": "custompools_j",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "participants",
+            "type": "participants_j",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "userinfo",
+            "type": "userinfo_j",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

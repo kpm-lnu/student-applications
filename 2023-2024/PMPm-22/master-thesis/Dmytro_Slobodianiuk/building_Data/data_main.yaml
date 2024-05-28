@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['b_1', 'b_2']
+
+roboflow:
+  workspace: lviv-national-university-of-ivan-franko
+  project: building_3
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/lviv-national-university-of-ivan-franko/building_3/dataset/1

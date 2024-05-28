@@ -1,0 +1,6 @@
+names:
+- building
+nc: 1
+test: D:/LNU/6.1/Course/Test3/Yolov8_main/content/building_Data/test/images
+train: D:/LNU/6.1/Course/Test3/Yolov8_main/content/building_Data/train/images
+val: D:/LNU/6.1/Course/Test3/Yolov8_main/content/building_Data/val/images

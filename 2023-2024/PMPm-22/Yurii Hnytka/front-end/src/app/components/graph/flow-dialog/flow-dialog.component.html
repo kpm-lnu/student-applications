@@ -1,0 +1,65 @@
+<div class="header">
+    <p class="title">Flow</p>
+
+    <button
+        mat-mini-fab
+        class="close-button"
+        color="primary"
+        (click)="onClose()"
+    >
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body" [formGroup]="control">
+    <div class="row">
+        <mat-form-field class="input" subscriptSizing="dynamic">
+            <mat-label>Source</mat-label>
+
+            <mat-select formControlName="source">
+                <mat-option
+                    *ngFor="let source of sources; trackBy: optionsTrackBy"
+                    [value]="source.value"
+                >
+                    {{ source.label }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="input" subscriptSizing="dynamic">
+            <mat-label>Target</mat-label>
+
+            <mat-select formControlName="target">
+                <mat-option
+                    *ngFor="let target of targets; trackBy: optionsTrackBy"
+                    [value]="target.value"
+                >
+                    {{ target.label }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <app-equation-input
+        class="equation-input"
+        formControlName="equation"
+        [title]="'Equation'"
+        [placeholder]="'Enter equation'"
+    ></app-equation-input>
+</div>
+
+<div class="footer">
+    <button mat-raised-button class="button" color="accent" (click)="onClose()">
+        Cancel
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        [disabled]="control.invalid || control.pristine"
+        (click)="onAccept()"
+    >
+        {{ edit ? "Update" : "Add" }}
+    </button>
+</div>

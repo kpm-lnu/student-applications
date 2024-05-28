@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitBreakerSimulator", "CircuitBreakerSimulator.csproj", "{DA0EBBF2-9D1F-40AC-926E-6FAC8EBA0C21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA0EBBF2-9D1F-40AC-926E-6FAC8EBA0C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0EBBF2-9D1F-40AC-926E-6FAC8EBA0C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA0EBBF2-9D1F-40AC-926E-6FAC8EBA0C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA0EBBF2-9D1F-40AC-926E-6FAC8EBA0C21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

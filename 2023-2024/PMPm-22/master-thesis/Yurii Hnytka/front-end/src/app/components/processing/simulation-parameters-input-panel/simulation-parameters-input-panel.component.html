@@ -1,0 +1,23 @@
+<ng-container [formGroup]="control">
+    <mat-form-field class="input" subscriptSizing="dynamic">
+        <mat-label>Time</mat-label>
+
+        <input
+            matInput
+            placeholder="Enter value"
+            type="number"
+            formControlName="time"
+        />
+    </mat-form-field>
+
+    <mat-form-field class="input" subscriptSizing="dynamic">
+        <mat-label>Nodes Amount</mat-label>
+
+        <input
+            matInput
+            placeholder="Enter value"
+            type="number"
+            formControlName="nodesAmount"
+        />
+    </mat-form-field>
+</ng-container>

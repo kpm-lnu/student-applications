@@ -1,0 +1,68 @@
+<as-split
+    direction="vertical"
+    [gutterSize]="7"
+    [gutterDblClickDuration]="400"
+    (gutterDblClick)="onGutterDBClick($event)"
+    [restrictMove]="true"
+>
+    <as-split-area class="split-area" [size]="50">
+        <div class="wrapper">
+            <div class="group">
+                <div class="title">Result</div>
+
+                <div class="body">
+                    <div class="table-group">
+                        <div class="title">Identified Constants</div>
+
+                        <app-datatable
+                            [enumerate]="true"
+                            [disabled]="true"
+                            [compact]="true"
+                            [rowScheme]="identifiedConstantsRowScheme"
+                            [data]="identifiedConstantsData"
+                        ></app-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </as-split-area>
+
+    <as-split-area class="split-area" [size]="50">
+        <div class="wrapper">
+            <div class="group">
+                <div class="title">Parameters</div>
+
+                <div class="body">
+                    <p class="field">
+                        <span class="name">Time:</span>
+                        {{ data ? data.parameters.timeStep : "N/A" }}
+                    </p>
+
+                    <div class="table-group">
+                        <div class="title">Selected Parameters</div>
+
+                        <app-datatable
+                            [enumerate]="true"
+                            [disabled]="true"
+                            [compact]="true"
+                            [rowScheme]="selectedConstantsRowScheme"
+                            [data]="selectedConstantsData"
+                        ></app-datatable>
+                    </div>
+
+                    <div class="table-group">
+                        <div class="title">Solution Data</div>
+
+                        <app-datatable
+                            [enumerate]="true"
+                            [disabled]="true"
+                            [compact]="true"
+                            [rowScheme]="dataRowScheme"
+                            [data]="dataData"
+                        ></app-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </as-split-area>
+</as-split>

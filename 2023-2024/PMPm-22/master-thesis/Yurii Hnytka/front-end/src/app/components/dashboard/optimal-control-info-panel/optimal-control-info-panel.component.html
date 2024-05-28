@@ -1,0 +1,118 @@
+<as-split
+    direction="vertical"
+    [gutterSize]="7"
+    [gutterDblClickDuration]="400"
+    (gutterDblClick)="onGutterDBClick($event)"
+    [restrictMove]="true"
+>
+    <as-split-area class="split-area" [size]="50">
+        <div class="wrapper">
+            <div class="group">
+                <div class="title">Result</div>
+
+                <div class="body">
+                    <p class="field">
+                        <span class="name">No Control Objective Value:</span>
+                        {{
+                            data
+                                ? (data.result[1].noControlObjective | number)
+                                : "N/A"
+                        }}
+                    </p>
+
+                    <p class="field">
+                        <span class="name">Optimal Objective Value:</span>
+                        {{
+                            data
+                                ? (data.result[1].optimalObjective | number)
+                                : "N/A"
+                        }}
+                    </p>
+
+                    <div class="table-group">
+                        <div class="title">Interventions</div>
+
+                        <app-datatable
+                            [enumerate]="true"
+                            [disabled]="true"
+                            [compact]="true"
+                            [rowScheme]="interventionsRowScheme"
+                            [data]="interventionsData"
+                        ></app-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </as-split-area>
+
+    <as-split-area class="split-area" [size]="50">
+        <div class="wrapper">
+            <div class="group">
+                <div class="title">Parameters</div>
+
+                <div class="body">
+                    <p class="field">
+                        <span class="name">Time:</span>
+                        {{ data ? data.parameters.time : "N/A" }}
+                    </p>
+
+                    <p class="field">
+                        <span class="name">Nodes Amount:</span>
+                        {{ data ? data.parameters.nodesAmount : "N/A" }}
+                    </p>
+
+                    <p class="field">
+                        <span class="name">Objective Function:</span>
+                        {{ data ? data.parameters.objectiveFunction : "N/A" }}
+                    </p>
+
+                    <div class="group">
+                        <p class="title">Intervention(s)</p>
+
+                        <div class="body">
+                            <p class="field">
+                                <span class="name">Nodes Amount:</span>
+                                {{
+                                    data
+                                        ? data.parameters.intervention
+                                              .nodesAmount
+                                        : "N/A"
+                                }}
+                            </p>
+
+                            <p class="field">
+                                <span class="name">Approximation Type:</span>
+                                {{
+                                    data
+                                        ? data.parameters.intervention
+                                              .approximationType
+                                        : "N/A"
+                                }}
+                            </p>
+
+                            <p class="field">
+                                <span class="name">Lower Boundary:</span>
+                                {{
+                                    data
+                                        ? data.parameters.intervention
+                                              .lowerBoundary
+                                        : "N/A"
+                                }}
+                            </p>
+
+                            <p class="field">
+                                <span class="name">Upper Boundary:</span>
+                                {{
+                                    data
+                                        ? data.parameters.intervention
+                                              .upperBoundary
+                                        : "N/A"
+                                }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </as-split-area>
+</as-split>

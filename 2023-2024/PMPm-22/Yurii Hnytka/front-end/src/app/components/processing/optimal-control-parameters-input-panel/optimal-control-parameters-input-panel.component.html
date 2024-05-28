@@ -1,0 +1,98 @@
+<ng-container [formGroup]="control">
+    <div class="row">
+        <mat-form-field class="input" subscriptSizing="dynamic">
+            <mat-label>Time</mat-label>
+
+            <input
+                matInput
+                placeholder="Enter value"
+                type="number"
+                formControlName="time"
+            />
+        </mat-form-field>
+
+        <mat-form-field class="input" subscriptSizing="dynamic">
+            <mat-label>Nodes Amount</mat-label>
+
+            <input
+                matInput
+                placeholder="Enter value"
+                type="number"
+                formControlName="nodesAmount"
+            />
+        </mat-form-field>
+    </div>
+
+    <div class="row" formGroupName="intervention">
+        <mat-form-field
+            class="input"
+            floatLabel="always"
+            subscriptSizing="dynamic"
+        >
+            <mat-label>Intervention Nodes Amount</mat-label>
+
+            <input
+                matInput
+                placeholder="Enter value"
+                type="number"
+                formControlName="nodesAmount"
+            />
+        </mat-form-field>
+
+        <mat-form-field
+            class="input"
+            floatLabel="always"
+            subscriptSizing="dynamic"
+        >
+            <mat-label>Approximation Type</mat-label>
+
+            <mat-select formControlName="approximationType">
+                <mat-option
+                    *ngFor="let approximationType of approximationTypes"
+                    [value]="approximationType.value"
+                >
+                    {{ approximationType.text }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="row" formGroupName="intervention">
+        <mat-form-field
+            class="input"
+            floatLabel="always"
+            subscriptSizing="dynamic"
+        >
+            <mat-label>Intervention Lower Boundary</mat-label>
+
+            <input
+                matInput
+                placeholder="Enter value"
+                type="number"
+                formControlName="lowerBoundary"
+            />
+        </mat-form-field>
+
+        <mat-form-field
+            class="input"
+            floatLabel="always"
+            subscriptSizing="dynamic"
+        >
+            <mat-label>Intervention Upper Boundary</mat-label>
+
+            <input
+                matInput
+                placeholder="Enter value"
+                type="number"
+                formControlName="upperBoundary"
+            />
+        </mat-form-field>
+    </div>
+
+    <app-equation-input
+        class="objective-function-input"
+        placeholder="Enter value"
+        formControlName="objectiveFunction"
+        [title]="'Objective Function'"
+    ></app-equation-input>
+</ng-container>

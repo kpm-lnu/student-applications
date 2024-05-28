@@ -1,0 +1,38 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    min-width: min-content;
+    overflow: auto;
+
+    .field {
+        white-space: nowrap;
+        margin: 0;
+        color: white;
+
+        .name {
+            font-weight: bold;
+        }
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+    }
+}

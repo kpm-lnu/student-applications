@@ -1,0 +1,23 @@
+Helicopter
+USSR|CIV/Transport|AN-124
+USSR|CIV/Transport/Recon.|AN-24/26/30
+USSR|Transport|AN-22
+USSR|Transport|AN-12
+USSR|CIV/Transport|AN-2
+USSR|Transport/Refuel.|IL-76/78
+USSR|Surv./MPA|IL-20/38
+CZECHOSLOVAKIA|Trainer/G-A|L-39
+RUSSIA|Trainer|YAK-130
+USSR|AWACS|A-50
+USSR|Bomber|TU-22
+USSR|Strat.Bomber|TU-22M
+USSR|Strat.Bomber/MAP|TU-95/142
+USSR|Strat.Bomber|TU-160
+USSR|Trainer|TU-134
+CIV AIRCRAFT
+USSR|Interceptor/G-A|MIG-31
+USSR|Fighter|MIG-29
+USSR|Mutlirole Fighter|SU-27/30/33/35
+USSR|Fighter/Bomber|SU-34
+USSR|CAS|SU-25
+USSR|Tact.Bomber|SU-24

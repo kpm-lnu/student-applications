@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Інтернет-магазин комп'ютерів</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scrolling-title">
+            <h1>Комп'ютерний інтернет-магазин</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="goToHomePage()">Головна</a></li>
+                    <li><a href="#" onclick="goToCatalogPage()">Каталог</a></li>
+                    <li><a href="#" onclick="goToContactsPage()">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+        <div id="content">
+            <section class="banner">
+                <h2>Вітаємо в нашому магазині</h2>
+                <p>Найкращі комп'ютери за найкращими цінами</p>
+                <a href="#" onclick="goToContactsPage()" class="btn">Детальна інформація про магазин</a>
+            </section>
+            <section class="carousel">
+                <h2>Найпопулярніші товари</h2>
+                <div class="featured-products">
+                    <a href="#" onclick="goToCatalogPage()">
+                        <div class="product">
+                            <h3>Для ігор</h3>
+                            <img src="./content/computer1.jpg" alt="Комп'ютер 1">
+                            <h3>Комп'ютер 1</h3>
+                            <p>Ціна: $999</p>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="goToCatalogPage()">
+                        <div class="product">
+                            <h3>Для роботи</h3>
+                            <img src="./content/computer2.jpg" alt="Комп'ютер 2">
+                            <h3>Комп'ютер 2</h3>
+                            <p>Ціна: $1299</p>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="goToCatalogPage()">
+                        <div class="product">
+                            <h3>Для дітей</h3>
+                            <img src="./content/computer3.jpg" alt="Комп'ютер 3">
+                            <h3>Комп'ютер 3</h3>
+                            <p>Ціна: $1299</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="goToCatalogPage()">
+                        <div class="product">
+                            <h3>Інше</h3>
+                            <img src="./content/computer4.jpg" alt="Комп'ютер 4"></img>
+                            <h3>Комп'ютер 4</h3>
+                            <p>Ціна: $1299</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <div class="helpfull">
+                <h2>Відео, яке допоможе Вам зробити вибір!</h2>
+                <div class="video-container">
+                    <video src="./content/video.mp4" controls></video>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>2023. Інтернет-магазин комп'ютерів</p>
+            <p>&copy; Усі права захищені.</p>
+        </footer>
+    </div>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

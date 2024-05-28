@@ -1,0 +1,18 @@
+<div class="header">
+    <p class="title">Simulation Dashboard</p>
+
+    <button mat-mini-fab class="close-button" color="primary" (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body">
+    <plotly-plot
+        *ngFor="let plotData of plotsData"
+        [data]="plotData.data"
+        [layout]="plotData.layout"
+        [config]="plotsConfig"
+        [style]="plotStyle"
+        [useResizeHandler]="true"
+    ></plotly-plot>
+</div>

@@ -1,0 +1,76 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    max-height: 95vh;
+
+    .header,
+    .footer {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e0e0e0;
+    }
+
+    .header {
+        justify-content: space-between;
+        border-bottom-width: 1px;
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+        }
+    }
+
+    .body {
+        display: grid;
+        grid:
+            "compartments constants" 1fr
+            "interventions flows" 1fr / 1fr 1fr;
+        overflow: hidden;
+        padding: 20px;
+        gap: 20px;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow: hidden;
+
+            .title {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .compartments {
+            grid-area: compartments;
+        }
+
+        .constants {
+            grid-area: constants;
+        }
+
+        .interventions {
+            grid-area: interventions;
+        }
+
+        .flows {
+            grid-area: flows;
+        }
+    }
+
+    .footer {
+        justify-content: flex-end;
+        border-top-width: 1px;
+
+        .button:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

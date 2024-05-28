@@ -1,0 +1,32 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.snackbar {
+    white-space: pre;
+}
+
+as-split.as-init {
+    .as-split-gutter {
+        &:hover {
+            filter: brightness(0.8);
+        }
+
+        &.as-dragged,
+        &:active {
+            filter: brightness(0.6);
+        }
+    }
+}

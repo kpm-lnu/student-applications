@@ -1,0 +1,66 @@
+<div class="header">
+    <p class="title">Definitions Table</p>
+
+    <button
+        mat-mini-fab
+        class="close-button"
+        color="primary"
+        (click)="onClose()"
+    >
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="body" [formGroup]="control">
+    <div class="section compartments">
+        <div class="title">Compartments</div>
+
+        <app-datatable
+            formControlName="compartments"
+            [rowScheme]="compartmentsRowScheme"
+        ></app-datatable>
+    </div>
+
+    <div class="section constants">
+        <div class="title">Constants</div>
+
+        <app-datatable
+            formControlName="constants"
+            [rowScheme]="constantsRowScheme"
+        ></app-datatable>
+    </div>
+
+    <div class="section interventions">
+        <div class="title">Interventions</div>
+
+        <app-datatable
+            formControlName="interventions"
+            [rowScheme]="interventionsRowScheme"
+        ></app-datatable>
+    </div>
+
+    <div class="section flows">
+        <div class="title">Flows</div>
+
+        <app-datatable
+            formControlName="flows"
+            [rowScheme]="flowsRowScheme"
+        ></app-datatable>
+    </div>
+</div>
+
+<div class="footer">
+    <button mat-raised-button class="button" color="accent" (click)="onClose()">
+        Cancel
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        [disabled]="control.invalid || control.pristine"
+        (click)="onSave()"
+    >
+        Process
+    </button>
+</div>

@@ -1,0 +1,76 @@
+<div class="header">
+    <p class="title">Model Processing</p>
+
+    <button
+        mat-mini-fab
+        class="close-button"
+        color="primary"
+        (click)="onClose()"
+    >
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<mat-tab-group
+    dynamicHeight
+    class="body"
+    mat-align-tabs="center"
+    [formGroup]="control"
+    [(selectedIndex)]="type"
+>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">show_chart</mat-icon>
+
+            Simulation
+        </ng-template>
+
+        <app-simulation-parameters-input-panel
+            class="panel"
+            formControlName="simulation"
+        ></app-simulation-parameters-input-panel>
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">trending_down</mat-icon>
+
+            Optimal Control
+        </ng-template>
+
+        <app-optimal-control-parameters-input-panel
+            class="panel"
+            formControlName="optimalControl"
+        ></app-optimal-control-parameters-input-panel>
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">troubleshoot</mat-icon>
+
+            Parameters Identification
+        </ng-template>
+
+        <app-parameters-identification-parameters-input-panel
+            class="panel"
+            formControlName="parametersIdentification"
+        >
+        </app-parameters-identification-parameters-input-panel>
+    </mat-tab>
+</mat-tab-group>
+
+<div class="footer">
+    <button mat-raised-button class="button" color="accent" (click)="onClose()">
+        Cancel
+    </button>
+
+    <button
+        mat-raised-button
+        class="button"
+        color="primary"
+        [disabled]="currentControl.invalid || currentControl.pristine"
+        (click)="onProcess()"
+    >
+        Process
+    </button>
+</div>

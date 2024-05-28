@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "cytoscape",
+        "Datatable",
+        "dydt",
+        "edgehandles",
+        "jsonify",
+        "klay",
+        "lambdify",
+        "nsimplify",
+        "outgoers",
+        "Plotly",
+        "plotlyjs",
+        "sympify",
+        "sympy"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [
+        "backend/"
+    ]
+}
