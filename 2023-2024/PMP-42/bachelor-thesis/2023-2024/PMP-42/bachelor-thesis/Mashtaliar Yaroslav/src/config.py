@@ -1,0 +1,10 @@
+CAMERA_INDEX = 1
+CAPTURE_WIDTH = 1280
+CAPTURE_HEIGHT = 720
+WINDOW_NAME = 'InjecTrack'
+EXIT_KEY = ord('q')
+CONFIRM_KEY = ord('c')
+SHOW_HISTORY_KEY = ord('w')
+SAVE_HISTORY_KEY = ord('s')
+RELOAD_HISTORY_KEY = ord('r')
+HISTORY_FILE_PATH = '../history.json'
