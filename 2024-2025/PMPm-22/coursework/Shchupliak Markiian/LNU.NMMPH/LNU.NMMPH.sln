@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LNU.NMMPH.API", "LNU.NMMPH.API\LNU.NMMPH.API.csproj", "{FCF55E0E-D1D8-4EEC-AFAD-744F803ED7F9}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "LNU.NMMPH.UI", "LNU.NMMPH.UI\LNU.NMMPH.UI.esproj", "{B493976A-2110-463F-BA78-DF306BC97804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCF55E0E-D1D8-4EEC-AFAD-744F803ED7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF55E0E-D1D8-4EEC-AFAD-744F803ED7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF55E0E-D1D8-4EEC-AFAD-744F803ED7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF55E0E-D1D8-4EEC-AFAD-744F803ED7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B493976A-2110-463F-BA78-DF306BC97804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B493976A-2110-463F-BA78-DF306BC97804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B493976A-2110-463F-BA78-DF306BC97804}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B493976A-2110-463F-BA78-DF306BC97804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B493976A-2110-463F-BA78-DF306BC97804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B493976A-2110-463F-BA78-DF306BC97804}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7369FD3-6F24-4EFF-9782-460CAC4467E3}
+	EndGlobalSection
+EndGlobal
