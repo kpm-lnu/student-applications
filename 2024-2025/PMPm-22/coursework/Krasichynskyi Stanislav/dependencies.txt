@@ -1,0 +1,8 @@
+## WROTE FOR PYTHON 3.11.9
+
+tkinter
+customtkinter
+numpy
+matplotlib
+CTkMenuBar
+opencv-python
