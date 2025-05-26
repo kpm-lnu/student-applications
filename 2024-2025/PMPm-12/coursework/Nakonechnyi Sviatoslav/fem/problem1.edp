@@ -1,0 +1,54 @@
+load "iovtk"
+
+int u00 = 0;
+
+mesh Mesh = square(500, 500);
+
+func f = -2;
+func uExact = 0.5 * f * x * (1 - x);
+
+fespace SpaceP2(Mesh, P2);
+
+real t0 = clock();
+
+varf poisson(u, v)= 
+    int2d(Mesh)(
+        dx(u)*dx(v) + 
+        dy(u)*dy(v)
+    )
+    + on(2, 4, u = u00)
+    + int2d(Mesh)(
+        f * v
+    );
+
+matrix A;
+real[int] b(SpaceP2.ndof);
+
+A = poisson(SpaceP2, SpaceP2);
+b = poisson(0, SpaceP2);
+
+SpaceP2 sol;
+SpaceP2 solExact;
+SpaceP2 err;
+
+solExact = uExact;
+sol[] = A^-1 * b;
+err = sol - solExact;
+
+real t1 = clock();
+cout << "Time of processing: " << t1 - t0 << " seconds" << endl;
+
+// plot(sol, cmm="Approximate solution", dim=3, wait=true, fill=true);
+// plot(solExact, cmm="Exact solution", dim=3, wait=true, fill=true);
+// plot(err, wait=true, fill=true, value=true, boundary=true, dim=3, cmm="Error u - uh");
+
+// int[int] orderOut = [1];
+// savevtk("./fem/plots/solE1.vtu", Mesh, solExact, order=orderOut);
+// savevtk("./fem/plots/sol1.vtu", Mesh, sol, order=orderOut);
+// savevtk("./fem/plots/err1.vtu", Mesh, err, order=orderOut);
+
+
+real L2error = sqrt(int2d(Mesh)( err^2 ));
+real H1error = sqrt(int2d(Mesh)( dx(err)^2 + dy(err)^2 + err^2 ));
+cout << "||u_h - u||_L2  = " << L2error << endl;
+cout << "||u_h - u||_H1  = " << H1error << endl;

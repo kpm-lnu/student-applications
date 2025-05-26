@@ -1,0 +1,70 @@
+load "PETSc"
+macro dimension()2// EOM
+include "macro_ddm.idp"
+
+int u00 = 0;
+
+mesh Mesh = square(500, 500);
+
+func f = -2;
+func uExact = 0.5 * f * x * (1 - x);
+
+fespace SpaceP2(Mesh, P2);
+
+real t0 = clock();
+
+varf poisson(u, v)= 
+    int2d(Mesh)(
+        dx(u)*dx(v) + 
+        dy(u)*dy(v)
+    )
+    + on(2, 4, u = u00)
+    + int2d(Mesh)(
+        f * v
+    );
+
+
+Mat A;
+createMat(Mesh, A, P2);
+set(A, sparams="-pc_type hypre");
+
+real[int] b(SpaceP2.ndof);
+
+A = poisson(SpaceP2, SpaceP2);
+b = poisson(0, SpaceP2);
+
+SpaceP2 sol;
+SpaceP2 solExact;
+SpaceP2 err;
+
+solExact = uExact;
+sol[] = A^-1 * b;
+err = sol - solExact;
+
+real t1 = clock();
+real time = t1 - t0;
+cout << "Time of processing: " << time << " seconds" << endl;
+
+// plot(sol, cmm="Approximate solution", dim=3, wait=true, fill=true);
+// plot(solExact, cmm="Exact solution", dim=3, wait=true, fill=true);
+// plot(err, cmm="Error u - uh", dim=3, wait=true, fill=true);
+
+// int[int] orderOut = [1];
+// savevtk("./fem_ddm/plots/solE1.vtu", Mesh, solExact, order=orderOut);
+// savevtk("./fem_ddm/plots/sol1.vtu", Mesh, sol, order=orderOut);
+// savevtk("./fem_ddm/plots/err1.vtu", Mesh, err, order=orderOut);
+
+real L2error = sqrt(int2d(Mesh)( err^2 ));
+real H1error = sqrt(int2d(Mesh)( dx(err)^2 + dy(err)^2 + err^2 ));
+
+// if (mpiRank == 0) {
+//     cout << "Глобальна ||u_h - u||_L2  = " << L2error << endl;
+//     cout << "Глобальна ||u_h - u||_H1  = " << H1error << endl;
+// }
+
+cout << "||u_h - u||_L2  = " << L2error << endl;
+cout << "||u_h - u||_H1  = " << H1error << endl;
+
+real T1 = 21.89; // приклад: час на одному ядрі
+real speedup = T1 / time;
+cout << "Speedup: " << speedup << endl;
