@@ -1,0 +1,5 @@
+source,target,capacity,loss,source_type,target_type
+S1,T1,400,0.03,source,transformer
+T1,H1,100,0.01,transformer,consumer
+T1,H2,150,0.01,transformer,consumer
+T1,H3,150,0.01,transformer,consumer

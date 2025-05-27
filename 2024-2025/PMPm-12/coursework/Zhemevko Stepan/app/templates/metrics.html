@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Метрики{% endblock %}
+{% block content %}
+<h1>Метрики енергосистеми</h1>
+<ul>
+    <li>Загальна генерація: {{ analysis.total_supply }}</li>
+    <li>Загальний попит: {{ analysis.total_demand }}</li>
+    <li>Подано: {{ analysis.delivered }}</li>
+    <li>Недопоставка: {{ analysis.unmet_demand }}</li>
+    <li>Використано ліній: {{ analysis.used_edges }}</li>
+    <li>Перевантажено ліній: {{ analysis.saturated_edges }}</li>
+</ul>
+{% endblock %}
