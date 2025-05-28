@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Результати оптимізації{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Результати оптимізації</h1>
+<h5 class="text-muted">Метод: {{ selected_method }}</h5>
+
+<h4>Метрики:</h4>
+<ul>
+    <li>Успішно: <strong>{{ result.success }}</strong></li>
+    <li>Втрати енергії: <strong>{{ result.total_loss if result.success else "—" }}</strong></li>
+    <li>Подано енергії: <strong>{{ analysis.delivered }}</strong></li>
+    <li>Незадоволений попит: <strong>{{ analysis.unmet_demand }}</strong></li>
+    <li>Навантажених ліній: <strong>{{ analysis.used_edges }}</strong></li>
+    <li>Перевантажених ліній: <strong>{{ analysis.saturated_edges }}</strong></li>
+</ul>
+
+<hr>
+
+<h4>Вузли:</h4>
+<table class="table table-bordered table-sm">
+    <thead class="table-light">
+        <tr>
+            <th>Вузол</th><th>Тип</th><th>Подача</th><th>Попит</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for node in nodes %}
+        <tr>
+            <td>{{ node.node }}</td>
+            <td>{{ node.type }}</td>
+            <td>{{ node.supply }}</td>
+            <td>{{ node.demand }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<h4>Ребра (лінії):</h4>
+<table class="table table-bordered table-sm">
+    <thead class="table-light">
+        <tr>
+            <th>Від</th><th>До</th><th>Пропускна здатність</th><th>Втрати</th><th>Потік</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for edge in edges %}
+        <tr>
+            <td>{{ edge.from }}</td>
+            <td>{{ edge.to }}</td>
+            <td>{{ edge.capacity }}</td>
+            <td>{{ edge.loss }}</td>
+            <td>{{ edge.flow }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<a href="{{ url_for('main.index') }}" class="btn btn-secondary mt-3 ms-2">← Назад</a>
+{% endblock %}

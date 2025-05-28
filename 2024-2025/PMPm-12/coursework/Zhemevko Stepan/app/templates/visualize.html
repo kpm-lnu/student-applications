@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}Візуалізація графа{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Інтерактивна візуалізація енергомережі</h2>
+
+<!-- Контейнер для графа -->
+<div id="graph-container">
+    {{ graph_html|safe }}
+</div>
+
+<!-- Легенда -->
+<div id="legend" class="mt-4">
+    <strong>Легенда:</strong><br>
+    <span style="color:#00BFFF;">● Джерело</span><br>
+    <span style="color:#FFD700;">● Трансформатор</span><br>
+    <span style="color:#FF6347;">● Споживач</span><br>
+    <span style="color:#32CD32;">● Гібрид</span><br>
+    <span style="color:#9370DB;">● Батарея</span><br>
+</div>
+
+<!-- Інформація про вузол -->
+<div id="node-info" class="mt-4">
+    <strong>Інформація про вузол:</strong>
+    <div id="info-content">Натисніть на вузол</div>
+</div>
+
+<!-- Обробка кліку -->
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        if (typeof network !== "undefined") {
+            network.on("click", function (params) {
+                if (params.nodes.length > 0) {
+                    var nodeId = params.nodes[0];
+                    var data = nodes.get(nodeId);
+                    let html = '';
+
+                    const skipFields = ['id', 'color', 'shape', 'title'];
+
+                    for (const key in data) {
+                        if (!skipFields.includes(key) && key !== 'links_info') {
+                            html += '<strong>' + key + '</strong>: ' + data[key] + '<br>';
+                        }
+                    }
+
+                    if (data.links_info && data.links_info.length > 0) {
+                        html += '<br><strong>Зв’язки:</strong><ul>';
+                        data.links_info.forEach(link => {
+                            html += `<li>→ ${link.to}: capacity = ${link.capacity}, loss = ${link.loss}, demand = ${link.target_demand}</li>`;
+                        });
+                        html += '</ul>';
+                    }
+
+                    document.getElementById("info-content").innerHTML = html;
+                }
+            });
+        }
+    });
+</script>
+
+{% endblock %}
