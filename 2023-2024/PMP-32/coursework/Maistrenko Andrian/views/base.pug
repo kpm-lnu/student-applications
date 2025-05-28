@@ -1,0 +1,35 @@
+doctype html 
+html 
+    head 
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+       
+        link(rel='stylesheet' href=`/css/style.css`)
+        link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+        title Computer Shop | #{title}
+    
+    body 
+        // header 
+        include _header
+
+        // content
+        block content 
+            //main.main
+
+        // footer
+        include _footer
+
+
+        script(src="https://unpkg.com/frisbee")
+        //- //- script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.js')
+        //- script(src="https://unpkg.com/axios/dist/axios.min.js")
+        //- //- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.js" integrity="sha512-pmaEGtUAy7E5gRmwjLqQAD/QWw0dL4Z59b6b+2HQkqQwQ+HcPLLb9/KbUNo5zr10WuXmbivK9nYVZOyDkMgZMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        script(type='module',src='/js/login.js')
+        script(type='module',src='/js/logout.js')
+        script(type='module',src='/js/signup.js')
+        script(type='module',src='/js/updateSettings.js')
+        //- script(type='module',src='/js/managePurchase.js')
+        //- script(type='module',src='/js/deletePurchase.js')
+        script(type='module',src='/js/stripe.js')
+        //- script(src='/js/bundle.js')

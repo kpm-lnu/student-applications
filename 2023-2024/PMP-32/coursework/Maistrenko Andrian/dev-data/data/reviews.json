@@ -1,0 +1,37 @@
+[
+  {
+    "review": "This laptop exceeded my expectations! It's incredibly fast and the display is stunning. Perfect for my work!",
+    "rating": 5,
+    "createdAt": "2024-05-01",
+    "product": "663b4ddc9612ce95e14e9c75",
+    "user": "663b4ec09b806b96cd687ed2"
+  },
+  {
+    "review": "I'm really impressed with the performance of this laptop. It's super lightweight and the battery life is amazing!",
+    "rating": 4,
+    "createdAt": "2024-05-02",
+    "product": "663b4ddc9612ce95e14e9c76",
+    "user": "663b4ec09b806b96cd687ed4"
+  },
+  {
+    "review": "This gaming desktop is a beast! I can run all my favorite games on ultra settings without any lag.",
+    "rating": 5,
+    "createdAt": "2024-05-03",
+    "product": "663b4ddc9612ce95e14e9c77",
+    "user": "663b4ec09b806b96cd687ed5"
+  },
+  {
+    "review": "Absolutely blown away by the performance of this gaming desktop. It handles all the latest games with ease and the design is stunning.",
+    "rating": 5,
+    "createdAt": "2024-05-04",
+    "product": "663b4ddc9612ce95e14e9c78",
+    "user": "663b4ec09b806b96cd687ed4"
+  },
+  {
+    "review": "This MacBook Pro is a powerhouse! It's perfect for all my creative work, and the display is absolutely gorgeous.",
+    "rating": 5,
+    "createdAt": "2024-05-05",
+    "product": "663b4ddc9612ce95e14e9c79",
+    "user": "663b4ec09b806b96cd687ed5"
+  }
+]

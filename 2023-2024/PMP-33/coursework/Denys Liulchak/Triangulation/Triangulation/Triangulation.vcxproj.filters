@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Input">
+      <UniqueIdentifier>{6f12692b-90af-4428-bcf4-7bae25e6cfc1}</UniqueIdentifier>
+      <Extensions>edg</Extensions>
+    </Filter>
+    <Filter Include="Output">
+      <UniqueIdentifier>{a169719c-649a-4578-80af-38941ed0d46c}</UniqueIdentifier>
+      <Extensions>.triang</Extensions>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{240206e8-e371-41f3-9af0-f73f0107e893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\GNU Octave">
+      <UniqueIdentifier>{84589d28-82ba-4360-b3fe-18cb25da9058}</UniqueIdentifier>
+      <Extensions>m</Extensions>
+    </Filter>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source files\Triangulation">
+      <UniqueIdentifier>{677dbcc0-f35d-45c3-bf3a-a986414a7090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Triangulation\Structures">
+      <UniqueIdentifier>{bd588764-0dd0-45d2-9320-ef86023cacce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Triangulation\Tools">
+      <UniqueIdentifier>{8f02a44e-9123-48f6-bf13-c7155861bbea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header files\Triangulation">
+      <UniqueIdentifier>{3c6b7b71-aba3-4ec6-afbf-9c2dbd52ccee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Triangulation\Structures">
+      <UniqueIdentifier>{f2f40780-52e1-4d66-9278-f9cf3fac621d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Triangulation\Tools">
+      <UniqueIdentifier>{da4d7d2a-f3b9-4edc-b1b1-4a5e21f1428e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Input\Points.edg">
+      <Filter>Input</Filter>
+    </None>
+    <None Include="Output\Triangulation.triang">
+      <Filter>Output</Filter>
+    </None>
+    <None Include="Scripts\GNU Octave\plotTriangulation.m">
+      <Filter>Scripts\GNU Octave</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source files\Main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Triangulation\Structures\Edge.cpp">
+      <Filter>Source files\Triangulation\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Triangulation\Structures\Point.cpp">
+      <Filter>Source files\Triangulation\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Triangulation\Structures\Triangle.cpp">
+      <Filter>Source files\Triangulation\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Triangulation\Tools\DelaunayCondition.cpp">
+      <Filter>Source files\Triangulation\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Triangulation\Tools\PointsReader.cpp">
+      <Filter>Source files\Triangulation\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Triangulation\Tools\ShuffleProvider.cpp">
+      <Filter>Source files\Triangulation\Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header files\Triangulation\Structures\Edge.h">
+      <Filter>Header files\Triangulation\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Triangulation\Structures\Point.h">
+      <Filter>Header files\Triangulation\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Triangulation\Structures\Points.h">
+      <Filter>Header files\Triangulation\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Triangulation\Structures\Triangle.h">
+      <Filter>Header files\Triangulation\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Triangulation\Tools\DelaunayCondition.h">
+      <Filter>Header files\Triangulation\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Triangulation\Tools\PointsReader.h">
+      <Filter>Header files\Triangulation\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Triangulation\Tools\ShuffleProvider.h">
+      <Filter>Header files\Triangulation\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

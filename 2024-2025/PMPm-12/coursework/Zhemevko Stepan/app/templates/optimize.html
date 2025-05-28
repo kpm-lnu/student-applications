@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Результат оптимізації (евристика)</h2>
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Вузол</th>
+        <th>Шлях</th>
+        <th>Подача (kWh)</th>
+    </tr>
+    {% for node, info in result.items() %}
+    <tr>
+        <td>{{ node }}</td>
+        <td>{{ info.path }}</td>
+        <td>{{ info.delivered }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

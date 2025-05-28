@@ -1,0 +1,23 @@
+extends base
+
+block content 
+    main.main
+        .card-container 
+            each review in reviews
+                .card
+                    .card__header
+                        .card__picture
+                            .card__picture-overlay &nbsp;
+                            img.card__picture-img(src=`img/products/${review.product.imageCover}`, alt=`${review.product.name}`)
+                    .card__details
+                        h4.card__sub-heading= review.user.name
+                        p.card__text= review.review
+                        .card__data 
+                            span Rating: 
+                            span.card__footer-value= review.rating
+                        .card__data 
+                            span Created At: 
+                            span.card__footer-value= new Date(review.createdAt).toLocaleDateString('en-US')
+                        .card__data 
+                            span Product Name: 
+                            span.card__footer-value= review.product.name

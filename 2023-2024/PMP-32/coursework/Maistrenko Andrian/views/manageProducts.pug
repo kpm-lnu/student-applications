@@ -1,0 +1,121 @@
+extends base
+
+mixin navItem(link,text,icon,active)
+    li(class=`${active ? 'side-nav--active': ''}`)
+        a(href=`${link}`)
+            svg
+                use(xlink:href=`img/icons.svg#icon-${icon}`)
+            | #{text}
+
+block content 
+    main.main
+        .user-view
+            nav.user-view__menu
+                ul.side-nav
+                    +navItem('/me','Settings','settings',true)
+                    +navItem('/my-products','My purchases','briefcase',false)
+                    +navItem('#','My reviews','star',false)
+                    //- +navItem('#','Billing','credit-card',false)
+
+                - if(user.role === 'admin') 
+                    .admin-nav
+                        h5.admin-nav__heading Admin
+                        ul.side-nav
+                            +navItem('/manage-products','Manage products','map',false)
+                            +navItem('/manage-users','Manage users','users',false)
+                            //- +navItem('#','Manage reviews','star',false)
+                            +navItem('/manage-purchases','Manage purchase','briefcase',false)
+                            
+            .user-view__content
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Create Product
+                    form.form.form-user-data
+                        .form__group
+                            label.form__label(for='rating') Rating
+                            input#name.form__input(type='text', value=``, required, name='rating')
+                        .form__group.form__photo-upload
+                            input.form__upload(type='file', accept='image/*', id='photo', name='photo')
+                            label(for='photo') Choose photo
+                        .form__group
+                            label.form__label(for='name') Name
+                            input#name.form__input(type='text', value=``, required, name='name')
+                        .form__group
+                            label.form__label(for='category') Categoty
+                            input#name.form__input(type='text', value=`Category is either Laptop, Desktop or Tablet`, required, name='category')
+                        .form__group
+                            label.form__label(for='price') Price
+                            input#name.form__input(type='text', value=``, required, name='price')
+                        .form__group
+                            label.form__label(for='description') Description
+                            input#name.form__input(type='text', value=``, required, name='description')
+                        .form__group
+                            label.form__label(for='warranty') Warranty
+                            input#name.form__input(type='text', value=``, required, name='warranty')
+                        .form__group
+                            label.form__label(for='processor') Processor
+                            input#name.form__input(type='text', value=``, required, name='processor')
+                        .form__group
+                            label.form__label(for='graphicsCard') Graphics Card
+                            input#name.form__input(type='text', value=``, required, name='graphicsCard')
+                        .form__group
+                            label.form__label(for='ram') Ram
+                            input#name.form__input(type='text', value=``, required, name='ram')
+                        .form__group
+                            label.form__label(for='drive') Drive
+                            input#name.form__input(type='text', value=``, required, name='drive')
+
+                        .form__group.right
+                            button.btn.btn--small.btn--green Create
+
+            .user-view__content
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Update Product
+                    form.form.form-user-data
+                        .form__group
+                            label.form__label(for='rating') Rating
+                            input#name.form__input(type='text', value=``, required, name='rating')
+                        .form__group.form__photo-upload
+                            input.form__upload(type='file', accept='image/*', id='photo', name='photo')
+                            label(for='photo') Choose photo
+                        .form__group
+                            label.form__label(for='name') Name
+                            input#name.form__input(type='text', value=``, required, name='name')
+                        .form__group
+                            label.form__label(for='category') Categoty
+                            input#name.form__input(type='text', value=`Category is either Laptop, Desktop or Tablet`, required, name='category')
+                        .form__group
+                            label.form__label(for='price') Price
+                            input#name.form__input(type='text', value=``, required, name='price')
+                        .form__group
+                            label.form__label(for='description') Description
+                            input#name.form__input(type='text', value=``, required, name='description')
+                        .form__group
+                            label.form__label(for='warranty') Warranty
+                            input#name.form__input(type='text', value=``, required, name='warranty')
+                        .form__group
+                            label.form__label(for='processor') Processor
+                            input#name.form__input(type='text', value=``, required, name='processor')
+                        .form__group
+                            label.form__label(for='graphicsCard') Graphics Card
+                            input#name.form__input(type='text', value=``, required, name='graphicsCard')
+                        .form__group
+                            label.form__label(for='ram') Ram
+                            input#name.form__input(type='text', value=``, required, name='ram')
+                        .form__group
+                            label.form__label(for='drive') Drive
+                            input#name.form__input(type='text', value=``, required, name='drive')
+
+                        .form__group.right
+                            button.btn.btn--small.btn--green Update
+
+            .user-view__content
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md 
+                    h2.heading-secondary.ma-bt-md Delete Product
+                    form.form.form-user-data
+                        .form__group
+                            label.form__label(for='productId') ProductId
+                            input#name.form__input(type='text', value=``, required, name='productId')
+                        .form__group.right
+                            button.btn.btn--small.btn--green Delete
+

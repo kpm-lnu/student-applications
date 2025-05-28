@@ -1,0 +1,18 @@
+<div class="card">
+  <p-dropdown [options]="methods" [(ngModel)]="selectedMethod" optionLabel="name" placeholder="Select a Method"
+    (onChange)="onChange($event)" />
+
+  <div *ngIf="selectedMethod !== null" class="mt-2">
+    <p-button label="Download template" class="mr-2" (onClick)="downloadTemplate()"></p-button>
+    <p-fileUpload #fileUploadControl name="demo[]" chooseIcon="pi pi-upload" maxFileSize="1000000"
+      styleClass="mt-2" customUpload="true" (uploadHandler)="onUpload($event)" [auto]="true"
+      chooseLabel="Upload Code" />
+
+    <div *ngIf="result !== null" class="mt-3">
+      <h2>Score:</h2>
+      <p-progressBar styleClass="mt-3" [value]="result"></p-progressBar>
+      <p class="mt-2">Numerical Score: {{ result }}%</p>
+      <p *ngIf="aiGrade">AI Evaluation: {{ aiGrade }}</p>
+    </div>
+  </div>
+</div>

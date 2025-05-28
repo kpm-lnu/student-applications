@@ -1,0 +1,38 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "role": "user",
+    "password": "pass1234",
+    "passwordConfirm": "pass1234",
+    "photo": "john_doe_photo.jpg",
+    "active": true
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "role": "user",
+    "password": "pass1234",
+    "passwordConfirm": "pass1234",
+    "photo": "jane_smith_photo.png",
+    "active": true
+  },
+  {
+    "name": "Emily Brown",
+    "email": "emily.brown@example.com",
+    "role": "user",
+    "password": "pass1234",
+    "passwordConfirm": "pass1234",
+    "photo": "emily_brown_photo.gif",
+    "active": true
+  },
+  {
+    "name": "David Wilson",
+    "email": "david.wilson@example.com",
+    "role": "user",
+    "password": "pass1234",
+    "passwordConfirm": "pass1234",
+    "photo": "david_wilson_photo.jpg",
+    "active": true
+  }
+]
