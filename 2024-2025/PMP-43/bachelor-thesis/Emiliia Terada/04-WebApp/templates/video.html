@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Video Recording</title>
+</head>
+<body>
+
+  <h2>Live Emotion Detection</h2>
+
+<img src="{{ url_for('video_feed') }}" width="720" height="540">
+
+<p>Recording in progress... You will be redirected to results after 45 seconds.</p>
+
+
+  <script>
+    setTimeout(function(){
+       window.location.href = "/video_dash";
+    }, 45000); // 45 секунд
+  </script>
+
+</body>
+</html>
