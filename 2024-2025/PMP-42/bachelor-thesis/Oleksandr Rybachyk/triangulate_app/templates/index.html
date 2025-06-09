@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delaunay Triangulation Viewer</title>
+    <script src="https://cdn.plot.ly/plotly-3.0.0.min.js"></script>
+    <style>
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h2>Завантажте DEM (.tif) файл:</h2>
+    <form id="upload-form">
+        <input type="file" id="file-input" name="file" required>
+        <br><br>
+        <label for="subset-size">Введіть n для підмножини з розміром n×n (для всієї області залиште 0):</label>
+        <input type="number" id="subset-size" name="subset_size" value="0">
+        <button type="submit">Тріангуляція</button>
+    </form>
+    <div id="loader" style="display:none; text-align: center; margin-top: 20px;">
+        <div class="spinner"></div>
+        <p id="status" style="font-weight: bold; color: darkgreen;"></p>
+    </div>
+    <div id="plot" style="width:100%; height:800px;"></div>
+
+    <script src="/static/plot.js"></script>
+</body>
+</html>
