@@ -1,0 +1,87 @@
+
+
+
+# path: D:/temp_2/coco128  # dataset old root dir
+path: C:\Users\Северин\Documents\unik\kursova\DB    # dataset root dir
+train: images/train # train images (relative to 'path') 476 images
+val: images/val   # val images (relative to 'path') 50 images
+
+# Classes
+nc: 23
+names: [
+  'Helicopter',
+  'USSR|CIV/Transport|AN-124',
+  'USSR|CIV/Transport/Recon.|AN-24/26/30',
+  'USSR|Transport|AN-22',
+  'USSR|Transport|AN-12',
+  'USSR|CIV/Transport|AN-2',
+  'USSR|Transport/Refuel.|IL-76/78',
+  'USSR|Surv./MPA|IL-20/38',
+  'CZECHOSLOVAKIA|Trainer/G-A|L-39',
+  'RUSSIA|Trainer|YAK-130',
+  'USSR|AWACS|A-50',
+  'USSR|Bomber|TU-22',
+  'USSR|Strat.Bomber|TU-22M',
+  'USSR|Strat.Bomber/MAP|TU-95/142',
+  'USSR|Strat.Bomber|TU-160',
+  'USSR|Trainer/CIV|TU-134/154',
+  'CIV AIRCRAFT',
+  'USSR|Interceptor/G-A|MIG-31',
+  'USSR|Fighter|MIG-29',
+  'USSR|Mutlirole Fighter|SU-27/30/33/35',
+  'USSR|Fighter/Bomber|SU-34',
+  'USSR|CAS|SU-25',
+  'USSR|Tact.Bomber|SU-24'
+]
+
+pos_weight: [
+  8.178472861085556,
+  104.58823529411765,
+  17.85140562248996,
+  277.8125,
+  50.51136363636363,
+  54.876543209876544,
+  13.7403400309119,
+  53.55421686746988,
+  13.761609907120743,
+  138.90625,
+  467.89473684210526,
+  467.89473684210526,
+  20.158730158730158,
+  24.092140921409214,
+  261.47058823529414,
+  25.4,
+  33.29588014981273,
+  14.11111111111111,
+  9.437367303609342,
+  8.262081784386616,
+  27.103658536585368,
+  19.755555555555556,
+  22.114427860696516
+]
+
+# augment:  # Data augmentation section
+#   hsv_h: 0.015  # Change in hue range
+#   hsv_s: 0.7  # Change in saturation range
+#   hsv_v: 0.4  # Change in value range
+#   degrees: 45  # Maximum rotation degrees
+#   translate: 0.1  # Relative translation (percentage)
+#   scale: 0.5  # Scale augmentation (percentage)
+#   shear: 10  # Shear angle (degrees)
+
+data:
+  # Your data path and class definitions...
+  augment: # value is probability
+    degrees: 0.3       # Rotation image
+    translate: 0.15    # Translates the image horizontally and vertically by a fraction of the image size
+    scale: 0.5         # Scales the image by a gain factor
+    perspective: 0.05  # Applies a random perspective transformation to the image
+    flipud: 0.4        # Up/Down flip
+    fliplr: 0.4        # Left/Right flip
+    mosaic: 0.1        # Probability of applying mosaic augmentation
+    mixup: 0.05        # Probability of applying mixup augmentation
+    copy_paste: 0.05   # Copies objects from one image and pastes them onto another
+    erasing: 0.25      # Randomly erases a portion of the image during classification training
+    crop_fraction: 0.4 # Crops the classification image to a fraction of its size to emphasize central features
+    #                    and adapt to object scales, reducing background distractions.
+    

@@ -1,0 +1,73 @@
+extends base
+
+mixin navItem(link,text,icon,active)
+    li(class=`${active ? 'side-nav--active': ''}`)
+        a(href=`${link}`)
+            svg
+                use(xlink:href=`img/icons.svg#icon-${icon}`)
+            | #{text}
+
+block content 
+    main.main
+        .user-view
+            nav.user-view__menu
+                ul.side-nav
+                    +navItem('/me','Settings','settings',true)
+                    +navItem('/my-products','My purchases','briefcase',false)
+                    +navItem('#','My reviews','star',false)
+                    //- +navItem('#','Billing','credit-card',false)
+
+                - if(user.role === 'admin') 
+                    .admin-nav
+                        h5.admin-nav__heading Admin
+                        ul.side-nav
+                            +navItem('/manage-products','Manage products','map',false)
+                            +navItem('/manage-users','Manage users','users',false)
+                            //- +navItem('#','Manage reviews','star',false)
+                            +navItem('/manage-purchases','Manage purchase','briefcase',false)
+                            
+            .user-view__content
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Create User
+                    form.form.form-user-data
+                        .form__group
+                            label.form__label(for='name') Name
+                            input#name.form__input(type='text', value=`${user.name}`, required, name='name')
+                        .form__group.ma-bt-md
+                            label.form__label(for='email') Email address
+                            input#email.form__input(type='email', value=`${user.email}`, required, name='email')
+                        .form__group.ma-bt-md
+                            label.form__label(for='role') Role
+                            input#email.form__input(type='text', value=`${user.role}`, required, name='role')
+                        .form__group.ma-bt-md
+                            label.form__label(for='password') Password
+                            input#email.form__input(type='password', value=`${user.password}`, required, name='password')
+
+                        .form__group.right
+                            button.btn.btn--small.btn--green Create
+
+                    h2.heading-secondary.ma-bt-md Update User
+                    form.form.form-user-data
+                        .form__group
+                            label.form__label(for='name') Name
+                            input#name.form__input(type='text', value=`${user.name}`, required, name='name')
+                        .form__group.ma-bt-md
+                            label.form__label(for='email') Email address
+                            input#email.form__input(type='email', value=`${user.email}`, required, name='email')
+                        .form__group.form__photo-upload
+                            img.form__user-photo(src=`img/users/${user.photo}`, alt=`${user.name} photo`)
+                            input.form__upload(type='file', accept='image/*', id='photo', name='photo')
+                            label(for='photo') Choose new photo
+
+                        .form__group.right
+                            button.btn.btn--small.btn--green Update
+
+                    h2.heading-secondary.ma-bt-md Delete User
+                    form.form.form-user-data
+                        .form__group.ma-bt-md
+                            label.form__label(for='email') Email address
+                            input#email.form__input(type='email', value=`${user.email}`, required, name='email')
+                        
+                        .form__group.right
+                            button.btn.btn--small.btn--green Delete
+                

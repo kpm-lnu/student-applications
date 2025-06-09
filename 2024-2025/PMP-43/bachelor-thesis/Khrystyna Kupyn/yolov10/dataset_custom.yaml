@@ -1,0 +1,7 @@
+train: C:\Users\User\Desktop\Programs\Diploma\yolov_10\train
+val: C:\Users\User\Desktop\Programs\Diploma\yolov_10\val
+
+nc: 9
+
+names: ["car", "chair", "cup", "door", "potted plant",
+"orange", "person", "phone", "tree"]

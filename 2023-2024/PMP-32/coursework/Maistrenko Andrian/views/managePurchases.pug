@@ -1,0 +1,84 @@
+extends base
+
+mixin navItem(link,text,icon,active)
+    li(class=`${active ? 'side-nav--active': ''}`)
+        a(href=`${link}`)
+            svg
+                use(xlink:href=`img/icons.svg#icon-${icon}`)
+            | #{text}
+
+block content 
+    main.main
+        .user-view
+            nav.user-view__menu
+                ul.side-nav
+                    +navItem('/me','Settings','settings',true)
+                    +navItem('/my-products','My purchases','briefcase',false)
+                    +navItem('#','My reviews','star',false)
+                    //- +navItem('#','Billing','credit-card',false)
+
+                - if(user.role === 'admin') 
+                    .admin-nav
+                        h5.admin-nav__heading Admin
+                        ul.side-nav
+                            +navItem('/manage-products','Manage products','map',false)
+                            +navItem('/manage-users','Manage users','users',false)
+                            //- +navItem('#','Manage reviews','star',false)
+                            +navItem('/manage-purchases','Manage purchase','briefcase',false)
+                            
+            .user-view__content
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Create Purchase
+
+                    //- not using api
+                    //- form.form.form-user-data(action='/submit-user-data' method='POST')
+                    //- using api
+                    form.form.form-purchase-create
+                        .form__group
+                            label.form__label(for='productId') Product Id
+                            input#name.form__input(type='text', value=``, required, name='productId')
+                        .form__group.ma-bt-md
+                            label.form__label(for='userId') User Id
+                            input#email.form__input(type='text', value=``, required, name='userId')
+                        .form__group.ma-bt-md
+                            label.form__label(for='price') Price
+                            input#email.form__input(type='text', value=``, required, name='price')
+                        //- .form__group.ma-bt-md
+                        //-     //- if here, means paid
+                        //-     label.form__label(for='paid') Paid
+                        //-     input#email.form__input(type='text', value=``, required, name='paid')
+
+                        .form__group.right
+                            button.btn.btn--small.btn--green Create
+
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Update Purchase
+                    form.form.form-purchase-update
+                        .form__group
+                            label.form__label(for='purchaseId') Purchase Id
+                            input#name.form__input(type='text', value=``, required, name='purchaseId')
+                        .form__group
+                            label.form__label(for='productId') ProductId
+                            input#name.form__input(type='text', value=``, required, name='productId')
+                        .form__group.ma-bt-md
+                            label.form__label(for='userId') UserId
+                            input#email.form__input(type='text', value=``, required, name='userId')
+                        .form__group.ma-bt-md
+                            label.form__label(for='price') Price
+                            input#email.form__input(type='text', value=``, required, name='price')
+                        //- .form__group.ma-bt-md
+                        //-     label.form__label(for='paid') Paid
+                        //-     input#email.form__input(type='text', value=``, required, name='paid')
+
+                        .form__group.right
+                            button.btn.btn--small.btn--green Update
+
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Delete Purchase
+                    form.form.form-purchase-delete
+                        .form__group.ma-bt-md
+                            label.form__label(for='purchaseId') 
+                            input#email.form__input(type='text', value=``, required, name='purchaseId')
+                        
+                        .form__group.right
+                            button.btn.btn--small.btn--green Delete

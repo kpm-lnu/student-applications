@@ -1,0 +1,15 @@
+header.header   
+    nav.nav.nav--tours  
+        a.nav__el(href='/') All products
+    .header__logo 
+        img(src='/img/atom.png' alt='Shop logo')
+    nav.nav.nav--user
+    if user
+        a.nav__el--logout Log Out
+        a.nav__el(href='/me')
+            img.nav__user-img(src=`/img/users/${user.photo}` alt=`${user.photo} photo`)
+            span= user.name.split(' ')[0]
+    else
+        a.nav__el(href='/login') Log in
+        a.nav__el.nav__el--cta(href='/signup') Sign up
+

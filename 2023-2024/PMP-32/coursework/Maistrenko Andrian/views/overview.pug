@@ -1,0 +1,42 @@
+extends base
+
+block content 
+    main.main
+        .card-container 
+            each product in products
+                .card
+                    .card__header
+                        .card__picture
+                            .card__picture-overlay &nbsp;
+                            img.card__picture-img(src=`img/products/${product.imageCover}`, alt=`${product.name}`)
+                        //h3.heading-tertirary
+                            span= product.name
+
+                    .card__details
+                        h4.card__sub-heading= product.name
+                        p.card__text=product.summary
+                        .card__data 
+                            img.card__icon(src='img/graphics-card-icon.png' alt='procegraphics card icon')
+                            span= product.graphicsCard
+                        .card__data
+                            img.card__icon(src='img/processor-icon.png' alt='processor icon')
+                            span= product.processor
+                        .card__data
+                            img.card__icon(src='img/ram-icon.png' alt='ram icon')
+                            span= product.ram
+                        .card__data 
+                            img.card__icon(src='img/drive-icon.png' alt='drive icon')
+                            span= product.drive
+
+                    .card__footer
+                        p
+                            span.card__footer-value= `$${product.price}`
+                            //span.card__footer-text per person
+                        p.card__ratings
+                            span.card__footer-value= product.ratingsAverage
+                            span.card__footer-text= ` rating (${product.ratingsQuantity})`
+                        a.btn.btn--green.btn--small(href=`/product/${product.slug}`) Details
+
+
+        .total-price 
+            p.card__text(style="margin-top:40px;font-size:2em;")= `Total spent: ${totalPrice}`
