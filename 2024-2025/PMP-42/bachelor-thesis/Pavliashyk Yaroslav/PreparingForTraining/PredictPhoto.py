@@ -4,14 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-# === Конфігурація ===
 TEST_DIR = r"D:\Programming\Diploma\NewDatasetDirectory\train_unique"
 PRED_JSON = "predictions.json"
 FILENAMES = "filenames.json"  # Якщо є
 CLASS_NAMES = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"]
 NUM_EXAMPLES = 20
 
-# === Завантаження даних ===
 with open(PRED_JSON, "r") as f:
     data = json.load(f)
 y_true = np.array(data["y_true"])
@@ -20,11 +18,9 @@ y_pred = np.array(data["y_pred"])
 with open(FILENAMES, "r") as f:
     filenames = json.load(f)
 
-# === Індекси правильних / помилкових ===
 correct_idx = np.where(y_true == y_pred)[0]
 incorrect_idx = np.where(y_true != y_pred)[0]
 
-# === Вивід прикладів ===
 def show_image(idx):
     path = os.path.join(TEST_DIR, filenames[idx])
     image = cv2.imread(path)
