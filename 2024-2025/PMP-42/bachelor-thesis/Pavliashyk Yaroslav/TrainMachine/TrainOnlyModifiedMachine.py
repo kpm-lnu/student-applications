@@ -5,7 +5,7 @@ from tensorflow.keras import layers, models, optimizers
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping, ModelCheckpoint
 
-# === Налаштування ===
+
 IMG_SIZE = (128, 128)
 BATCH_SIZE = 32
 EPOCHS = 25
@@ -13,7 +13,7 @@ DATASET_PATH = "D:/Programming/Diploma/NewDatasetDirectory/train_unique_modified
 MODEL_PATH = "best_emotion_model_valacc.keras"
 HISTORY_FILE = "emotion_history_valacc.json"
 
-# === Генератор зображень ===
+
 datagen = ImageDataGenerator(
     validation_split=0.2,
     rescale=1./255,
@@ -40,7 +40,7 @@ val_gen = datagen.flow_from_directory(
     shuffle=False
 )
 
-# === Побудова покращеної моделі ===
+
 def create_improved_model(input_shape=(128, 128, 3), num_classes=7):
     model = models.Sequential([
         layers.Input(shape=input_shape),
@@ -73,7 +73,7 @@ def create_improved_model(input_shape=(128, 128, 3), num_classes=7):
     )
     return model
 
-# === Колбеки для val_accuracy ===
+
 def get_callbacks_accuracy_driven():
     return [
         ModelCheckpoint(MODEL_PATH, monitor='val_accuracy', save_best_only=True, mode='max', verbose=1),
@@ -81,7 +81,7 @@ def get_callbacks_accuracy_driven():
         EarlyStopping(monitor='val_accuracy', patience=6, restore_best_weights=True, verbose=1, mode='max')
     ]
 
-# === Навчання ===
+
 model = create_improved_model(input_shape=(*IMG_SIZE, 3), num_classes=train_gen.num_classes)
 history = model.fit(
     train_gen,
@@ -90,11 +90,11 @@ history = model.fit(
     callbacks=get_callbacks_accuracy_driven()
 )
 
-# === Збереження історії ===
+
 with open(HISTORY_FILE, 'w') as f:
     json.dump(history.history, f)
 
-# === Графік ===
+
 plt.figure(figsize=(10, 5))
 plt.plot(history.history['accuracy'], label='Train Accuracy')
 plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
