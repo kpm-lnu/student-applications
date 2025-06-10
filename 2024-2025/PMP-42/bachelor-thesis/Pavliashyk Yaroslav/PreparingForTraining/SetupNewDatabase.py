@@ -2,7 +2,7 @@ import os
 import shutil
 from PIL import Image
 
-# Вхідні директорії
+
 SOURCE_DIRS = [
     r"D:\Programming\Diploma\datasets\combined_dataset\train",
     r"D:\Programming\Diploma\datasets\Oahega"
@@ -12,13 +12,13 @@ SOURCE_DIRS = [
 # Вихідна директорія
 DEST_DIR = r"D:\Programming\Diploma\NewDatasetDirectory\train"
 
-# Мінімальний розмір зображення
+
 MIN_SIZE = 128
 
-# Підтримувані формати
+
 IMG_EXTENSIONS = ('.jpg', '.jpeg', '.png')
 
-# Лічильник для статистики
+
 total_copied = 0
 skipped_too_small = 0
 skipped_errors = 0
@@ -39,11 +39,11 @@ for src_dir in SOURCE_DIRS:
                             skipped_too_small += 1
                             continue
 
-                        # Вихідна папка
+
                         dest_emotion_dir = os.path.join(DEST_DIR, emotion.lower())
                         os.makedirs(dest_emotion_dir, exist_ok=True)
 
-                        # Уникнути конфлікту імен
+
                         base_name = os.path.splitext(filename)[0]
                         extension = os.path.splitext(filename)[1]
                         counter = 1
