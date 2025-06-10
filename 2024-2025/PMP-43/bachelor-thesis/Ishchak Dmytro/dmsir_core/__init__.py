@@ -1,0 +1,1 @@
+from .dmsir_dde import simulate, Params   # експорт API ядра
