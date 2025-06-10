@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "UnVliXf/PrxsblrVyLeSBw81ghh62TY5K01NibGdWrw=",
+  "Source": "MonteCarloWeb",
+  "BasePath": "_content/MonteCarloWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MonteCarloWeb\\wwwroot",
+      "Source": "MonteCarloWeb",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\MonteCarloWeb\\wwwroot\\",
+      "BasePath": "_content/MonteCarloWeb",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\admin\\Desktop\\MonteCarloWeb\\wwwroot\\index.html",
+      "SourceId": "MonteCarloWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\MonteCarloWeb\\wwwroot\\",
+      "BasePath": "_content/MonteCarloWeb",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Desktop\\MonteCarloWeb\\wwwroot\\RASTR UKR BLACK_WHITE-01-01.png",
+      "SourceId": "MonteCarloWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\MonteCarloWeb\\wwwroot\\",
+      "BasePath": "_content/MonteCarloWeb",
+      "RelativePath": "RASTR UKR BLACK_WHITE-01-01.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RASTR UKR BLACK_WHITE-01-01.png"
+    }
+  ]
+}
