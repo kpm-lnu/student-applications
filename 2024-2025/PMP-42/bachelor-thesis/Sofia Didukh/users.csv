@@ -1,0 +1,1692 @@
+id;gender;age;marital_status;highest_qualification;gross_income;smoke
+1;Male;38;Divorced;No Qualification;2,600 to 5,200;No
+2;Female;42;Single;No Qualification;Under 2,600;Yes
+3;Male;40;Married;Degree;28,600 to 36,400;No
+4;Female;40;Married;Degree;10,400 to 15,600;No
+5;Female;39;Married;GCSE/O Level;2,600 to 5,200;No
+6;Female;37;Married;GCSE/O Level;15,600 to 20,800;No
+7;Male;53;Married;Degree;Above 36,400;Yes
+8;Male;44;Single;Degree;10,400 to 15,600;No
+9;Male;40;Single;GCSE/CSE;2,600 to 5,200;Yes
+10;Female;41;Married;No Qualification;5,200 to 10,400;Yes
+11;Male;72;Widowed;No Qualification;10,400 to 15,600;No
+12;Male;49;Married;No Qualification;Refused;No
+13;Male;29;Married;Degree;Above 36,400;No
+14;Female;79;Widowed;No Qualification;10,400 to 15,600;No
+15;Male;25;Single;Degree;15,600 to 20,800;No
+16;Female;27;Single;Degree;15,600 to 20,800;No
+17;Female;30;Single;Degree;20,800 to 28,600;No
+18;Male;47;Divorced;No Qualification;10,400 to 15,600;No
+19;Female;69;Single;Other/Sub Degree;2,600 to 5,200;No
+20;Male;55;Married;No Qualification;20,800 to 28,600;No
+21;Female;34;Married;GCSE/CSE;2,600 to 5,200;Yes
+22;Female;36;Married;GCSE/O Level;5,200 to 10,400;Yes
+23;Female;56;Married;No Qualification;2,600 to 5,200;Yes
+24;Male;71;Divorced;No Qualification;Unknown;No
+25;Female;38;Married;No Qualification;5,200 to 10,400;No
+26;Female;79;Married;No Qualification;Under 2,600;No
+27;Female;58;Divorced;No Qualification;5,200 to 10,400;Yes
+28;Female;69;Married;No Qualification;Under 2,600;No
+29;Male;83;Widowed;No Qualification;2,600 to 5,200;No
+30;Female;73;Widowed;No Qualification;5,200 to 10,400;No
+31;Female;42;Married;GCSE/O Level;Refused;Yes
+32;Female;31;Married;GCSE/CSE;Under 2,600;Yes
+33;Male;26;Single;GCSE/CSE;2,600 to 5,200;No
+34;Female;27;Separated;Degree;15,600 to 20,800;No
+35;Female;57;Married;Higher/Sub Degree;10,400 to 15,600;No
+36;Female;30;Married;ONC/BTEC;2,600 to 5,200;No
+37;Female;22;Single;A Levels;5,200 to 10,400;No
+38;Female;78;Widowed;No Qualification;Under 2,600;Yes
+39;Female;49;Married;ONC/BTEC;15,600 to 20,800;No
+40;Male;74;Married;Other/Sub Degree;15,600 to 20,800;No
+41;Male;85;Widowed;Degree;20,800 to 28,600;No
+42;Male;75;Married;Other/Sub Degree;Refused;No
+43;Female;80;Widowed;GCSE/O Level;2,600 to 5,200;No
+44;Female;37;Married;Degree;Under 2,600;No
+45;Female;33;Single;Degree;10,400 to 15,600;No
+46;Male;41;Divorced;A Levels;15,600 to 20,800;No
+47;Female;81;Widowed;No Qualification;2,600 to 5,200;No
+48;Female;76;Widowed;No Qualification;2,600 to 5,200;Yes
+49;Female;58;Married;A Levels;10,400 to 15,600;No
+50;Male;59;Married;Other/Sub Degree;15,600 to 20,800;Yes
+51;Female;40;Divorced;GCSE/O Level;5,200 to 10,400;Yes
+52;Female;54;Divorced;GCSE/O Level;10,400 to 15,600;No
+53;Male;49;Married;Degree;Above 36,400;No
+54;Female;79;Widowed;No Qualification;5,200 to 10,400;No
+55;Male;28;Married;Other/Sub Degree;20,800 to 28,600;Yes
+56;Male;44;Married;Other/Sub Degree;5,200 to 10,400;No
+57;Female;42;Single;GCSE/CSE;10,400 to 15,600;No
+58;Female;36;Single;GCSE/CSE;5,200 to 10,400;No
+59;Male;89;Widowed;No Qualification;5,200 to 10,400;No
+60;Female;64;Married;No Qualification;2,600 to 5,200;No
+61;Female;76;Married;No Qualification;Under 2,600;No
+62;Female;76;Married;No Qualification;Under 2,600;No
+63;Female;61;Married;No Qualification;2,600 to 5,200;No
+64;Female;81;Widowed;GCSE/O Level;5,200 to 10,400;No
+65;Female;20;Single;No Qualification;2,600 to 5,200;Yes
+66;Female;82;Widowed;No Qualification;5,200 to 10,400;No
+67;Female;23;Single;GCSE/O Level;5,200 to 10,400;Yes
+68;Male;41;Married;GCSE/O Level;Above 36,400;No
+69;Female;31;Single;A Levels;15,600 to 20,800;No
+70;Female;44;Married;A Levels;20,800 to 28,600;Yes
+71;Female;42;Married;Degree;10,400 to 15,600;No
+72;Male;67;Widowed;No Qualification;5,200 to 10,400;Yes
+73;Male;53;Married;Degree;20,800 to 28,600;No
+74;Male;76;Married;No Qualification;10,400 to 15,600;No
+75;Male;40;Married;Other/Sub Degree;2,600 to 5,200;Yes
+76;Male;44;Married;A Levels;15,600 to 20,800;No
+77;Female;31;Separated;GCSE/O Level;15,600 to 20,800;Yes
+78;Male;43;Divorced;Other/Sub Degree;2,600 to 5,200;Yes
+79;Female;36;Separated;A Levels;10,400 to 15,600;No
+80;Female;34;Divorced;GCSE/O Level;10,400 to 15,600;No
+81;Female;18;Single;GCSE/O Level;2,600 to 5,200;Yes
+82;Male;56;Married;No Qualification;5,200 to 10,400;No
+83;Female;73;Married;No Qualification;Under 2,600;No
+84;Female;22;Single;GCSE/CSE;2,600 to 5,200;Yes
+85;Female;33;Single;GCSE/CSE;15,600 to 20,800;No
+86;Male;27;Single;ONC/BTEC;15,600 to 20,800;Yes
+87;Female;33;Married;GCSE/O Level;10,400 to 15,600;No
+88;Female;63;Married;No Qualification;Under 2,600;No
+89;Female;64;Married;A Levels;2,600 to 5,200;No
+90;Male;54;Married;Degree;Above 36,400;No
+91;Female;34;Married;Degree;Under 2,600;No
+92;Male;78;Married;No Qualification;10,400 to 15,600;No
+93;Female;54;Married;No Qualification;Under 2,600;No
+94;Male;56;Separated;GCSE/CSE;28,600 to 36,400;No
+95;Male;78;Widowed;No Qualification;2,600 to 5,200;No
+96;Female;37;Married;A Levels;5,200 to 10,400;No
+97;Male;54;Married;Degree;28,600 to 36,400;No
+98;Female;40;Married;GCSE/O Level;20,800 to 28,600;Yes
+99;Female;64;Divorced;No Qualification;2,600 to 5,200;No
+100;Female;42;Married;GCSE/O Level;5,200 to 10,400;No
+101;Female;34;Married;Higher/Sub Degree;2,600 to 5,200;No
+102;Female;64;Married;No Qualification;Under 2,600;No
+103;Female;50;Divorced;Other/Sub Degree;15,600 to 20,800;No
+104;Female;31;Married;ONC/BTEC;10,400 to 15,600;No
+105;Female;37;Married;Degree;Above 36,400;No
+106;Male;81;Married;Degree;10,400 to 15,600;No
+107;Male;57;Separated;No Qualification;5,200 to 10,400;Yes
+108;Female;59;Married;Higher/Sub Degree;2,600 to 5,200;No
+109;Male;66;Married;Degree;20,800 to 28,600;No
+110;Male;57;Married;No Qualification;20,800 to 28,600;No
+111;Female;78;Widowed;No Qualification;5,200 to 10,400;No
+112;Male;49;Married;Degree;20,800 to 28,600;No
+113;Female;62;Married;GCSE/O Level;15,600 to 20,800;No
+114;Female;17;Single;GCSE/CSE;2,600 to 5,200;No
+115;Female;36;Single;GCSE/O Level;15,600 to 20,800;No
+116;Female;31;Single;No Qualification;Refused;Yes
+117;Female;61;Married;Higher/Sub Degree;15,600 to 20,800;Yes
+118;Male;71;Widowed;No Qualification;15,600 to 20,800;Yes
+119;Female;75;Widowed;No Qualification;5,200 to 10,400;Yes
+120;Female;43;Married;Higher/Sub Degree;Above 36,400;No
+121;Female;68;Widowed;No Qualification;Refused;No
+122;Female;65;Widowed;Degree;15,600 to 20,800;No
+123;Female;85;Widowed;No Qualification;5,200 to 10,400;No
+124;Female;35;Separated;GCSE/O Level;5,200 to 10,400;Yes
+125;Female;52;Married;Higher/Sub Degree;15,600 to 20,800;No
+126;Female;28;Single;ONC/BTEC;5,200 to 10,400;Yes
+127;Male;52;Single;ONC/BTEC;20,800 to 28,600;No
+128;Male;67;Widowed;No Qualification;5,200 to 10,400;Yes
+129;Female;35;Divorced;No Qualification;5,200 to 10,400;Yes
+130;Female;68;Married;No Qualification;2,600 to 5,200;No
+131;Female;34;Married;Higher/Sub Degree;10,400 to 15,600;No
+132;Female;57;Divorced;No Qualification;2,600 to 5,200;Yes
+133;Male;37;Married;Higher/Sub Degree;15,600 to 20,800;Yes
+134;Female;37;Divorced;No Qualification;5,200 to 10,400;Yes
+135;Male;43;Divorced;No Qualification;10,400 to 15,600;Yes
+136;Male;59;Widowed;GCSE/O Level;2,600 to 5,200;No
+137;Female;28;Single;Degree;10,400 to 15,600;No
+138;Female;60;Married;No Qualification;5,200 to 10,400;No
+139;Male;16;Single;GCSE/O Level;Under 2,600;No
+140;Male;37;Single;No Qualification;2,600 to 5,200;Yes
+141;Male;34;Married;No Qualification;15,600 to 20,800;No
+142;Female;73;Married;No Qualification;5,200 to 10,400;No
+143;Male;24;Single;GCSE/O Level;10,400 to 15,600;No
+144;Female;36;Single;Higher/Sub Degree;15,600 to 20,800;No
+145;Male;39;Separated;GCSE/O Level;10,400 to 15,600;Yes
+146;Female;74;Married;No Qualification;Refused;No
+147;Female;32;Married;GCSE/CSE;Under 2,600;Yes
+148;Female;30;Married;Degree;15,600 to 20,800;No
+149;Female;68;Married;GCSE/O Level;15,600 to 20,800;No
+150;Female;49;Married;No Qualification;Refused;No
+151;Female;47;Married;Higher/Sub Degree;2,600 to 5,200;No
+152;Male;30;Single;Higher/Sub Degree;10,400 to 15,600;Yes
+153;Male;60;Divorced;No Qualification;10,400 to 15,600;Yes
+154;Male;72;Single;Other/Sub Degree;15,600 to 20,800;No
+155;Male;73;Married;Degree;10,400 to 15,600;No
+156;Female;48;Widowed;GCSE/O Level;10,400 to 15,600;Yes
+157;Male;53;Divorced;Degree;Above 36,400;No
+158;Male;17;Single;GCSE/O Level;Refused;No
+159;Female;58;Married;GCSE/O Level;5,200 to 10,400;No
+160;Female;34;Married;ONC/BTEC;10,400 to 15,600;No
+161;Male;44;Single;GCSE/O Level;15,600 to 20,800;No
+162;Male;23;Single;No Qualification;5,200 to 10,400;No
+163;Male;49;Married;Degree;20,800 to 28,600;No
+164;Male;30;Married;Degree;15,600 to 20,800;No
+165;Female;61;Widowed;GCSE/O Level;5,200 to 10,400;No
+166;Male;38;Separated;A Levels;10,400 to 15,600;Yes
+167;Male;30;Single;Degree;10,400 to 15,600;No
+168;Female;44;Married;A Levels;15,600 to 20,800;No
+169;Male;91;Widowed;No Qualification;Under 2,600;No
+170;Male;40;Divorced;GCSE/O Level;Above 36,400;No
+171;Female;63;Married;Degree;2,600 to 5,200;No
+172;Female;61;Divorced;No Qualification;2,600 to 5,200;Yes
+173;Female;40;Married;Higher/Sub Degree;5,200 to 10,400;No
+174;Female;57;Married;No Qualification;Under 2,600;Yes
+175;Female;41;Married;Degree;28,600 to 36,400;No
+176;Female;32;Single;No Qualification;2,600 to 5,200;Yes
+177;Male;76;Married;No Qualification;5,200 to 10,400;No
+178;Female;35;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+179;Male;70;Married;No Qualification;5,200 to 10,400;No
+180;Female;75;Widowed;No Qualification;5,200 to 10,400;No
+181;Female;74;Widowed;No Qualification;2,600 to 5,200;No
+182;Male;49;Married;Degree;Above 36,400;No
+183;Female;56;Married;GCSE/O Level;Under 2,600;No
+184;Male;60;Married;Degree;15,600 to 20,800;No
+185;Female;72;Widowed;No Qualification;5,200 to 10,400;No
+186;Male;17;Single;GCSE/O Level;5,200 to 10,400;No
+187;Female;23;Single;Degree;20,800 to 28,600;No
+188;Male;79;Married;No Qualification;5,200 to 10,400;No
+189;Female;65;Separated;No Qualification;2,600 to 5,200;No
+190;Female;57;Married;Degree;5,200 to 10,400;No
+191;Female;37;Married;GCSE/O Level;15,600 to 20,800;No
+192;Male;79;Single;No Qualification;5,200 to 10,400;No
+193;Female;71;Single;No Qualification;2,600 to 5,200;No
+194;Female;87;Widowed;No Qualification;Unknown;No
+195;Male;59;Married;Degree;28,600 to 36,400;Yes
+196;Male;21;Single;ONC/BTEC;10,400 to 15,600;Yes
+197;Female;66;Married;No Qualification;Under 2,600;No
+198;Male;58;Married;Higher/Sub Degree;28,600 to 36,400;No
+199;Male;38;Married;GCSE/O Level;Above 36,400;Yes
+200;Male;61;Widowed;Other/Sub Degree;15,600 to 20,800;No
+201;Male;37;Separated;Degree;Above 36,400;No
+202;Female;38;Married;GCSE/O Level;5,200 to 10,400;No
+203;Male;34;Married;Degree;28,600 to 36,400;No
+204;Female;34;Married;Higher/Sub Degree;10,400 to 15,600;No
+205;Female;20;Single;GCSE/O Level;2,600 to 5,200;No
+206;Female;77;Widowed;No Qualification;5,200 to 10,400;Yes
+207;Female;31;Single;GCSE/O Level;2,600 to 5,200;Yes
+208;Male;28;Single;No Qualification;2,600 to 5,200;Yes
+209;Female;36;Married;GCSE/CSE;5,200 to 10,400;No
+210;Female;16;Single;GCSE/O Level;5,200 to 10,400;Yes
+211;Male;42;Married;GCSE/O Level;5,200 to 10,400;No
+212;Female;47;Married;Higher/Sub Degree;Under 2,600;No
+213;Male;42;Married;GCSE/CSE;28,600 to 36,400;No
+214;Female;67;Widowed;No Qualification;2,600 to 5,200;No
+215;Female;72;Single;No Qualification;5,200 to 10,400;No
+216;Male;40;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+217;Female;34;Single;Degree;Above 36,400;No
+218;Male;75;Married;No Qualification;15,600 to 20,800;No
+219;Female;35;Married;GCSE/O Level;5,200 to 10,400;No
+220;Female;40;Separated;No Qualification;5,200 to 10,400;Yes
+221;Female;46;Married;No Qualification;15,600 to 20,800;No
+222;Male;23;Married;GCSE/O Level;15,600 to 20,800;No
+223;Male;42;Married;GCSE/O Level;10,400 to 15,600;No
+224;Male;63;Married;No Qualification;2,600 to 5,200;No
+225;Female;33;Married;A Levels;5,200 to 10,400;No
+226;Female;31;Married;GCSE/O Level;15,600 to 20,800;No
+227;Male;54;Single;No Qualification;5,200 to 10,400;No
+228;Female;33;Single;ONC/BTEC;15,600 to 20,800;No
+229;Female;24;Single;Degree;15,600 to 20,800;Yes
+230;Female;80;Widowed;No Qualification;5,200 to 10,400;No
+231;Female;77;Single;No Qualification;2,600 to 5,200;No
+232;Male;51;Married;No Qualification;10,400 to 15,600;No
+233;Male;16;Single;GCSE/O Level;Refused;No
+234;Male;27;Single;ONC/BTEC;Refused;Yes
+235;Female;75;Single;No Qualification;2,600 to 5,200;No
+236;Female;24;Single;Degree;5,200 to 10,400;No
+237;Male;78;Widowed;No Qualification;5,200 to 10,400;Yes
+238;Female;20;Single;GCSE/O Level;5,200 to 10,400;No
+239;Male;18;Single;GCSE/CSE;5,200 to 10,400;No
+240;Female;25;Separated;ONC/BTEC;10,400 to 15,600;No
+241;Female;55;Separated;No Qualification;5,200 to 10,400;Yes
+242;Female;29;Married;Higher/Sub Degree;10,400 to 15,600;Yes
+243;Female;67;Divorced;No Qualification;5,200 to 10,400;No
+244;Female;79;Widowed;No Qualification;5,200 to 10,400;No
+245;Male;44;Single;No Qualification;20,800 to 28,600;No
+246;Male;47;Married;Degree;20,800 to 28,600;No
+247;Female;41;Divorced;GCSE/O Level;10,400 to 15,600;No
+248;Female;31;Married;GCSE/O Level;10,400 to 15,600;Yes
+249;Male;32;Married;Other/Sub Degree;10,400 to 15,600;No
+250;Female;68;Widowed;No Qualification;Refused;No
+251;Female;84;Widowed;No Qualification;Under 2,600;No
+252;Male;67;Married;No Qualification;10,400 to 15,600;No
+253;Male;49;Married;No Qualification;10,400 to 15,600;No
+254;Male;69;Married;No Qualification;5,200 to 10,400;Yes
+255;Male;64;Married;Higher/Sub Degree;28,600 to 36,400;Yes
+256;Male;62;Married;No Qualification;20,800 to 28,600;No
+257;Male;52;Divorced;No Qualification;5,200 to 10,400;No
+258;Male;45;Married;ONC/BTEC;28,600 to 36,400;No
+259;Female;28;Divorced;No Qualification;10,400 to 15,600;Yes
+260;Female;36;Single;GCSE/O Level;10,400 to 15,600;No
+261;Female;73;Divorced;No Qualification;5,200 to 10,400;No
+262;Male;48;Widowed;No Qualification;10,400 to 15,600;No
+263;Male;67;Widowed;No Qualification;10,400 to 15,600;Yes
+264;Female;38;Divorced;GCSE/O Level;20,800 to 28,600;No
+265;Female;40;Divorced;GCSE/CSE;10,400 to 15,600;Yes
+266;Male;43;Single;Other/Sub Degree;15,600 to 20,800;No
+267;Female;30;Single;Degree;10,400 to 15,600;No
+268;Female;70;Widowed;No Qualification;5,200 to 10,400;No
+269;Female;82;Widowed;No Qualification;5,200 to 10,400;No
+270;Female;78;Widowed;No Qualification;5,200 to 10,400;No
+271;Male;21;Single;GCSE/O Level;Under 2,600;Yes
+272;Male;67;Widowed;No Qualification;15,600 to 20,800;No
+273;Male;16;Single;GCSE/O Level;Refused;No
+274;Female;21;Single;GCSE/CSE;5,200 to 10,400;Yes
+275;Male;68;Separated;No Qualification;5,200 to 10,400;Yes
+276;Male;41;Married;No Qualification;2,600 to 5,200;Yes
+277;Male;33;Single;GCSE/O Level;15,600 to 20,800;No
+278;Female;28;Married;No Qualification;Under 2,600;No
+279;Female;75;Married;No Qualification;2,600 to 5,200;Yes
+280;Female;21;Single;Other/Sub Degree;5,200 to 10,400;Yes
+281;Female;69;Divorced;GCSE/CSE;2,600 to 5,200;No
+282;Female;38;Married;GCSE/O Level;5,200 to 10,400;No
+283;Female;33;Single;GCSE/O Level;5,200 to 10,400;Yes
+284;Female;47;Married;No Qualification;5,200 to 10,400;No
+285;Female;44;Single;GCSE/CSE;2,600 to 5,200;Yes
+286;Female;74;Married;No Qualification;Under 2,600;No
+287;Female;29;Married;GCSE/O Level;Under 2,600;No
+288;Female;23;Married;A Levels;Under 2,600;No
+289;Female;72;Widowed;No Qualification;2,600 to 5,200;No
+290;Female;31;Widowed;No Qualification;5,200 to 10,400;Yes
+291;Female;48;Married;No Qualification;Under 2,600;No
+292;Female;29;Married;GCSE/O Level;5,200 to 10,400;No
+293;Male;72;Married;Other/Sub Degree;5,200 to 10,400;No
+294;Female;52;Married;No Qualification;Unknown;No
+295;Female;68;Single;Degree;5,200 to 10,400;No
+296;Male;48;Married;Other/Sub Degree;15,600 to 20,800;Yes
+297;Female;55;Married;GCSE/O Level;10,400 to 15,600;No
+298;Female;23;Married;ONC/BTEC;10,400 to 15,600;Yes
+299;Female;66;Widowed;No Qualification;2,600 to 5,200;No
+300;Female;33;Single;ONC/BTEC;15,600 to 20,800;No
+301;Female;37;Married;GCSE/CSE;Under 2,600;Yes
+302;Male;42;Married;Degree;20,800 to 28,600;No
+303;Female;46;Married;No Qualification;10,400 to 15,600;Yes
+304;Male;57;Married;Other/Sub Degree;28,600 to 36,400;No
+305;Female;36;Married;GCSE/O Level;Under 2,600;No
+306;Female;51;Married;GCSE/O Level;20,800 to 28,600;No
+307;Female;18;Single;GCSE/O Level;Refused;Yes
+308;Female;69;Married;GCSE/O Level;Under 2,600;No
+309;Male;30;Single;Degree;15,600 to 20,800;No
+310;Male;51;Married;Higher/Sub Degree;28,600 to 36,400;No
+311;Female;63;Married;No Qualification;5,200 to 10,400;No
+312;Female;31;Single;Degree;28,600 to 36,400;No
+313;Male;58;Single;No Qualification;10,400 to 15,600;No
+314;Male;50;Married;GCSE/CSE;20,800 to 28,600;Yes
+315;Female;67;Divorced;No Qualification;2,600 to 5,200;Yes
+316;Male;20;Single;A Levels;Refused;No
+317;Female;45;Single;Degree;15,600 to 20,800;No
+318;Female;26;Married;GCSE/O Level;5,200 to 10,400;No
+319;Male;30;Single;Degree;28,600 to 36,400;No
+320;Female;43;Married;Degree;Refused;No
+321;Male;73;Widowed;Other/Sub Degree;2,600 to 5,200;No
+322;Female;52;Married;Higher/Sub Degree;Under 2,600;No
+323;Male;18;Single;No Qualification;10,400 to 15,600;Yes
+324;Male;52;Married;No Qualification;28,600 to 36,400;No
+325;Male;33;Divorced;GCSE/O Level;15,600 to 20,800;No
+326;Female;56;Divorced;GCSE/O Level;15,600 to 20,800;No
+327;Female;65;Married;No Qualification;2,600 to 5,200;No
+328;Female;30;Single;No Qualification;2,600 to 5,200;No
+329;Female;40;Married;No Qualification;5,200 to 10,400;Yes
+330;Female;26;Single;GCSE/CSE;5,200 to 10,400;Yes
+331;Male;74;Single;No Qualification;Refused;No
+332;Female;44;Married;Degree;28,600 to 36,400;No
+333;Female;80;Widowed;No Qualification;2,600 to 5,200;No
+334;Female;67;Married;No Qualification;Under 2,600;No
+335;Female;59;Married;No Qualification;Refused;No
+336;Female;28;Single;Higher/Sub Degree;5,200 to 10,400;Yes
+337;Female;31;Married;ONC/BTEC;15,600 to 20,800;No
+338;Male;25;Single;GCSE/CSE;15,600 to 20,800;No
+339;Female;64;Married;No Qualification;Under 2,600;No
+340;Male;68;Married;Other/Sub Degree;2,600 to 5,200;No
+341;Female;61;Widowed;No Qualification;5,200 to 10,400;No
+342;Female;50;Divorced;No Qualification;10,400 to 15,600;No
+343;Male;43;Married;Higher/Sub Degree;Above 36,400;No
+344;Female;19;Single;No Qualification;Under 2,600;No
+345;Female;21;Married;GCSE/O Level;Under 2,600;No
+346;Male;51;Divorced;Degree;2,600 to 5,200;No
+347;Male;65;Single;Other/Sub Degree;5,200 to 10,400;No
+348;Female;50;Separated;No Qualification;2,600 to 5,200;No
+349;Female;38;Single;Other/Sub Degree;2,600 to 5,200;No
+350;Female;78;Widowed;No Qualification;5,200 to 10,400;No
+351;Male;74;Widowed;No Qualification;2,600 to 5,200;No
+352;Female;22;Single;Degree;2,600 to 5,200;No
+353;Male;66;Married;No Qualification;5,200 to 10,400;No
+354;Female;48;Single;No Qualification;2,600 to 5,200;No
+355;Female;59;Married;No Qualification;5,200 to 10,400;No
+356;Female;69;Widowed;No Qualification;Unknown;No
+357;Female;76;Widowed;No Qualification;5,200 to 10,400;Yes
+358;Female;21;Single;ONC/BTEC;2,600 to 5,200;No
+359;Female;47;Married;GCSE/O Level;10,400 to 15,600;No
+360;Female;77;Widowed;No Qualification;2,600 to 5,200;No
+361;Female;25;Single;GCSE/O Level;10,400 to 15,600;Yes
+362;Female;71;Widowed;No Qualification;2,600 to 5,200;No
+363;Female;24;Single;GCSE/O Level;2,600 to 5,200;Yes
+364;Female;90;Widowed;No Qualification;2,600 to 5,200;No
+365;Female;41;Divorced;GCSE/O Level;5,200 to 10,400;Yes
+366;Female;69;Married;No Qualification;Under 2,600;No
+367;Female;35;Married;GCSE/O Level;15,600 to 20,800;No
+368;Female;32;Single;No Qualification;5,200 to 10,400;Yes
+369;Female;48;Single;GCSE/O Level;15,600 to 20,800;No
+370;Female;34;Married;No Qualification;2,600 to 5,200;No
+371;Female;28;Married;GCSE/O Level;5,200 to 10,400;Yes
+372;Male;66;Married;No Qualification;Unknown;No
+373;Male;56;Married;GCSE/CSE;20,800 to 28,600;No
+374;Male;51;Married;Other/Sub Degree;10,400 to 15,600;No
+375;Female;63;Married;No Qualification;2,600 to 5,200;No
+376;Male;44;Married;Degree;28,600 to 36,400;No
+377;Female;45;Married;Higher/Sub Degree;10,400 to 15,600;No
+378;Male;55;Married;No Qualification;10,400 to 15,600;Yes
+379;Female;55;Married;No Qualification;5,200 to 10,400;No
+380;Female;55;Married;A Levels;Refused;No
+381;Female;57;Married;GCSE/O Level;2,600 to 5,200;No
+382;Male;76;Married;A Levels;5,200 to 10,400;No
+383;Female;59;Married;No Qualification;5,200 to 10,400;No
+384;Female;46;Married;No Qualification;5,200 to 10,400;No
+385;Female;56;Married;No Qualification;Under 2,600;No
+386;Male;67;Married;No Qualification;5,200 to 10,400;No
+387;Female;73;Single;Other/Sub Degree;10,400 to 15,600;No
+388;Female;82;Widowed;No Qualification;Refused;No
+389;Male;75;Married;ONC/BTEC;Refused;No
+390;Female;41;Married;Other/Sub Degree;5,200 to 10,400;No
+391;Female;40;Married;A Levels;15,600 to 20,800;No
+392;Male;37;Married;GCSE/O Level;15,600 to 20,800;No
+393;Male;53;Married;ONC/BTEC;20,800 to 28,600;No
+394;Female;35;Married;No Qualification;5,200 to 10,400;No
+395;Female;39;Married;GCSE/O Level;20,800 to 28,600;No
+396;Female;31;Separated;Other/Sub Degree;2,600 to 5,200;No
+397;Male;38;Married;ONC/BTEC;Above 36,400;No
+398;Female;34;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+399;Female;36;Married;A Levels;10,400 to 15,600;Yes
+400;Male;31;Single;Degree;20,800 to 28,600;No
+401;Female;31;Single;GCSE/CSE;Under 2,600;Yes
+402;Male;35;Married;Degree;20,800 to 28,600;No
+403;Male;42;Married;No Qualification;20,800 to 28,600;No
+404;Male;30;Single;GCSE/CSE;15,600 to 20,800;No
+405;Female;39;Divorced;GCSE/O Level;10,400 to 15,600;No
+406;Female;47;Married;GCSE/O Level;10,400 to 15,600;No
+407;Male;38;Married;Higher/Sub Degree;20,800 to 28,600;No
+408;Female;29;Divorced;A Levels;15,600 to 20,800;No
+409;Male;75;Widowed;No Qualification;5,200 to 10,400;No
+410;Female;47;Married;Higher/Sub Degree;Refused;No
+411;Male;55;Married;No Qualification;15,600 to 20,800;No
+412;Male;42;Married;Higher/Sub Degree;Above 36,400;No
+413;Female;39;Married;Degree;Above 36,400;No
+414;Male;64;Married;GCSE/O Level;5,200 to 10,400;No
+415;Female;84;Widowed;No Qualification;2,600 to 5,200;No
+416;Female;49;Married;Higher/Sub Degree;5,200 to 10,400;No
+417;Male;24;Single;Higher/Sub Degree;10,400 to 15,600;No
+418;Male;38;Single;GCSE/O Level;10,400 to 15,600;Yes
+419;Female;45;Married;Degree;15,600 to 20,800;No
+420;Female;47;Divorced;GCSE/O Level;5,200 to 10,400;No
+421;Male;37;Divorced;Higher/Sub Degree;28,600 to 36,400;No
+422;Male;59;Married;Higher/Sub Degree;5,200 to 10,400;No
+423;Male;25;Single;Degree;28,600 to 36,400;No
+424;Male;56;Married;No Qualification;15,600 to 20,800;No
+425;Female;71;Divorced;GCSE/CSE;2,600 to 5,200;No
+426;Male;81;Widowed;Higher/Sub Degree;10,400 to 15,600;No
+427;Male;55;Married;A Levels;15,600 to 20,800;No
+428;Male;42;Married;GCSE/CSE;Above 36,400;No
+429;Male;73;Married;No Qualification;2,600 to 5,200;No
+430;Male;43;Married;A Levels;28,600 to 36,400;No
+431;Female;57;Divorced;No Qualification;10,400 to 15,600;Yes
+432;Female;47;Married;Degree;Above 36,400;No
+433;Female;29;Married;No Qualification;10,400 to 15,600;Yes
+434;Female;30;Widowed;GCSE/CSE;10,400 to 15,600;No
+435;Male;58;Married;No Qualification;15,600 to 20,800;Yes
+436;Female;58;Married;Degree;28,600 to 36,400;No
+437;Male;70;Widowed;No Qualification;5,200 to 10,400;No
+438;Male;18;Single;A Levels;Refused;No
+439;Female;45;Single;No Qualification;2,600 to 5,200;No
+440;Male;37;Single;GCSE/O Level;15,600 to 20,800;Yes
+441;Female;44;Separated;GCSE/O Level;10,400 to 15,600;No
+442;Male;46;Married;Degree;Above 36,400;No
+443;Male;29;Married;Degree;20,800 to 28,600;No
+444;Male;50;Married;GCSE/O Level;Above 36,400;No
+445;Female;51;Married;No Qualification;2,600 to 5,200;No
+446;Male;80;Widowed;No Qualification;5,200 to 10,400;No
+447;Female;85;Married;A Levels;5,200 to 10,400;No
+448;Female;49;Married;No Qualification;Under 2,600;No
+449;Male;52;Married;No Qualification;20,800 to 28,600;No
+450;Female;58;Married;No Qualification;5,200 to 10,400;No
+451;Female;49;Married;Degree;2,600 to 5,200;No
+452;Male;39;Single;Degree;28,600 to 36,400;No
+453;Female;53;Married;Degree;5,200 to 10,400;Yes
+454;Female;71;Married;GCSE/O Level;10,400 to 15,600;No
+455;Male;29;Single;Higher/Sub Degree;15,600 to 20,800;No
+456;Female;66;Married;No Qualification;15,600 to 20,800;No
+457;Male;75;Married;Other/Sub Degree;20,800 to 28,600;No
+458;Female;45;Divorced;Degree;28,600 to 36,400;No
+459;Female;69;Married;No Qualification;Under 2,600;No
+460;Female;49;Divorced;Degree;15,600 to 20,800;No
+461;Male;63;Married;No Qualification;15,600 to 20,800;No
+462;Male;61;Married;Other/Sub Degree;5,200 to 10,400;No
+463;Female;55;Married;Higher/Sub Degree;2,600 to 5,200;No
+464;Male;57;Married;Higher/Sub Degree;10,400 to 15,600;No
+465;Female;60;Married;Degree;2,600 to 5,200;No
+466;Male;58;Married;GCSE/O Level;20,800 to 28,600;No
+467;Female;76;Widowed;No Qualification;5,200 to 10,400;Yes
+468;Male;29;Single;Higher/Sub Degree;20,800 to 28,600;Yes
+469;Female;50;Married;GCSE/O Level;5,200 to 10,400;No
+470;Male;40;Married;GCSE/O Level;Refused;No
+471;Female;34;Married;Higher/Sub Degree;5,200 to 10,400;No
+472;Female;77;Widowed;No Qualification;2,600 to 5,200;No
+473;Male;47;Married;Degree;Above 36,400;No
+474;Female;68;Married;No Qualification;Under 2,600;No
+475;Male;31;Married;Higher/Sub Degree;Above 36,400;No
+476;Male;41;Married;Degree;20,800 to 28,600;No
+477;Female;55;Married;Higher/Sub Degree;5,200 to 10,400;Yes
+478;Male;66;Married;A Levels;5,200 to 10,400;No
+479;Female;80;Married;No Qualification;Under 2,600;No
+480;Female;45;Married;Degree;2,600 to 5,200;No
+481;Male;63;Married;Degree;Above 36,400;No
+482;Male;62;Married;Degree;20,800 to 28,600;No
+483;Female;49;Married;No Qualification;10,400 to 15,600;No
+484;Male;33;Married;ONC/BTEC;10,400 to 15,600;No
+485;Female;16;Single;GCSE/O Level;Refused;No
+486;Male;58;Married;Degree;Above 36,400;No
+487;Female;33;Separated;ONC/BTEC;5,200 to 10,400;No
+488;Male;65;Married;Degree;28,600 to 36,400;No
+489;Female;39;Single;Degree;20,800 to 28,600;No
+490;Female;57;Married;Higher/Sub Degree;15,600 to 20,800;Yes
+491;Female;31;Married;A Levels;2,600 to 5,200;No
+492;Male;79;Married;No Qualification;10,400 to 15,600;No
+493;Female;16;Single;GCSE/CSE;Under 2,600;Yes
+494;Female;54;Married;No Qualification;10,400 to 15,600;No
+495;Female;37;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+496;Female;87;Widowed;No Qualification;5,200 to 10,400;No
+497;Male;32;Single;Degree;2,600 to 5,200;No
+498;Male;72;Married;No Qualification;5,200 to 10,400;No
+499;Male;20;Married;GCSE/O Level;10,400 to 15,600;Yes
+500;Male;77;Married;No Qualification;2,600 to 5,200;No
+501;Female;63;Married;No Qualification;Under 2,600;No
+502;Male;56;Married;No Qualification;10,400 to 15,600;No
+503;Male;34;Single;GCSE/O Level;15,600 to 20,800;Yes
+504;Female;24;Married;A Levels;20,800 to 28,600;No
+505;Female;42;Single;GCSE/O Level;15,600 to 20,800;Yes
+506;Male;71;Married;No Qualification;5,200 to 10,400;No
+507;Female;48;Married;GCSE/O Level;15,600 to 20,800;No
+508;Male;38;Separated;ONC/BTEC;28,600 to 36,400;No
+509;Female;55;Divorced;A Levels;Under 2,600;No
+510;Male;50;Married;GCSE/CSE;20,800 to 28,600;No
+511;Male;30;Single;ONC/BTEC;20,800 to 28,600;No
+512;Female;72;Married;No Qualification;10,400 to 15,600;No
+513;Male;59;Married;Other/Sub Degree;15,600 to 20,800;No
+514;Female;68;Married;Higher/Sub Degree;15,600 to 20,800;No
+515;Male;48;Married;No Qualification;20,800 to 28,600;No
+516;Male;42;Widowed;GCSE/O Level;15,600 to 20,800;No
+517;Female;72;Divorced;Other/Sub Degree;2,600 to 5,200;No
+518;Male;54;Married;Other/Sub Degree;Refused;No
+519;Female;53;Divorced;GCSE/O Level;Unknown;Yes
+520;Female;86;Married;No Qualification;Under 2,600;No
+521;Female;57;Divorced;No Qualification;5,200 to 10,400;Yes
+522;Female;30;Single;Degree;15,600 to 20,800;No
+523;Male;35;Single;No Qualification;Refused;Yes
+524;Female;25;Separated;GCSE/O Level;10,400 to 15,600;Yes
+525;Male;67;Married;Other/Sub Degree;5,200 to 10,400;No
+526;Female;33;Divorced;GCSE/O Level;28,600 to 36,400;No
+527;Female;51;Married;No Qualification;5,200 to 10,400;Yes
+528;Female;54;Married;No Qualification;20,800 to 28,600;No
+529;Male;86;Married;No Qualification;Unknown;No
+530;Female;69;Married;No Qualification;Under 2,600;No
+531;Female;23;Married;Higher/Sub Degree;5,200 to 10,400;No
+532;Female;33;Single;Degree;15,600 to 20,800;Yes
+533;Male;79;Married;No Qualification;5,200 to 10,400;No
+534;Male;21;Single;A Levels;5,200 to 10,400;No
+535;Female;37;Divorced;GCSE/O Level;2,600 to 5,200;No
+536;Male;40;Married;GCSE/O Level;5,200 to 10,400;Yes
+537;Male;79;Single;No Qualification;Refused;No
+538;Female;34;Divorced;Higher/Sub Degree;5,200 to 10,400;Yes
+539;Male;28;Single;GCSE/O Level;10,400 to 15,600;Yes
+540;Female;44;Married;No Qualification;2,600 to 5,200;Yes
+541;Female;64;Married;GCSE/O Level;2,600 to 5,200;No
+542;Female;51;Separated;No Qualification;10,400 to 15,600;No
+543;Male;21;Single;ONC/BTEC;10,400 to 15,600;Yes
+544;Male;40;Single;GCSE/O Level;2,600 to 5,200;Yes
+545;Female;42;Single;GCSE/O Level;5,200 to 10,400;No
+546;Female;47;Divorced;No Qualification;5,200 to 10,400;No
+547;Male;73;Widowed;Other/Sub Degree;5,200 to 10,400;No
+548;Female;18;Single;Higher/Sub Degree;2,600 to 5,200;Yes
+549;Male;24;Single;GCSE/O Level;10,400 to 15,600;No
+550;Female;69;Widowed;GCSE/O Level;5,200 to 10,400;No
+551;Female;61;Married;No Qualification;2,600 to 5,200;No
+552;Female;83;Single;No Qualification;Refused;No
+553;Female;80;Widowed;No Qualification;2,600 to 5,200;No
+554;Female;80;Married;No Qualification;Under 2,600;No
+555;Female;26;Single;GCSE/O Level;5,200 to 10,400;No
+556;Female;34;Separated;GCSE/O Level;10,400 to 15,600;No
+557;Male;34;Married;Degree;28,600 to 36,400;No
+558;Female;39;Single;GCSE/O Level;15,600 to 20,800;Yes
+559;Male;33;Married;Other/Sub Degree;5,200 to 10,400;Yes
+560;Male;36;Married;GCSE/O Level;15,600 to 20,800;No
+561;Female;39;Divorced;No Qualification;10,400 to 15,600;No
+562;Male;35;Married;GCSE/O Level;15,600 to 20,800;Yes
+563;Female;89;Widowed;No Qualification;2,600 to 5,200;No
+564;Female;23;Married;Degree;5,200 to 10,400;Yes
+565;Female;32;Divorced;GCSE/O Level;10,400 to 15,600;No
+566;Male;32;Married;No Qualification;5,200 to 10,400;Yes
+567;Male;35;Married;GCSE/O Level;2,600 to 5,200;Yes
+568;Female;18;Single;A Levels;5,200 to 10,400;No
+569;Male;44;Divorced;Degree;15,600 to 20,800;No
+570;Female;75;Married;GCSE/CSE;5,200 to 10,400;No
+571;Female;65;Married;GCSE/O Level;Under 2,600;No
+572;Female;54;Married;ONC/BTEC;20,800 to 28,600;No
+573;Male;32;Married;GCSE/O Level;28,600 to 36,400;No
+574;Female;57;Married;Higher/Sub Degree;2,600 to 5,200;No
+575;Female;50;Married;Other/Sub Degree;10,400 to 15,600;Yes
+576;Female;58;Married;Other/Sub Degree;2,600 to 5,200;No
+577;Female;30;Married;Degree;5,200 to 10,400;No
+578;Female;57;Married;Higher/Sub Degree;15,600 to 20,800;No
+579;Female;60;Married;No Qualification;2,600 to 5,200;Yes
+580;Female;78;Separated;No Qualification;2,600 to 5,200;No
+581;Female;44;Married;No Qualification;10,400 to 15,600;Yes
+582;Male;32;Single;ONC/BTEC;Above 36,400;Yes
+583;Female;56;Separated;Higher/Sub Degree;28,600 to 36,400;No
+584;Male;51;Married;Other/Sub Degree;15,600 to 20,800;No
+585;Male;71;Married;Other/Sub Degree;5,200 to 10,400;No
+586;Female;74;Widowed;Other/Sub Degree;2,600 to 5,200;No
+587;Female;56;Single;Degree;15,600 to 20,800;Yes
+588;Female;80;Widowed;No Qualification;Under 2,600;No
+589;Female;51;Married;ONC/BTEC;15,600 to 20,800;No
+590;Female;53;Widowed;GCSE/O Level;10,400 to 15,600;No
+591;Male;80;Married;No Qualification;20,800 to 28,600;No
+592;Male;42;Married;Degree;20,800 to 28,600;Yes
+593;Female;82;Widowed;Other/Sub Degree;10,400 to 15,600;No
+594;Male;58;Married;A Levels;5,200 to 10,400;No
+595;Female;78;Married;Degree;10,400 to 15,600;No
+596;Male;61;Married;No Qualification;20,800 to 28,600;Yes
+597;Female;49;Single;No Qualification;10,400 to 15,600;Yes
+598;Female;51;Divorced;GCSE/CSE;10,400 to 15,600;No
+599;Male;48;Married;Other/Sub Degree;10,400 to 15,600;No
+600;Female;37;Married;GCSE/O Level;10,400 to 15,600;No
+601;Male;51;Married;GCSE/CSE;10,400 to 15,600;Yes
+602;Male;55;Married;GCSE/O Level;10,400 to 15,600;No
+603;Female;48;Married;No Qualification;10,400 to 15,600;No
+604;Female;82;Widowed;No Qualification;5,200 to 10,400;No
+605;Female;56;Married;No Qualification;2,600 to 5,200;No
+606;Female;71;Widowed;GCSE/O Level;5,200 to 10,400;No
+607;Male;30;Single;No Qualification;5,200 to 10,400;No
+608;Female;73;Widowed;No Qualification;5,200 to 10,400;No
+609;Female;35;Married;GCSE/O Level;Under 2,600;Yes
+610;Male;79;Married;No Qualification;5,200 to 10,400;No
+611;Male;75;Widowed;No Qualification;5,200 to 10,400;Yes
+612;Female;49;Married;ONC/BTEC;5,200 to 10,400;No
+613;Female;74;Married;No Qualification;Under 2,600;No
+614;Male;33;Married;No Qualification;5,200 to 10,400;No
+615;Female;81;Widowed;No Qualification;2,600 to 5,200;No
+616;Female;63;Married;No Qualification;2,600 to 5,200;No
+617;Female;78;Widowed;No Qualification;2,600 to 5,200;No
+618;Male;68;Widowed;No Qualification;5,200 to 10,400;Yes
+619;Male;73;Married;No Qualification;5,200 to 10,400;No
+620;Female;34;Married;A Levels;15,600 to 20,800;No
+621;Female;36;Divorced;No Qualification;10,400 to 15,600;Yes
+622;Female;16;Single;No Qualification;Under 2,600;No
+623;Male;72;Widowed;No Qualification;5,200 to 10,400;No
+624;Female;66;Married;Higher/Sub Degree;5,200 to 10,400;No
+625;Female;41;Married;No Qualification;10,400 to 15,600;No
+626;Female;49;Married;Other/Sub Degree;10,400 to 15,600;Yes
+627;Male;42;Single;No Qualification;20,800 to 28,600;No
+628;Female;54;Separated;GCSE/CSE;10,400 to 15,600;No
+629;Male;70;Married;Higher/Sub Degree;10,400 to 15,600;No
+630;Female;29;Married;GCSE/CSE;20,800 to 28,600;No
+631;Male;43;Married;No Qualification;Refused;Yes
+632;Female;19;Single;A Levels;Refused;No
+633;Male;44;Married;Higher/Sub Degree;28,600 to 36,400;No
+634;Male;27;Single;Degree;20,800 to 28,600;Yes
+635;Male;68;Married;No Qualification;20,800 to 28,600;No
+636;Female;80;Widowed;GCSE/O Level;15,600 to 20,800;No
+637;Male;85;Widowed;No Qualification;10,400 to 15,600;No
+638;Male;65;Married;No Qualification;2,600 to 5,200;No
+639;Female;88;Widowed;No Qualification;5,200 to 10,400;No
+640;Female;76;Widowed;No Qualification;Unknown;No
+641;Male;81;Married;GCSE/O Level;5,200 to 10,400;No
+642;Female;44;Separated;Degree;5,200 to 10,400;Yes
+643;Female;34;Married;Other/Sub Degree;10,400 to 15,600;No
+644;Female;55;Married;Higher/Sub Degree;2,600 to 5,200;No
+645;Male;77;Widowed;No Qualification;Refused;No
+646;Female;33;Married;Degree;Refused;No
+647;Male;82;Single;No Qualification;5,200 to 10,400;No
+648;Female;77;Widowed;Higher/Sub Degree;5,200 to 10,400;No
+649;Male;19;Single;GCSE/O Level;5,200 to 10,400;No
+650;Female;70;Widowed;Other/Sub Degree;Refused;No
+651;Female;74;Widowed;No Qualification;5,200 to 10,400;No
+652;Female;57;Married;Other/Sub Degree;2,600 to 5,200;No
+653;Female;44;Divorced;GCSE/CSE;10,400 to 15,600;No
+654;Female;38;Single;Degree;Refused;No
+655;Male;43;Married;Degree;Above 36,400;No
+656;Female;57;Separated;No Qualification;2,600 to 5,200;No
+657;Female;54;Divorced;GCSE/O Level;2,600 to 5,200;Yes
+658;Male;17;Single;GCSE/O Level;2,600 to 5,200;No
+659;Male;60;Married;No Qualification;10,400 to 15,600;No
+660;Female;50;Married;No Qualification;Under 2,600;No
+661;Female;24;Single;GCSE/CSE;10,400 to 15,600;Yes
+662;Female;78;Widowed;No Qualification;2,600 to 5,200;No
+663;Male;60;Single;Other/Sub Degree;5,200 to 10,400;No
+664;Female;85;Widowed;Other/Sub Degree;5,200 to 10,400;Yes
+665;Male;59;Married;No Qualification;10,400 to 15,600;No
+666;Male;65;Married;Degree;Above 36,400;No
+667;Female;55;Married;Other/Sub Degree;Refused;No
+668;Female;32;Married;ONC/BTEC;15,600 to 20,800;No
+669;Male;41;Single;Higher/Sub Degree;Under 2,600;No
+670;Female;31;Single;Higher/Sub Degree;10,400 to 15,600;No
+671;Male;45;Married;No Qualification;5,200 to 10,400;Yes
+672;Female;30;Single;Degree;20,800 to 28,600;No
+673;Female;19;Single;A Levels;2,600 to 5,200;No
+674;Female;76;Widowed;GCSE/O Level;5,200 to 10,400;No
+675;Male;73;Married;No Qualification;10,400 to 15,600;No
+676;Male;19;Single;GCSE/O Level;Refused;Yes
+677;Male;34;Married;Degree;28,600 to 36,400;No
+678;Female;59;Married;No Qualification;5,200 to 10,400;No
+679;Female;22;Single;GCSE/CSE;5,200 to 10,400;Yes
+680;Female;27;Single;Degree;10,400 to 15,600;No
+681;Female;45;Married;A Levels;15,600 to 20,800;No
+682;Female;69;Widowed;Other/Sub Degree;10,400 to 15,600;No
+683;Male;76;Married;Degree;Above 36,400;No
+684;Female;54;Married;Degree;28,600 to 36,400;No
+685;Male;72;Married;Degree;5,200 to 10,400;No
+686;Female;89;Widowed;No Qualification;2,600 to 5,200;No
+687;Female;78;Widowed;No Qualification;Refused;Yes
+688;Female;60;Married;GCSE/O Level;Refused;No
+689;Female;39;Married;A Levels;10,400 to 15,600;No
+690;Male;28;Single;GCSE/O Level;5,200 to 10,400;Yes
+691;Male;23;Single;GCSE/CSE;Under 2,600;Yes
+692;Male;26;Single;A Levels;10,400 to 15,600;No
+693;Female;52;Married;Other/Sub Degree;5,200 to 10,400;No
+694;Female;54;Married;Other/Sub Degree;10,400 to 15,600;No
+695;Male;20;Single;A Levels;10,400 to 15,600;Yes
+696;Female;59;Married;Other/Sub Degree;Refused;No
+697;Male;30;Married;ONC/BTEC;15,600 to 20,800;No
+698;Male;41;Married;GCSE/O Level;10,400 to 15,600;No
+699;Female;26;Single;GCSE/O Level;10,400 to 15,600;No
+700;Female;27;Married;GCSE/O Level;2,600 to 5,200;No
+701;Male;49;Married;No Qualification;Refused;Yes
+702;Male;29;Single;ONC/BTEC;10,400 to 15,600;No
+703;Female;36;Divorced;GCSE/O Level;10,400 to 15,600;No
+704;Male;43;Divorced;GCSE/CSE;15,600 to 20,800;No
+705;Male;29;Single;ONC/BTEC;10,400 to 15,600;No
+706;Female;34;Separated;GCSE/O Level;5,200 to 10,400;Yes
+707;Female;81;Married;No Qualification;Refused;No
+708;Female;30;Single;GCSE/O Level;10,400 to 15,600;Yes
+709;Male;25;Single;Degree;20,800 to 28,600;Yes
+710;Male;59;Divorced;No Qualification;10,400 to 15,600;Yes
+711;Female;44;Widowed;No Qualification;2,600 to 5,200;No
+712;Male;64;Married;GCSE/O Level;Refused;No
+713;Female;35;Married;A Levels;Refused;No
+714;Male;40;Single;GCSE/O Level;15,600 to 20,800;No
+715;Female;65;Single;A Levels;10,400 to 15,600;No
+716;Female;17;Single;GCSE/O Level;Refused;No
+717;Male;72;Married;No Qualification;15,600 to 20,800;No
+718;Female;29;Married;Degree;Under 2,600;No
+719;Male;39;Married;No Qualification;28,600 to 36,400;No
+720;Male;70;Widowed;No Qualification;5,200 to 10,400;No
+721;Male;73;Married;No Qualification;5,200 to 10,400;No
+722;Male;46;Single;GCSE/O Level;20,800 to 28,600;No
+723;Male;59;Married;ONC/BTEC;5,200 to 10,400;No
+724;Female;77;Widowed;No Qualification;2,600 to 5,200;No
+725;Female;42;Married;GCSE/O Level;10,400 to 15,600;Yes
+726;Male;41;Married;GCSE/O Level;20,800 to 28,600;No
+727;Male;49;Married;A Levels;15,600 to 20,800;Yes
+728;Male;67;Single;Degree;10,400 to 15,600;No
+729;Female;65;Single;No Qualification;5,200 to 10,400;No
+730;Male;40;Single;No Qualification;15,600 to 20,800;No
+731;Male;49;Separated;GCSE/O Level;28,600 to 36,400;No
+732;Male;34;Single;GCSE/CSE;15,600 to 20,800;No
+733;Female;64;Married;No Qualification;Under 2,600;No
+734;Female;44;Widowed;Degree;10,400 to 15,600;No
+735;Female;72;Widowed;No Qualification;2,600 to 5,200;No
+736;Male;32;Married;A Levels;20,800 to 28,600;Yes
+737;Female;53;Married;No Qualification;Refused;No
+738;Female;50;Married;A Levels;15,600 to 20,800;No
+739;Female;63;Divorced;No Qualification;5,200 to 10,400;No
+740;Female;57;Married;Degree;5,200 to 10,400;No
+741;Male;40;Married;Degree;Refused;No
+742;Female;88;Divorced;Other/Sub Degree;10,400 to 15,600;No
+743;Male;57;Married;Degree;Above 36,400;No
+744;Female;54;Married;Degree;Above 36,400;No
+745;Female;58;Widowed;No Qualification;20,800 to 28,600;No
+746;Female;77;Divorced;Higher/Sub Degree;5,200 to 10,400;No
+747;Female;45;Divorced;GCSE/CSE;10,400 to 15,600;No
+748;Female;31;Single;GCSE/O Level;Under 2,600;No
+749;Male;31;Married;ONC/BTEC;20,800 to 28,600;No
+750;Male;80;Widowed;Degree;28,600 to 36,400;No
+751;Male;67;Widowed;Degree;20,800 to 28,600;Yes
+752;Male;40;Single;GCSE/O Level;Refused;Yes
+753;Female;70;Widowed;No Qualification;Refused;No
+754;Female;28;Single;GCSE/CSE;Under 2,600;Yes
+755;Male;30;Married;GCSE/CSE;Above 36,400;No
+756;Female;70;Divorced;Other/Sub Degree;Refused;No
+757;Male;57;Married;Degree;Above 36,400;No
+758;Female;76;Widowed;GCSE/O Level;10,400 to 15,600;No
+759;Female;89;Widowed;No Qualification;2,600 to 5,200;No
+760;Male;81;Married;No Qualification;2,600 to 5,200;No
+761;Female;30;Single;ONC/BTEC;15,600 to 20,800;No
+762;Female;39;Single;Higher/Sub Degree;5,200 to 10,400;No
+763;Female;73;Married;No Qualification;Under 2,600;Yes
+764;Female;39;Married;A Levels;Refused;No
+765;Female;76;Widowed;No Qualification;2,600 to 5,200;No
+766;Male;62;Single;No Qualification;5,200 to 10,400;No
+767;Female;66;Married;A Levels;2,600 to 5,200;No
+768;Female;53;Separated;Degree;28,600 to 36,400;No
+769;Male;60;Married;Degree;10,400 to 15,600;No
+770;Female;36;Married;GCSE/O Level;2,600 to 5,200;No
+771;Female;40;Single;GCSE/CSE;10,400 to 15,600;No
+772;Female;57;Separated;No Qualification;28,600 to 36,400;Yes
+773;Male;16;Single;No Qualification;Under 2,600;Yes
+774;Female;25;Single;GCSE/O Level;15,600 to 20,800;No
+775;Male;58;Single;No Qualification;15,600 to 20,800;No
+776;Female;49;Divorced;No Qualification;5,200 to 10,400;No
+777;Female;48;Single;Degree;15,600 to 20,800;No
+778;Female;76;Widowed;No Qualification;5,200 to 10,400;No
+779;Male;88;Widowed;No Qualification;5,200 to 10,400;No
+780;Male;35;Married;A Levels;10,400 to 15,600;No
+781;Male;43;Married;Degree;20,800 to 28,600;No
+782;Female;69;Widowed;No Qualification;2,600 to 5,200;No
+783;Female;64;Widowed;No Qualification;5,200 to 10,400;Yes
+784;Female;40;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+785;Male;78;Married;Degree;Refused;No
+786;Male;58;Married;Degree;Above 36,400;No
+787;Female;34;Married;Degree;Under 2,600;Yes
+788;Female;46;Married;Degree;20,800 to 28,600;No
+789;Female;65;Married;No Qualification;20,800 to 28,600;No
+790;Female;34;Single;GCSE/O Level;10,400 to 15,600;Yes
+791;Female;40;Separated;GCSE/CSE;5,200 to 10,400;No
+792;Male;79;Married;No Qualification;Refused;No
+793;Male;36;Married;No Qualification;10,400 to 15,600;No
+794;Female;39;Married;No Qualification;2,600 to 5,200;No
+795;Male;24;Married;GCSE/CSE;15,600 to 20,800;No
+796;Female;28;Single;Other/Sub Degree;2,600 to 5,200;Yes
+797;Female;26;Single;A Levels;2,600 to 5,200;No
+798;Female;45;Widowed;GCSE/CSE;Under 2,600;No
+799;Female;24;Single;GCSE/O Level;5,200 to 10,400;Yes
+800;Male;77;Divorced;No Qualification;2,600 to 5,200;No
+801;Female;78;Married;Higher/Sub Degree;10,400 to 15,600;No
+802;Male;25;Single;Degree;Refused;No
+803;Male;36;Married;GCSE/CSE;15,600 to 20,800;No
+804;Male;17;Single;GCSE/O Level;Refused;No
+805;Male;55;Married;GCSE/O Level;28,600 to 36,400;No
+806;Female;70;Married;Other/Sub Degree;5,200 to 10,400;No
+807;Female;43;Single;GCSE/O Level;20,800 to 28,600;Yes
+808;Female;59;Divorced;No Qualification;10,400 to 15,600;No
+809;Female;32;Married;Other/Sub Degree;Under 2,600;No
+810;Female;34;Married;Degree;Under 2,600;No
+811;Male;58;Single;Degree;28,600 to 36,400;No
+812;Male;44;Married;GCSE/O Level;Above 36,400;No
+813;Male;64;Married;No Qualification;Refused;Yes
+814;Female;34;Married;GCSE/CSE;5,200 to 10,400;No
+815;Male;32;Single;GCSE/CSE;Refused;No
+816;Male;38;Married;Degree;Above 36,400;No
+817;Male;28;Single;GCSE/CSE;28,600 to 36,400;No
+818;Male;42;Married;GCSE/CSE;20,800 to 28,600;No
+819;Female;34;Single;Degree;20,800 to 28,600;No
+820;Male;23;Single;ONC/BTEC;5,200 to 10,400;Yes
+821;Male;55;Separated;Degree;15,600 to 20,800;No
+822;Male;65;Married;Other/Sub Degree;5,200 to 10,400;No
+823;Female;62;Married;GCSE/O Level;2,600 to 5,200;No
+824;Female;66;Married;Higher/Sub Degree;15,600 to 20,800;No
+825;Female;73;Married;No Qualification;Under 2,600;No
+826;Male;34;Single;Other/Sub Degree;20,800 to 28,600;No
+827;Female;33;Married;Degree;2,600 to 5,200;No
+828;Male;76;Widowed;No Qualification;5,200 to 10,400;No
+829;Female;55;Married;No Qualification;2,600 to 5,200;Yes
+830;Female;39;Married;Degree;Under 2,600;No
+831;Female;26;Single;Degree;15,600 to 20,800;No
+832;Male;61;Married;GCSE/O Level;15,600 to 20,800;Yes
+833;Female;78;Married;Other/Sub Degree;2,600 to 5,200;No
+834;Male;42;Married;Degree;Above 36,400;No
+835;Female;72;Married;No Qualification;2,600 to 5,200;No
+836;Male;62;Widowed;No Qualification;20,800 to 28,600;Yes
+837;Female;46;Married;GCSE/O Level;10,400 to 15,600;Yes
+838;Male;24;Single;A Levels;15,600 to 20,800;No
+839;Male;27;Single;Degree;10,400 to 15,600;Yes
+840;Female;64;Married;GCSE/O Level;5,200 to 10,400;No
+841;Male;86;Married;Degree;28,600 to 36,400;No
+842;Female;46;Married;Degree;20,800 to 28,600;No
+843;Male;20;Single;ONC/BTEC;10,400 to 15,600;Yes
+844;Male;35;Divorced;Higher/Sub Degree;28,600 to 36,400;No
+845;Female;46;Married;Higher/Sub Degree;28,600 to 36,400;Yes
+846;Female;39;Married;Higher/Sub Degree;Under 2,600;No
+847;Female;28;Married;GCSE/O Level;Above 36,400;No
+848;Female;33;Married;Higher/Sub Degree;Refused;No
+849;Female;39;Divorced;GCSE/O Level;5,200 to 10,400;No
+850;Male;45;Divorced;GCSE/CSE;10,400 to 15,600;No
+851;Female;37;Separated;Higher/Sub Degree;20,800 to 28,600;No
+852;Male;29;Married;ONC/BTEC;15,600 to 20,800;Yes
+853;Male;76;Widowed;No Qualification;5,200 to 10,400;No
+854;Male;26;Married;Degree;20,800 to 28,600;No
+855;Female;47;Divorced;Degree;20,800 to 28,600;Yes
+856;Male;72;Divorced;No Qualification;10,400 to 15,600;No
+857;Female;72;Married;No Qualification;Under 2,600;No
+858;Female;65;Widowed;No Qualification;2,600 to 5,200;No
+859;Female;69;Married;No Qualification;Under 2,600;No
+860;Female;61;Married;A Levels;Unknown;No
+861;Female;63;Married;No Qualification;Refused;No
+862;Male;16;Single;No Qualification;Refused;No
+863;Male;61;Divorced;No Qualification;2,600 to 5,200;No
+864;Male;18;Single;GCSE/O Level;Under 2,600;No
+865;Male;76;Single;No Qualification;5,200 to 10,400;No
+866;Male;65;Married;GCSE/O Level;5,200 to 10,400;No
+867;Female;52;Married;No Qualification;5,200 to 10,400;No
+868;Male;64;Widowed;No Qualification;10,400 to 15,600;No
+869;Female;42;Married;GCSE/CSE;Under 2,600;No
+870;Male;40;Married;Degree;Above 36,400;No
+871;Female;28;Married;Other/Sub Degree;20,800 to 28,600;No
+872;Male;40;Married;Degree;Above 36,400;No
+873;Male;48;Married;GCSE/O Level;28,600 to 36,400;No
+874;Male;35;Separated;Degree;20,800 to 28,600;No
+875;Female;30;Single;Degree;5,200 to 10,400;Yes
+876;Female;26;Single;Degree;5,200 to 10,400;No
+877;Male;81;Widowed;No Qualification;5,200 to 10,400;No
+878;Male;77;Divorced;A Levels;10,400 to 15,600;No
+879;Female;25;Single;Degree;15,600 to 20,800;No
+880;Female;66;Married;No Qualification;Under 2,600;No
+881;Male;18;Single;A Levels;5,200 to 10,400;Yes
+882;Male;43;Married;GCSE/O Level;15,600 to 20,800;No
+883;Male;49;Divorced;Other/Sub Degree;5,200 to 10,400;Yes
+884;Male;29;Married;Degree;Above 36,400;No
+885;Female;20;Single;No Qualification;5,200 to 10,400;No
+886;Female;75;Widowed;Other/Sub Degree;Under 2,600;Yes
+887;Male;40;Married;No Qualification;20,800 to 28,600;No
+888;Female;64;Single;Higher/Sub Degree;5,200 to 10,400;No
+889;Male;66;Single;Degree;Refused;No
+890;Female;34;Single;Degree;5,200 to 10,400;No
+891;Female;76;Divorced;Degree;28,600 to 36,400;No
+892;Male;30;Married;Degree;Above 36,400;Yes
+893;Male;55;Married;Degree;Above 36,400;No
+894;Female;49;Single;GCSE/O Level;5,200 to 10,400;No
+895;Male;38;Separated;Degree;10,400 to 15,600;No
+896;Male;23;Single;A Levels;Refused;Yes
+897;Male;77;Married;Degree;15,600 to 20,800;No
+898;Male;46;Single;Degree;10,400 to 15,600;Yes
+899;Female;26;Separated;Higher/Sub Degree;Under 2,600;No
+900;Female;26;Single;Degree;28,600 to 36,400;Yes
+901;Male;45;Single;Degree;Above 36,400;Yes
+902;Female;45;Single;No Qualification;2,600 to 5,200;No
+903;Female;61;Married;No Qualification;Refused;No
+904;Female;47;Married;GCSE/O Level;5,200 to 10,400;No
+905;Female;75;Widowed;Other/Sub Degree;10,400 to 15,600;Yes
+906;Female;36;Divorced;No Qualification;2,600 to 5,200;Yes
+907;Male;26;Single;Degree;2,600 to 5,200;No
+908;Male;71;Widowed;No Qualification;2,600 to 5,200;Yes
+909;Male;69;Married;No Qualification;5,200 to 10,400;Yes
+910;Male;38;Single;A Levels;28,600 to 36,400;Yes
+911;Female;21;Single;GCSE/O Level;Refused;No
+912;Male;26;Single;No Qualification;10,400 to 15,600;No
+913;Female;83;Widowed;No Qualification;Unknown;No
+914;Female;56;Divorced;No Qualification;5,200 to 10,400;No
+915;Male;34;Single;Degree;Above 36,400;Yes
+916;Female;66;Widowed;No Qualification;5,200 to 10,400;No
+917;Female;32;Single;GCSE/O Level;5,200 to 10,400;Yes
+918;Female;77;Single;No Qualification;5,200 to 10,400;No
+919;Female;70;Married;No Qualification;Under 2,600;No
+920;Male;24;Single;GCSE/O Level;Under 2,600;Yes
+921;Female;81;Widowed;No Qualification;5,200 to 10,400;No
+922;Male;37;Separated;Other/Sub Degree;2,600 to 5,200;No
+923;Male;90;Married;No Qualification;2,600 to 5,200;No
+924;Female;29;Single;GCSE/O Level;5,200 to 10,400;Yes
+925;Female;24;Single;A Levels;5,200 to 10,400;No
+926;Male;81;Widowed;No Qualification;2,600 to 5,200;No
+927;Female;38;Separated;ONC/BTEC;5,200 to 10,400;No
+928;Male;22;Single;GCSE/O Level;20,800 to 28,600;Yes
+929;Male;31;Married;GCSE/CSE;5,200 to 10,400;No
+930;Female;77;Widowed;No Qualification;2,600 to 5,200;No
+931;Female;61;Divorced;No Qualification;10,400 to 15,600;Yes
+932;Male;54;Single;No Qualification;2,600 to 5,200;No
+933;Female;72;Widowed;No Qualification;5,200 to 10,400;No
+934;Male;66;Single;No Qualification;5,200 to 10,400;Yes
+935;Male;47;Single;ONC/BTEC;20,800 to 28,600;No
+936;Female;76;Widowed;No Qualification;5,200 to 10,400;No
+937;Male;41;Married;A Levels;20,800 to 28,600;No
+938;Female;80;Widowed;No Qualification;5,200 to 10,400;No
+939;Female;63;Married;No Qualification;2,600 to 5,200;No
+940;Male;29;Married;No Qualification;15,600 to 20,800;No
+941;Female;40;Single;GCSE/O Level;15,600 to 20,800;No
+942;Female;54;Married;No Qualification;10,400 to 15,600;No
+943;Male;66;Married;Degree;10,400 to 15,600;Yes
+944;Male;69;Married;Other/Sub Degree;10,400 to 15,600;No
+945;Male;51;Married;No Qualification;15,600 to 20,800;No
+946;Male;70;Widowed;No Qualification;5,200 to 10,400;No
+947;Female;36;Married;GCSE/O Level;2,600 to 5,200;Yes
+948;Female;73;Married;No Qualification;Under 2,600;No
+949;Male;72;Married;Other/Sub Degree;2,600 to 5,200;No
+950;Female;18;Single;GCSE/O Level;Under 2,600;No
+951;Female;57;Married;Other/Sub Degree;Under 2,600;No
+952;Male;21;Single;A Levels;Refused;No
+953;Male;64;Married;Degree;5,200 to 10,400;No
+954;Female;39;Married;GCSE/CSE;20,800 to 28,600;No
+955;Female;37;Divorced;GCSE/CSE;5,200 to 10,400;No
+956;Female;36;Married;GCSE/CSE;Under 2,600;Yes
+957;Female;37;Married;Degree;10,400 to 15,600;No
+958;Male;79;Married;No Qualification;2,600 to 5,200;No
+959;Female;49;Married;GCSE/CSE;5,200 to 10,400;No
+960;Female;30;Married;GCSE/O Level;5,200 to 10,400;No
+961;Female;27;Single;Degree;20,800 to 28,600;No
+962;Male;16;Single;GCSE/O Level;Under 2,600;No
+963;Male;40;Married;GCSE/O Level;Above 36,400;No
+964;Female;45;Separated;GCSE/O Level;15,600 to 20,800;No
+965;Female;78;Widowed;Other/Sub Degree;5,200 to 10,400;No
+966;Female;59;Married;Other/Sub Degree;5,200 to 10,400;No
+967;Female;93;Widowed;Other/Sub Degree;5,200 to 10,400;Yes
+968;Female;33;Married;A Levels;10,400 to 15,600;No
+969;Female;57;Divorced;No Qualification;15,600 to 20,800;No
+970;Female;53;Single;No Qualification;2,600 to 5,200;Yes
+971;Female;54;Divorced;Higher/Sub Degree;2,600 to 5,200;No
+972;Female;33;Married;A Levels;Above 36,400;No
+973;Female;52;Single;Other/Sub Degree;2,600 to 5,200;No
+974;Male;31;Single;Higher/Sub Degree;10,400 to 15,600;No
+975;Female;54;Married;Degree;28,600 to 36,400;No
+976;Female;41;Married;Higher/Sub Degree;20,800 to 28,600;Yes
+977;Female;23;Single;GCSE/O Level;10,400 to 15,600;No
+978;Female;81;Widowed;GCSE/CSE;Under 2,600;No
+979;Female;17;Single;A Levels;Refused;No
+980;Male;73;Married;No Qualification;Above 36,400;No
+981;Male;62;Married;No Qualification;20,800 to 28,600;No
+982;Female;73;Married;Degree;10,400 to 15,600;Yes
+983;Male;22;Single;ONC/BTEC;20,800 to 28,600;Yes
+984;Female;18;Single;A Levels;Under 2,600;No
+985;Female;86;Widowed;GCSE/O Level;10,400 to 15,600;Yes
+986;Female;54;Married;Degree;20,800 to 28,600;Yes
+987;Female;55;Married;Degree;20,800 to 28,600;No
+988;Female;22;Single;Degree;20,800 to 28,600;Yes
+989;Female;30;Married;ONC/BTEC;5,200 to 10,400;No
+990;Female;25;Single;Degree;2,600 to 5,200;No
+991;Female;54;Divorced;Other/Sub Degree;Under 2,600;Yes
+992;Male;36;Single;GCSE/O Level;15,600 to 20,800;No
+993;Female;40;Married;Other/Sub Degree;Under 2,600;No
+994;Female;51;Divorced;GCSE/O Level;2,600 to 5,200;Yes
+995;Male;44;Married;Degree;10,400 to 15,600;No
+996;Female;26;Single;Degree;Under 2,600;Yes
+997;Male;73;Married;ONC/BTEC;5,200 to 10,400;No
+998;Female;36;Married;GCSE/O Level;15,600 to 20,800;No
+999;Male;69;Widowed;No Qualification;5,200 to 10,400;No
+1000;Female;41;Married;Degree;10,400 to 15,600;No
+1001;Male;40;Married;Degree;Above 36,400;No
+1002;Male;82;Married;Other/Sub Degree;2,600 to 5,200;Yes
+1003;Male;27;Single;Degree;15,600 to 20,800;No
+1004;Female;35;Single;Degree;20,800 to 28,600;No
+1005;Male;35;Married;Degree;Above 36,400;No
+1006;Male;33;Married;Other/Sub Degree;28,600 to 36,400;No
+1007;Female;41;Divorced;No Qualification;2,600 to 5,200;Yes
+1008;Female;26;Separated;Other/Sub Degree;5,200 to 10,400;No
+1009;Female;55;Married;No Qualification;Refused;No
+1010;Male;18;Single;GCSE/O Level;Under 2,600;No
+1011;Female;68;Married;GCSE/O Level;5,200 to 10,400;No
+1012;Female;43;Single;GCSE/O Level;10,400 to 15,600;No
+1013;Male;58;Married;No Qualification;20,800 to 28,600;No
+1014;Female;39;Married;GCSE/O Level;5,200 to 10,400;No
+1015;Female;54;Separated;No Qualification;2,600 to 5,200;No
+1016;Female;62;Married;No Qualification;28,600 to 36,400;No
+1017;Female;40;Married;A Levels;10,400 to 15,600;Yes
+1018;Female;59;Single;GCSE/O Level;2,600 to 5,200;No
+1019;Female;57;Divorced;GCSE/O Level;20,800 to 28,600;No
+1020;Female;42;Single;GCSE/O Level;5,200 to 10,400;Yes
+1021;Female;48;Separated;GCSE/O Level;20,800 to 28,600;Yes
+1022;Female;45;Divorced;GCSE/O Level;20,800 to 28,600;Yes
+1023;Female;24;Single;GCSE/CSE;2,600 to 5,200;No
+1024;Female;66;Widowed;GCSE/CSE;10,400 to 15,600;No
+1025;Male;63;Single;Higher/Sub Degree;10,400 to 15,600;Yes
+1026;Male;28;Single;GCSE/O Level;Refused;No
+1027;Male;59;Divorced;No Qualification;20,800 to 28,600;No
+1028;Male;50;Married;Higher/Sub Degree;20,800 to 28,600;No
+1029;Female;41;Separated;GCSE/CSE;10,400 to 15,600;No
+1030;Female;76;Single;No Qualification;5,200 to 10,400;No
+1031;Male;24;Single;ONC/BTEC;15,600 to 20,800;Yes
+1032;Female;25;Single;Other/Sub Degree;20,800 to 28,600;Yes
+1033;Female;33;Widowed;Degree;5,200 to 10,400;No
+1034;Male;31;Single;ONC/BTEC;28,600 to 36,400;No
+1035;Female;33;Single;Degree;5,200 to 10,400;Yes
+1036;Female;37;Single;No Qualification;5,200 to 10,400;No
+1037;Male;81;Divorced;No Qualification;5,200 to 10,400;No
+1038;Female;36;Single;No Qualification;20,800 to 28,600;No
+1039;Female;64;Married;No Qualification;10,400 to 15,600;Yes
+1040;Male;51;Married;Other/Sub Degree;5,200 to 10,400;No
+1041;Female;19;Single;A Levels;10,400 to 15,600;No
+1042;Female;18;Single;A Levels;Refused;No
+1043;Male;31;Married;Degree;Above 36,400;Yes
+1044;Female;24;Single;ONC/BTEC;5,200 to 10,400;No
+1045;Male;18;Single;No Qualification;Under 2,600;Yes
+1046;Male;22;Single;Degree;2,600 to 5,200;No
+1047;Female;26;Single;Other/Sub Degree;10,400 to 15,600;No
+1048;Female;33;Single;Degree;2,600 to 5,200;No
+1049;Male;17;Single;GCSE/CSE;Under 2,600;Yes
+1050;Male;37;Single;ONC/BTEC;10,400 to 15,600;Yes
+1051;Male;60;Married;No Qualification;2,600 to 5,200;No
+1052;Male;80;Married;No Qualification;2,600 to 5,200;No
+1053;Male;68;Married;ONC/BTEC;10,400 to 15,600;Yes
+1054;Female;65;Married;GCSE/O Level;5,200 to 10,400;No
+1055;Male;42;Married;No Qualification;10,400 to 15,600;No
+1056;Female;48;Married;GCSE/O Level;15,600 to 20,800;No
+1057;Male;46;Married;A Levels;Above 36,400;No
+1058;Male;44;Married;ONC/BTEC;28,600 to 36,400;No
+1059;Female;29;Married;A Levels;10,400 to 15,600;Yes
+1060;Male;38;Married;Higher/Sub Degree;15,600 to 20,800;No
+1061;Female;52;Married;No Qualification;Refused;No
+1062;Male;48;Divorced;Degree;Above 36,400;No
+1063;Male;65;Married;GCSE/CSE;10,400 to 15,600;No
+1064;Male;27;Single;Degree;10,400 to 15,600;No
+1065;Female;37;Married;GCSE/O Level;2,600 to 5,200;No
+1066;Female;42;Married;GCSE/O Level;Under 2,600;No
+1067;Male;53;Single;No Qualification;5,200 to 10,400;No
+1068;Female;66;Widowed;No Qualification;Refused;Yes
+1069;Female;20;Single;ONC/BTEC;15,600 to 20,800;No
+1070;Female;62;Married;No Qualification;Refused;No
+1071;Male;18;Single;Other/Sub Degree;2,600 to 5,200;No
+1072;Male;69;Married;No Qualification;5,200 to 10,400;No
+1073;Male;63;Divorced;ONC/BTEC;Above 36,400;Yes
+1074;Male;41;Married;Degree;28,600 to 36,400;No
+1075;Male;74;Married;Higher/Sub Degree;Above 36,400;No
+1076;Female;20;Single;Other/Sub Degree;2,600 to 5,200;No
+1077;Female;18;Single;GCSE/O Level;2,600 to 5,200;No
+1078;Male;28;Single;GCSE/O Level;5,200 to 10,400;Yes
+1079;Male;49;Married;Degree;Above 36,400;No
+1080;Male;64;Married;Higher/Sub Degree;5,200 to 10,400;No
+1081;Female;69;Widowed;GCSE/O Level;5,200 to 10,400;No
+1082;Female;33;Separated;No Qualification;5,200 to 10,400;No
+1083;Female;22;Single;GCSE/CSE;10,400 to 15,600;Yes
+1084;Female;63;Married;No Qualification;10,400 to 15,600;No
+1085;Female;93;Widowed;No Qualification;2,600 to 5,200;No
+1086;Female;65;Married;No Qualification;Under 2,600;No
+1087;Female;33;Married;GCSE/O Level;10,400 to 15,600;Yes
+1088;Female;38;Married;No Qualification;2,600 to 5,200;No
+1089;Female;29;Single;GCSE/O Level;Under 2,600;Yes
+1090;Male;59;Married;A Levels;Above 36,400;No
+1091;Male;37;Single;Degree;Above 36,400;No
+1092;Male;51;Single;No Qualification;20,800 to 28,600;Yes
+1093;Female;33;Married;GCSE/O Level;Refused;No
+1094;Female;80;Single;Higher/Sub Degree;2,600 to 5,200;No
+1095;Male;49;Married;A Levels;15,600 to 20,800;No
+1096;Female;38;Married;Degree;20,800 to 28,600;No
+1097;Male;45;Single;GCSE/O Level;Above 36,400;Yes
+1098;Female;58;Married;Higher/Sub Degree;20,800 to 28,600;No
+1099;Female;63;Married;Degree;2,600 to 5,200;No
+1100;Female;69;Married;Other/Sub Degree;2,600 to 5,200;No
+1101;Male;86;Widowed;Other/Sub Degree;20,800 to 28,600;No
+1102;Female;66;Widowed;Higher/Sub Degree;20,800 to 28,600;No
+1103;Male;61;Married;No Qualification;5,200 to 10,400;No
+1104;Female;62;Separated;Higher/Sub Degree;15,600 to 20,800;No
+1105;Female;89;Widowed;No Qualification;2,600 to 5,200;No
+1106;Female;72;Widowed;Degree;20,800 to 28,600;No
+1107;Male;64;Married;Other/Sub Degree;Above 36,400;No
+1108;Female;58;Married;A Levels;28,600 to 36,400;No
+1109;Female;80;Widowed;No Qualification;10,400 to 15,600;No
+1110;Female;61;Married;Higher/Sub Degree;5,200 to 10,400;No
+1111;Female;34;Married;Higher/Sub Degree;5,200 to 10,400;No
+1112;Female;36;Married;GCSE/O Level;Under 2,600;Yes
+1113;Female;34;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+1114;Female;40;Single;A Levels;Above 36,400;No
+1115;Male;53;Single;No Qualification;20,800 to 28,600;No
+1116;Female;31;Single;Degree;20,800 to 28,600;No
+1117;Female;86;Separated;No Qualification;2,600 to 5,200;No
+1118;Female;46;Married;No Qualification;5,200 to 10,400;Yes
+1119;Male;34;Single;GCSE/O Level;15,600 to 20,800;No
+1120;Female;44;Single;Degree;28,600 to 36,400;No
+1121;Female;69;Widowed;A Levels;5,200 to 10,400;No
+1122;Female;56;Widowed;No Qualification;15,600 to 20,800;No
+1123;Male;79;Single;No Qualification;2,600 to 5,200;No
+1124;Female;41;Separated;GCSE/CSE;5,200 to 10,400;Yes
+1125;Male;34;Divorced;ONC/BTEC;Above 36,400;Yes
+1126;Male;47;Single;GCSE/CSE;2,600 to 5,200;Yes
+1127;Male;46;Married;No Qualification;15,600 to 20,800;No
+1128;Female;30;Single;No Qualification;10,400 to 15,600;No
+1129;Female;19;Single;A Levels;5,200 to 10,400;No
+1130;Male;45;Married;Degree;28,600 to 36,400;No
+1131;Female;24;Single;Higher/Sub Degree;10,400 to 15,600;No
+1132;Male;42;Married;GCSE/O Level;20,800 to 28,600;No
+1133;Male;32;Married;Other/Sub Degree;15,600 to 20,800;No
+1134;Male;32;Single;GCSE/CSE;10,400 to 15,600;Yes
+1135;Female;28;Single;A Levels;Under 2,600;Yes
+1136;Female;78;Widowed;No Qualification;10,400 to 15,600;No
+1137;Male;42;Divorced;GCSE/O Level;15,600 to 20,800;Yes
+1138;Female;27;Married;Degree;28,600 to 36,400;No
+1139;Female;57;Married;Other/Sub Degree;Refused;No
+1140;Female;24;Single;Degree;Refused;No
+1141;Female;71;Married;GCSE/O Level;2,600 to 5,200;No
+1142;Male;51;Married;GCSE/O Level;20,800 to 28,600;No
+1143;Male;66;Widowed;No Qualification;10,400 to 15,600;No
+1144;Female;73;Separated;No Qualification;2,600 to 5,200;No
+1145;Male;18;Single;No Qualification;Refused;Yes
+1146;Male;50;Divorced;A Levels;20,800 to 28,600;Yes
+1147;Female;79;Widowed;No Qualification;5,200 to 10,400;Yes
+1148;Female;22;Single;GCSE/O Level;Under 2,600;Yes
+1149;Male;45;Divorced;No Qualification;10,400 to 15,600;No
+1150;Female;53;Married;No Qualification;Refused;No
+1151;Male;77;Married;No Qualification;2,600 to 5,200;Yes
+1152;Female;64;Widowed;No Qualification;5,200 to 10,400;No
+1153;Male;39;Married;A Levels;Under 2,600;No
+1154;Male;54;Widowed;No Qualification;5,200 to 10,400;Yes
+1155;Male;17;Single;GCSE/CSE;Refused;No
+1156;Male;78;Married;No Qualification;5,200 to 10,400;No
+1157;Male;50;Single;Degree;20,800 to 28,600;Yes
+1158;Male;41;Married;Higher/Sub Degree;Above 36,400;No
+1159;Female;48;Divorced;No Qualification;2,600 to 5,200;Yes
+1160;Male;25;Married;GCSE/O Level;15,600 to 20,800;No
+1161;Male;18;Married;ONC/BTEC;2,600 to 5,200;No
+1162;Female;58;Married;GCSE/O Level;10,400 to 15,600;No
+1163;Female;79;Widowed;Higher/Sub Degree;20,800 to 28,600;No
+1164;Male;62;Married;No Qualification;2,600 to 5,200;Yes
+1165;Female;36;Married;GCSE/CSE;Under 2,600;No
+1166;Female;38;Divorced;No Qualification;5,200 to 10,400;No
+1167;Male;19;Single;Other/Sub Degree;10,400 to 15,600;No
+1168;Female;45;Separated;No Qualification;5,200 to 10,400;No
+1169;Male;54;Married;Degree;Above 36,400;No
+1170;Female;69;Widowed;GCSE/O Level;15,600 to 20,800;No
+1171;Female;65;Widowed;Higher/Sub Degree;10,400 to 15,600;No
+1172;Male;31;Married;GCSE/CSE;20,800 to 28,600;No
+1173;Female;31;Married;Degree;2,600 to 5,200;No
+1174;Female;46;Single;No Qualification;2,600 to 5,200;Yes
+1175;Male;37;Single;ONC/BTEC;20,800 to 28,600;No
+1176;Female;72;Married;No Qualification;Unknown;No
+1177;Male;59;Married;GCSE/O Level;20,800 to 28,600;No
+1178;Female;82;Widowed;GCSE/O Level;Refused;No
+1179;Male;81;Widowed;Degree;28,600 to 36,400;No
+1180;Female;65;Widowed;GCSE/O Level;2,600 to 5,200;No
+1181;Female;48;Divorced;No Qualification;15,600 to 20,800;Yes
+1182;Male;49;Divorced;ONC/BTEC;Above 36,400;Yes
+1183;Male;35;Single;GCSE/O Level;2,600 to 5,200;Yes
+1184;Female;73;Married;No Qualification;5,200 to 10,400;No
+1185;Female;80;Divorced;No Qualification;5,200 to 10,400;No
+1186;Male;55;Married;ONC/BTEC;28,600 to 36,400;No
+1187;Male;78;Widowed;No Qualification;Refused;No
+1188;Female;45;Single;GCSE/O Level;Refused;Yes
+1189;Male;39;Married;A Levels;20,800 to 28,600;Yes
+1190;Male;75;Married;No Qualification;5,200 to 10,400;No
+1191;Male;65;Married;Other/Sub Degree;5,200 to 10,400;No
+1192;Male;79;Divorced;No Qualification;2,600 to 5,200;No
+1193;Male;75;Married;GCSE/O Level;20,800 to 28,600;No
+1194;Female;69;Married;No Qualification;5,200 to 10,400;No
+1195;Female;57;Single;No Qualification;15,600 to 20,800;No
+1196;Female;29;Single;Degree;20,800 to 28,600;No
+1197;Male;54;Married;No Qualification;20,800 to 28,600;Yes
+1198;Male;29;Married;Degree;20,800 to 28,600;No
+1199;Male;42;Divorced;No Qualification;10,400 to 15,600;No
+1200;Male;28;Single;Degree;15,600 to 20,800;Yes
+1201;Female;65;Widowed;No Qualification;15,600 to 20,800;No
+1202;Male;37;Married;Degree;Above 36,400;Yes
+1203;Female;35;Single;Degree;5,200 to 10,400;No
+1204;Female;33;Single;Degree;15,600 to 20,800;Yes
+1205;Male;52;Married;Degree;5,200 to 10,400;Yes
+1206;Male;57;Single;Higher/Sub Degree;20,800 to 28,600;No
+1207;Female;31;Single;Degree;15,600 to 20,800;No
+1208;Male;73;Married;No Qualification;5,200 to 10,400;No
+1209;Male;43;Married;Degree;Above 36,400;No
+1210;Male;38;Single;Degree;28,600 to 36,400;No
+1211;Female;43;Married;No Qualification;Above 36,400;Yes
+1212;Female;55;Married;Higher/Sub Degree;20,800 to 28,600;No
+1213;Male;59;Married;Degree;Above 36,400;No
+1214;Female;33;Married;Degree;20,800 to 28,600;No
+1215;Female;41;Married;GCSE/O Level;5,200 to 10,400;Yes
+1216;Female;46;Married;GCSE/CSE;5,200 to 10,400;Yes
+1217;Male;57;Married;Degree;Above 36,400;Yes
+1218;Male;40;Single;A Levels;15,600 to 20,800;No
+1219;Male;57;Married;GCSE/O Level;5,200 to 10,400;No
+1220;Female;39;Married;GCSE/O Level;10,400 to 15,600;Yes
+1221;Male;67;Married;Other/Sub Degree;5,200 to 10,400;Yes
+1222;Female;46;Single;No Qualification;2,600 to 5,200;No
+1223;Male;39;Married;Higher/Sub Degree;28,600 to 36,400;No
+1224;Female;55;Married;GCSE/O Level;Refused;No
+1225;Male;50;Married;Other/Sub Degree;15,600 to 20,800;Yes
+1226;Female;70;Widowed;ONC/BTEC;5,200 to 10,400;No
+1227;Female;44;Married;Higher/Sub Degree;Under 2,600;No
+1228;Female;33;Married;ONC/BTEC;Under 2,600;No
+1229;Male;69;Divorced;Other/Sub Degree;5,200 to 10,400;No
+1230;Female;70;Married;No Qualification;Under 2,600;Yes
+1231;Female;62;Widowed;No Qualification;Refused;No
+1232;Female;31;Married;GCSE/O Level;Under 2,600;No
+1233;Male;70;Married;Other/Sub Degree;10,400 to 15,600;No
+1234;Male;32;Married;No Qualification;28,600 to 36,400;No
+1235;Female;75;Divorced;A Levels;Refused;No
+1236;Male;47;Married;Higher/Sub Degree;20,800 to 28,600;No
+1237;Male;57;Married;No Qualification;20,800 to 28,600;No
+1238;Male;86;Widowed;No Qualification;5,200 to 10,400;No
+1239;Female;32;Single;GCSE/O Level;2,600 to 5,200;No
+1240;Male;46;Single;GCSE/O Level;10,400 to 15,600;Yes
+1241;Male;51;Single;No Qualification;Under 2,600;Yes
+1242;Female;69;Married;GCSE/O Level;10,400 to 15,600;No
+1243;Female;73;Married;GCSE/O Level;2,600 to 5,200;No
+1244;Female;32;Single;Higher/Sub Degree;15,600 to 20,800;Yes
+1245;Female;75;Married;GCSE/O Level;Unknown;No
+1246;Female;54;Widowed;GCSE/CSE;20,800 to 28,600;Yes
+1247;Female;51;Married;Higher/Sub Degree;10,400 to 15,600;No
+1248;Female;35;Married;Degree;10,400 to 15,600;No
+1249;Male;38;Married;Degree;Above 36,400;No
+1250;Female;72;Married;GCSE/O Level;5,200 to 10,400;No
+1251;Female;66;Married;A Levels;Refused;No
+1252;Female;59;Married;GCSE/CSE;2,600 to 5,200;No
+1253;Male;70;Married;Degree;20,800 to 28,600;No
+1254;Male;44;Single;GCSE/CSE;Refused;No
+1255;Female;67;Married;GCSE/CSE;5,200 to 10,400;No
+1256;Male;35;Married;GCSE/O Level;20,800 to 28,600;No
+1257;Female;33;Married;GCSE/O Level;5,200 to 10,400;No
+1258;Male;17;Single;GCSE/CSE;2,600 to 5,200;No
+1259;Female;45;Married;GCSE/O Level;Under 2,600;No
+1260;Female;57;Married;GCSE/O Level;5,200 to 10,400;No
+1261;Female;18;Single;A Levels;Under 2,600;No
+1262;Male;68;Separated;A Levels;15,600 to 20,800;No
+1263;Female;27;Single;Higher/Sub Degree;15,600 to 20,800;Yes
+1264;Female;40;Married;GCSE/CSE;Under 2,600;Yes
+1265;Male;77;Single;GCSE/CSE;5,200 to 10,400;No
+1266;Female;77;Married;GCSE/O Level;2,600 to 5,200;No
+1267;Male;75;Married;ONC/BTEC;Above 36,400;No
+1268;Male;39;Married;ONC/BTEC;15,600 to 20,800;Yes
+1269;Female;21;Single;GCSE/O Level;2,600 to 5,200;No
+1270;Female;59;Divorced;Degree;5,200 to 10,400;No
+1271;Male;27;Single;GCSE/CSE;20,800 to 28,600;No
+1272;Female;67;Married;No Qualification;2,600 to 5,200;No
+1273;Female;50;Single;Higher/Sub Degree;20,800 to 28,600;No
+1274;Female;64;Divorced;GCSE/O Level;5,200 to 10,400;No
+1275;Female;79;Widowed;No Qualification;5,200 to 10,400;No
+1276;Male;31;Single;GCSE/O Level;10,400 to 15,600;Yes
+1277;Female;19;Single;A Levels;10,400 to 15,600;No
+1278;Male;42;Married;Degree;28,600 to 36,400;No
+1279;Male;36;Married;GCSE/CSE;5,200 to 10,400;No
+1280;Male;36;Married;GCSE/CSE;20,800 to 28,600;No
+1281;Female;64;Widowed;GCSE/O Level;2,600 to 5,200;No
+1282;Female;53;Single;No Qualification;5,200 to 10,400;No
+1283;Female;39;Married;GCSE/CSE;15,600 to 20,800;Yes
+1284;Female;39;Married;Degree;28,600 to 36,400;No
+1285;Female;28;Married;Degree;5,200 to 10,400;Yes
+1286;Male;81;Married;No Qualification;5,200 to 10,400;No
+1287;Female;79;Married;No Qualification;Under 2,600;No
+1288;Female;72;Married;No Qualification;5,200 to 10,400;No
+1289;Female;18;Single;GCSE/O Level;2,600 to 5,200;Yes
+1290;Female;76;Married;No Qualification;2,600 to 5,200;No
+1291;Female;68;Widowed;No Qualification;5,200 to 10,400;Yes
+1292;Female;28;Single;GCSE/CSE;10,400 to 15,600;Yes
+1293;Female;42;Divorced;GCSE/O Level;2,600 to 5,200;No
+1294;Female;26;Single;GCSE/O Level;5,200 to 10,400;Yes
+1295;Female;19;Single;No Qualification;2,600 to 5,200;Yes
+1296;Female;41;Divorced;Other/Sub Degree;5,200 to 10,400;Yes
+1297;Female;82;Widowed;No Qualification;5,200 to 10,400;No
+1298;Male;36;Married;Degree;15,600 to 20,800;No
+1299;Male;47;Single;No Qualification;5,200 to 10,400;Yes
+1300;Male;77;Widowed;Other/Sub Degree;5,200 to 10,400;No
+1301;Female;66;Divorced;No Qualification;Under 2,600;No
+1302;Male;50;Divorced;Other/Sub Degree;5,200 to 10,400;Yes
+1303;Female;55;Divorced;No Qualification;5,200 to 10,400;No
+1304;Female;36;Married;A Levels;Under 2,600;Yes
+1305;Male;79;Married;No Qualification;Unknown;No
+1306;Female;67;Married;No Qualification;2,600 to 5,200;No
+1307;Female;42;Single;A Levels;Refused;No
+1308;Female;76;Married;No Qualification;Under 2,600;No
+1309;Female;44;Married;Other/Sub Degree;15,600 to 20,800;No
+1310;Female;75;Married;No Qualification;2,600 to 5,200;No
+1311;Female;24;Married;Other/Sub Degree;10,400 to 15,600;No
+1312;Male;78;Married;Other/Sub Degree;5,200 to 10,400;No
+1313;Female;38;Married;ONC/BTEC;5,200 to 10,400;No
+1314;Male;22;Single;Other/Sub Degree;5,200 to 10,400;No
+1315;Female;62;Married;Other/Sub Degree;2,600 to 5,200;No
+1316;Female;40;Divorced;No Qualification;5,200 to 10,400;Yes
+1317;Male;35;Married;Degree;20,800 to 28,600;No
+1318;Female;45;Married;ONC/BTEC;5,200 to 10,400;No
+1319;Female;66;Married;No Qualification;2,600 to 5,200;No
+1320;Female;53;Divorced;Higher/Sub Degree;5,200 to 10,400;No
+1321;Female;43;Divorced;GCSE/O Level;10,400 to 15,600;Yes
+1322;Female;72;Widowed;No Qualification;2,600 to 5,200;Yes
+1323;Female;72;Widowed;No Qualification;5,200 to 10,400;No
+1324;Female;67;Married;Higher/Sub Degree;10,400 to 15,600;No
+1325;Female;37;Divorced;GCSE/O Level;5,200 to 10,400;No
+1326;Male;38;Married;ONC/BTEC;10,400 to 15,600;No
+1327;Female;39;Married;GCSE/O Level;10,400 to 15,600;Yes
+1328;Male;64;Divorced;No Qualification;5,200 to 10,400;No
+1329;Male;72;Married;No Qualification;2,600 to 5,200;No
+1330;Male;54;Married;GCSE/O Level;10,400 to 15,600;Yes
+1331;Female;59;Widowed;No Qualification;5,200 to 10,400;No
+1332;Female;50;Married;ONC/BTEC;10,400 to 15,600;No
+1333;Male;33;Married;GCSE/O Level;Above 36,400;No
+1334;Female;45;Married;Higher/Sub Degree;20,800 to 28,600;No
+1335;Female;73;Widowed;No Qualification;5,200 to 10,400;No
+1336;Male;68;Married;Degree;15,600 to 20,800;No
+1337;Female;33;Married;GCSE/O Level;10,400 to 15,600;No
+1338;Female;21;Single;ONC/BTEC;2,600 to 5,200;No
+1339;Female;32;Married;Degree;20,800 to 28,600;No
+1340;Male;37;Married;Other/Sub Degree;15,600 to 20,800;No
+1341;Female;48;Single;Degree;Refused;Yes
+1342;Male;25;Single;No Qualification;15,600 to 20,800;Yes
+1343;Male;61;Married;No Qualification;5,200 to 10,400;Yes
+1344;Female;86;Widowed;No Qualification;2,600 to 5,200;No
+1345;Female;45;Married;No Qualification;5,200 to 10,400;No
+1346;Female;60;Divorced;GCSE/O Level;10,400 to 15,600;No
+1347;Female;40;Single;Degree;15,600 to 20,800;No
+1348;Male;55;Married;No Qualification;Refused;No
+1349;Male;53;Separated;GCSE/O Level;10,400 to 15,600;No
+1350;Male;41;Married;GCSE/O Level;2,600 to 5,200;No
+1351;Female;17;Single;GCSE/O Level;Under 2,600;Yes
+1352;Female;42;Divorced;Higher/Sub Degree;15,600 to 20,800;No
+1353;Male;44;Married;GCSE/O Level;20,800 to 28,600;No
+1354;Female;43;Married;A Levels;10,400 to 15,600;No
+1355;Female;39;Married;Other/Sub Degree;2,600 to 5,200;Yes
+1356;Male;67;Married;No Qualification;10,400 to 15,600;No
+1357;Female;73;Married;No Qualification;Under 2,600;No
+1358;Female;16;Single;GCSE/O Level;2,600 to 5,200;No
+1359;Female;73;Widowed;No Qualification;10,400 to 15,600;No
+1360;Male;52;Married;Degree;Above 36,400;No
+1361;Male;72;Single;No Qualification;5,200 to 10,400;No
+1362;Male;79;Married;No Qualification;10,400 to 15,600;No
+1363;Female;90;Widowed;No Qualification;2,600 to 5,200;No
+1364;Male;27;Single;Higher/Sub Degree;20,800 to 28,600;Yes
+1365;Male;32;Divorced;Degree;Above 36,400;No
+1366;Female;38;Divorced;GCSE/O Level;5,200 to 10,400;No
+1367;Female;21;Single;Degree;Under 2,600;No
+1368;Male;40;Married;A Levels;Above 36,400;No
+1369;Male;28;Married;Degree;Above 36,400;No
+1370;Male;47;Married;A Levels;Above 36,400;Yes
+1371;Female;45;Married;Degree;5,200 to 10,400;No
+1372;Female;95;Widowed;No Qualification;5,200 to 10,400;No
+1373;Male;18;Single;A Levels;2,600 to 5,200;No
+1374;Female;89;Widowed;GCSE/O Level;Unknown;No
+1375;Female;82;Widowed;No Qualification;5,200 to 10,400;No
+1376;Male;65;Married;A Levels;28,600 to 36,400;No
+1377;Female;87;Widowed;GCSE/O Level;5,200 to 10,400;No
+1378;Male;30;Single;Higher/Sub Degree;20,800 to 28,600;Yes
+1379;Female;77;Widowed;Degree;28,600 to 36,400;No
+1380;Female;55;Divorced;Degree;Above 36,400;No
+1381;Female;33;Married;Degree;5,200 to 10,400;No
+1382;Female;56;Married;No Qualification;5,200 to 10,400;No
+1383;Female;68;Divorced;No Qualification;2,600 to 5,200;Yes
+1384;Female;73;Married;No Qualification;2,600 to 5,200;No
+1385;Female;66;Single;GCSE/O Level;10,400 to 15,600;No
+1386;Female;73;Married;Other/Sub Degree;5,200 to 10,400;No
+1387;Male;42;Married;Higher/Sub Degree;20,800 to 28,600;Yes
+1388;Male;41;Single;No Qualification;Refused;No
+1389;Female;35;Married;GCSE/CSE;10,400 to 15,600;No
+1390;Female;53;Married;No Qualification;2,600 to 5,200;No
+1391;Female;74;Divorced;No Qualification;5,200 to 10,400;No
+1392;Male;46;Married;No Qualification;10,400 to 15,600;Yes
+1393;Female;22;Single;GCSE/CSE;2,600 to 5,200;No
+1394;Male;27;Married;A Levels;15,600 to 20,800;No
+1395;Female;71;Married;GCSE/O Level;5,200 to 10,400;No
+1396;Male;78;Widowed;Other/Sub Degree;5,200 to 10,400;No
+1397;Female;38;Married;GCSE/O Level;5,200 to 10,400;No
+1398;Female;31;Married;A Levels;10,400 to 15,600;No
+1399;Female;54;Married;Degree;2,600 to 5,200;No
+1400;Female;31;Single;GCSE/CSE;10,400 to 15,600;No
+1401;Male;53;Married;ONC/BTEC;Above 36,400;No
+1402;Female;36;Single;GCSE/O Level;2,600 to 5,200;Yes
+1403;Male;41;Married;Other/Sub Degree;15,600 to 20,800;No
+1404;Male;78;Widowed;No Qualification;5,200 to 10,400;Yes
+1405;Female;54;Divorced;GCSE/O Level;2,600 to 5,200;Yes
+1406;Female;72;Divorced;No Qualification;2,600 to 5,200;No
+1407;Male;28;Married;Other/Sub Degree;20,800 to 28,600;Yes
+1408;Female;41;Separated;GCSE/O Level;5,200 to 10,400;Yes
+1409;Female;78;Married;No Qualification;Under 2,600;No
+1410;Male;71;Widowed;No Qualification;5,200 to 10,400;No
+1411;Female;57;Married;Other/Sub Degree;5,200 to 10,400;No
+1412;Male;31;Married;GCSE/O Level;15,600 to 20,800;Yes
+1413;Female;64;Widowed;No Qualification;5,200 to 10,400;No
+1414;Male;65;Married;No Qualification;5,200 to 10,400;No
+1415;Male;61;Married;No Qualification;5,200 to 10,400;No
+1416;Male;33;Married;GCSE/CSE;20,800 to 28,600;No
+1417;Female;60;Married;ONC/BTEC;Refused;Yes
+1418;Male;40;Married;Higher/Sub Degree;15,600 to 20,800;No
+1419;Female;68;Married;Other/Sub Degree;5,200 to 10,400;No
+1420;Female;36;Married;No Qualification;15,600 to 20,800;No
+1421;Female;35;Married;GCSE/O Level;Under 2,600;No
+1422;Male;22;Single;GCSE/CSE;20,800 to 28,600;Yes
+1423;Female;43;Married;GCSE/CSE;2,600 to 5,200;No
+1424;Male;84;Widowed;No Qualification;5,200 to 10,400;No
+1425;Female;24;Single;No Qualification;5,200 to 10,400;No
+1426;Male;68;Married;No Qualification;5,200 to 10,400;Yes
+1427;Male;35;Single;Other/Sub Degree;Under 2,600;Yes
+1428;Female;51;Divorced;Other/Sub Degree;Unknown;Yes
+1429;Male;45;Married;ONC/BTEC;28,600 to 36,400;No
+1430;Female;45;Single;No Qualification;Refused;Yes
+1431;Male;71;Married;No Qualification;10,400 to 15,600;No
+1432;Female;47;Married;No Qualification;5,200 to 10,400;Yes
+1433;Female;39;Married;Higher/Sub Degree;10,400 to 15,600;No
+1434;Male;62;Married;Higher/Sub Degree;2,600 to 5,200;No
+1435;Female;37;Single;Degree;15,600 to 20,800;No
+1436;Female;71;Married;No Qualification;Refused;No
+1437;Male;49;Divorced;Degree;28,600 to 36,400;No
+1438;Female;22;Single;GCSE/CSE;2,600 to 5,200;Yes
+1439;Male;61;Married;No Qualification;Under 2,600;No
+1440;Male;34;Single;GCSE/O Level;20,800 to 28,600;Yes
+1441;Female;40;Separated;Degree;Above 36,400;No
+1442;Female;27;Separated;No Qualification;2,600 to 5,200;Yes
+1443;Male;28;Single;ONC/BTEC;10,400 to 15,600;Yes
+1444;Female;28;Single;A Levels;10,400 to 15,600;No
+1445;Male;36;Married;GCSE/CSE;20,800 to 28,600;Yes
+1446;Female;34;Single;GCSE/O Level;5,200 to 10,400;Yes
+1447;Male;19;Single;A Levels;10,400 to 15,600;No
+1448;Female;31;Divorced;GCSE/O Level;15,600 to 20,800;Yes
+1449;Male;49;Divorced;No Qualification;Refused;Yes
+1450;Male;42;Divorced;A Levels;2,600 to 5,200;Yes
+1451;Female;38;Married;No Qualification;Under 2,600;No
+1452;Male;16;Single;No Qualification;Under 2,600;Yes
+1453;Male;73;Married;No Qualification;5,200 to 10,400;No
+1454;Male;36;Married;GCSE/O Level;15,600 to 20,800;No
+1455;Female;81;Married;No Qualification;Under 2,600;No
+1456;Female;97;Widowed;No Qualification;10,400 to 15,600;No
+1457;Male;38;Married;No Qualification;10,400 to 15,600;No
+1458;Female;46;Married;Other/Sub Degree;5,200 to 10,400;Yes
+1459;Male;79;Married;No Qualification;5,200 to 10,400;No
+1460;Female;76;Widowed;No Qualification;2,600 to 5,200;Yes
+1461;Female;54;Widowed;No Qualification;2,600 to 5,200;No
+1462;Male;59;Married;Degree;Above 36,400;No
+1463;Male;52;Separated;Degree;Above 36,400;No
+1464;Male;58;Divorced;No Qualification;5,200 to 10,400;Yes
+1465;Male;69;Divorced;Degree;15,600 to 20,800;No
+1466;Male;67;Widowed;Degree;5,200 to 10,400;No
+1467;Female;76;Married;Other/Sub Degree;Refused;No
+1468;Male;33;Married;No Qualification;5,200 to 10,400;No
+1469;Male;61;Separated;No Qualification;Refused;Yes
+1470;Female;82;Widowed;No Qualification;Refused;No
+1471;Male;62;Married;No Qualification;5,200 to 10,400;No
+1472;Male;66;Divorced;No Qualification;Refused;No
+1473;Female;69;Widowed;No Qualification;Under 2,600;No
+1474;Female;25;Married;No Qualification;Refused;No
+1475;Male;29;Single;Degree;20,800 to 28,600;No
+1476;Male;28;Married;Degree;10,400 to 15,600;No
+1477;Female;52;Single;Degree;28,600 to 36,400;No
+1478;Female;81;Widowed;No Qualification;Refused;No
+1479;Female;44;Married;GCSE/O Level;10,400 to 15,600;Yes
+1480;Female;62;Married;GCSE/O Level;Refused;No
+1481;Male;45;Married;No Qualification;2,600 to 5,200;No
+1482;Female;71;Widowed;No Qualification;5,200 to 10,400;No
+1483;Female;72;Married;No Qualification;2,600 to 5,200;No
+1484;Female;69;Widowed;No Qualification;Unknown;Yes
+1485;Female;72;Widowed;No Qualification;2,600 to 5,200;Yes
+1486;Male;61;Married;No Qualification;5,200 to 10,400;No
+1487;Female;29;Married;A Levels;2,600 to 5,200;Yes
+1488;Female;37;Single;Higher/Sub Degree;5,200 to 10,400;Yes
+1489;Male;29;Single;GCSE/O Level;15,600 to 20,800;Yes
+1490;Male;57;Married;No Qualification;10,400 to 15,600;No
+1491;Male;60;Married;GCSE/O Level;5,200 to 10,400;No
+1492;Male;38;Married;Higher/Sub Degree;28,600 to 36,400;No
+1493;Male;74;Married;No Qualification;5,200 to 10,400;No
+1494;Male;38;Married;Higher/Sub Degree;10,400 to 15,600;No
+1495;Female;51;Divorced;GCSE/O Level;Refused;No
+1496;Male;68;Married;No Qualification;2,600 to 5,200;Yes
+1497;Male;67;Married;Higher/Sub Degree;10,400 to 15,600;No
+1498;Male;32;Single;GCSE/O Level;10,400 to 15,600;No
+1499;Female;25;Married;ONC/BTEC;5,200 to 10,400;No
+1500;Male;53;Married;No Qualification;15,600 to 20,800;No
+1501;Female;52;Divorced;No Qualification;5,200 to 10,400;Yes
+1502;Female;21;Single;No Qualification;2,600 to 5,200;No
+1503;Female;71;Divorced;No Qualification;5,200 to 10,400;No
+1504;Female;30;Married;GCSE/O Level;Under 2,600;No
+1505;Male;23;Single;GCSE/O Level;15,600 to 20,800;No
+1506;Female;28;Single;Higher/Sub Degree;10,400 to 15,600;Yes
+1507;Female;37;Married;GCSE/O Level;5,200 to 10,400;No
+1508;Female;84;Widowed;No Qualification;2,600 to 5,200;No
+1509;Female;61;Married;No Qualification;2,600 to 5,200;No
+1510;Female;18;Single;GCSE/O Level;2,600 to 5,200;No
+1511;Female;55;Married;GCSE/O Level;5,200 to 10,400;No
+1512;Male;52;Single;Higher/Sub Degree;20,800 to 28,600;No
+1513;Female;46;Married;No Qualification;2,600 to 5,200;Yes
+1514;Female;46;Married;Other/Sub Degree;10,400 to 15,600;No
+1515;Male;23;Single;No Qualification;2,600 to 5,200;No
+1516;Male;58;Married;Degree;20,800 to 28,600;No
+1517;Male;16;Single;GCSE/O Level;Under 2,600;No
+1518;Male;71;Married;No Qualification;15,600 to 20,800;No
+1519;Female;47;Married;No Qualification;2,600 to 5,200;Yes
+1520;Male;34;Married;Degree;20,800 to 28,600;No
+1521;Female;55;Single;No Qualification;Above 36,400;No
+1522;Female;78;Widowed;Other/Sub Degree;20,800 to 28,600;No
+1523;Male;35;Single;No Qualification;2,600 to 5,200;Yes
+1524;Male;68;Married;No Qualification;20,800 to 28,600;No
+1525;Male;76;Single;No Qualification;5,200 to 10,400;No
+1526;Male;28;Single;GCSE/CSE;10,400 to 15,600;No
+1527;Female;36;Divorced;GCSE/CSE;5,200 to 10,400;Yes
+1528;Female;57;Divorced;ONC/BTEC;5,200 to 10,400;No
+1529;Female;29;Single;Higher/Sub Degree;10,400 to 15,600;Yes
+1530;Female;27;Single;GCSE/O Level;5,200 to 10,400;Yes
+1531;Female;64;Widowed;No Qualification;2,600 to 5,200;No
+1532;Female;89;Single;No Qualification;Refused;No
+1533;Female;26;Single;GCSE/CSE;2,600 to 5,200;Yes
+1534;Male;27;Single;Higher/Sub Degree;20,800 to 28,600;No
+1535;Male;66;Single;Higher/Sub Degree;10,400 to 15,600;No
+1536;Female;84;Widowed;No Qualification;5,200 to 10,400;No
+1537;Male;41;Single;Higher/Sub Degree;20,800 to 28,600;Yes
+1538;Male;27;Single;Degree;15,600 to 20,800;No
+1539;Female;40;Divorced;GCSE/O Level;10,400 to 15,600;No
+1540;Female;79;Widowed;No Qualification;10,400 to 15,600;No
+1541;Male;49;Married;No Qualification;20,800 to 28,600;Yes
+1542;Female;79;Widowed;No Qualification;Unknown;No
+1543;Female;54;Married;No Qualification;Under 2,600;No
+1544;Male;25;Single;GCSE/O Level;5,200 to 10,400;Yes
+1545;Female;45;Single;Degree;28,600 to 36,400;Yes
+1546;Female;24;Single;Degree;5,200 to 10,400;Yes
+1547;Female;54;Divorced;No Qualification;10,400 to 15,600;Yes
+1548;Female;78;Widowed;No Qualification;15,600 to 20,800;No
+1549;Male;50;Married;No Qualification;10,400 to 15,600;Yes
+1550;Female;42;Married;Degree;20,800 to 28,600;No
+1551;Female;32;Single;A Levels;10,400 to 15,600;Yes
+1552;Male;75;Single;No Qualification;5,200 to 10,400;No
+1553;Female;25;Single;GCSE/O Level;Under 2,600;Yes
+1554;Male;50;Separated;Higher/Sub Degree;20,800 to 28,600;No
+1555;Male;24;Single;Higher/Sub Degree;28,600 to 36,400;Yes
+1556;Male;35;Single;Higher/Sub Degree;28,600 to 36,400;No
+1557;Female;52;Married;No Qualification;10,400 to 15,600;No
+1558;Female;42;Married;Degree;10,400 to 15,600;No
+1559;Male;44;Separated;GCSE/O Level;15,600 to 20,800;No
+1560;Male;67;Widowed;No Qualification;5,200 to 10,400;Yes
+1561;Female;69;Widowed;No Qualification;2,600 to 5,200;No
+1562;Female;91;Single;No Qualification;2,600 to 5,200;No
+1563;Male;61;Divorced;No Qualification;2,600 to 5,200;No
+1564;Female;50;Single;Degree;20,800 to 28,600;No
+1565;Male;37;Single;Higher/Sub Degree;20,800 to 28,600;No
+1566;Female;35;Single;Higher/Sub Degree;15,600 to 20,800;Yes
+1567;Male;24;Single;Higher/Sub Degree;10,400 to 15,600;Yes
+1568;Female;39;Single;No Qualification;5,200 to 10,400;No
+1569;Female;79;Divorced;No Qualification;2,600 to 5,200;No
+1570;Male;40;Married;Degree;Above 36,400;No
+1571;Male;60;Married;Degree;Above 36,400;No
+1572;Male;42;Married;No Qualification;20,800 to 28,600;No
+1573;Male;64;Widowed;Other/Sub Degree;5,200 to 10,400;No
+1574;Female;55;Married;GCSE/O Level;15,600 to 20,800;Yes
+1575;Male;54;Married;Other/Sub Degree;10,400 to 15,600;No
+1576;Female;61;Married;Higher/Sub Degree;10,400 to 15,600;No
+1577;Female;62;Divorced;Higher/Sub Degree;5,200 to 10,400;No
+1578;Female;59;Divorced;Degree;Unknown;No
+1579;Female;79;Widowed;GCSE/CSE;Refused;No
+1580;Female;37;Married;Degree;10,400 to 15,600;No
+1581;Female;55;Married;Other/Sub Degree;2,600 to 5,200;Yes
+1582;Female;88;Widowed;Higher/Sub Degree;28,600 to 36,400;No
+1583;Female;39;Divorced;Degree;15,600 to 20,800;No
+1584;Male;34;Single;Degree;Above 36,400;No
+1585;Male;42;Married;Degree;28,600 to 36,400;No
+1586;Female;45;Married;Degree;2,600 to 5,200;No
+1587;Male;59;Married;ONC/BTEC;Above 36,400;No
+1588;Male;58;Married;GCSE/O Level;10,400 to 15,600;Yes
+1589;Male;74;Widowed;Higher/Sub Degree;5,200 to 10,400;No
+1590;Male;45;Married;GCSE/O Level;20,800 to 28,600;No
+1591;Male;64;Married;No Qualification;10,400 to 15,600;No
+1592;Male;53;Single;Higher/Sub Degree;15,600 to 20,800;No
+1593;Male;40;Married;GCSE/O Level;15,600 to 20,800;No
+1594;Male;30;Married;ONC/BTEC;15,600 to 20,800;Yes
+1595;Male;70;Married;No Qualification;10,400 to 15,600;No
+1596;Female;28;Separated;ONC/BTEC;5,200 to 10,400;No
+1597;Female;78;Widowed;No Qualification;2,600 to 5,200;No
+1598;Male;41;Married;A Levels;20,800 to 28,600;Yes
+1599;Female;69;Divorced;No Qualification;5,200 to 10,400;No
+1600;Male;54;Married;GCSE/O Level;20,800 to 28,600;No
+1601;Male;59;Married;ONC/BTEC;15,600 to 20,800;Yes
+1602;Female;23;Single;GCSE/O Level;5,200 to 10,400;Yes
+1603;Male;40;Married;No Qualification;15,600 to 20,800;Yes
+1604;Male;17;Single;GCSE/O Level;5,200 to 10,400;Yes
+1605;Male;54;Single;No Qualification;5,200 to 10,400;No
+1606;Female;49;Divorced;No Qualification;5,200 to 10,400;No
+1607;Male;55;Married;Higher/Sub Degree;5,200 to 10,400;Yes
+1608;Male;51;Widowed;ONC/BTEC;5,200 to 10,400;Yes
+1609;Female;73;Married;No Qualification;Under 2,600;No
+1610;Female;41;Married;No Qualification;2,600 to 5,200;No
+1611;Female;70;Married;GCSE/O Level;20,800 to 28,600;No
+1612;Female;44;Separated;No Qualification;10,400 to 15,600;Yes
+1613;Male;51;Divorced;No Qualification;Under 2,600;No
+1614;Male;68;Married;Degree;28,600 to 36,400;Yes
+1615;Female;75;Separated;No Qualification;2,600 to 5,200;No
+1616;Male;60;Married;No Qualification;5,200 to 10,400;Yes
+1617;Male;56;Married;No Qualification;2,600 to 5,200;No
+1618;Male;64;Widowed;No Qualification;5,200 to 10,400;No
+1619;Female;27;Single;Degree;10,400 to 15,600;No
+1620;Female;73;Widowed;No Qualification;5,200 to 10,400;Yes
+1621;Male;34;Single;GCSE/O Level;15,600 to 20,800;Yes
+1622;Male;47;Married;GCSE/O Level;10,400 to 15,600;Yes
+1623;Male;32;Single;A Levels;10,400 to 15,600;No
+1624;Male;63;Married;No Qualification;15,600 to 20,800;No
+1625;Female;23;Single;Degree;5,200 to 10,400;No
+1626;Female;63;Married;No Qualification;5,200 to 10,400;No
+1627;Female;46;Divorced;A Levels;15,600 to 20,800;No
+1628;Male;48;Single;A Levels;10,400 to 15,600;No
+1629;Male;68;Married;No Qualification;5,200 to 10,400;No
+1630;Male;52;Separated;No Qualification;15,600 to 20,800;Yes
+1631;Female;29;Separated;No Qualification;15,600 to 20,800;Yes
+1632;Female;16;Single;No Qualification;Refused;No
+1633;Male;41;Divorced;A Levels;15,600 to 20,800;No
+1634;Female;48;Widowed;No Qualification;5,200 to 10,400;Yes
+1635;Male;24;Single;A Levels;5,200 to 10,400;No
+1636;Male;72;Widowed;No Qualification;5,200 to 10,400;Yes
+1637;Male;45;Married;GCSE/O Level;15,600 to 20,800;No
+1638;Female;28;Married;Degree;28,600 to 36,400;No
+1639;Male;20;Single;A Levels;5,200 to 10,400;No
+1640;Female;69;Widowed;No Qualification;5,200 to 10,400;No
+1641;Female;70;Married;No Qualification;Under 2,600;No
+1642;Male;50;Married;GCSE/CSE;15,600 to 20,800;Yes
+1643;Male;63;Married;A Levels;5,200 to 10,400;Yes
+1644;Male;44;Married;GCSE/O Level;15,600 to 20,800;No
+1645;Female;83;Widowed;No Qualification;5,200 to 10,400;No
+1646;Female;17;Single;GCSE/CSE;5,200 to 10,400;Yes
+1647;Female;61;Married;Other/Sub Degree;5,200 to 10,400;No
+1648;Female;47;Married;GCSE/O Level;5,200 to 10,400;Yes
+1649;Male;57;Married;Degree;28,600 to 36,400;No
+1650;Female;44;Married;GCSE/O Level;5,200 to 10,400;Yes
+1651;Male;52;Single;GCSE/CSE;15,600 to 20,800;Yes
+1652;Male;82;Married;No Qualification;5,200 to 10,400;No
+1653;Male;63;Married;A Levels;28,600 to 36,400;No
+1654;Female;72;Separated;No Qualification;2,600 to 5,200;No
+1655;Male;39;Married;Higher/Sub Degree;Above 36,400;No
+1656;Male;16;Single;No Qualification;Refused;No
+1657;Female;35;Divorced;Degree;15,600 to 20,800;No
+1658;Female;39;Married;Degree;10,400 to 15,600;No
+1659;Male;56;Separated;No Qualification;Refused;Yes
+1660;Female;31;Single;Other/Sub Degree;5,200 to 10,400;Yes
+1661;Male;61;Married;No Qualification;Under 2,600;No
+1662;Male;23;Separated;GCSE/O Level;Under 2,600;Yes
+1663;Male;34;Single;No Qualification;10,400 to 15,600;Yes
+1664;Male;24;Single;Degree;15,600 to 20,800;No
+1665;Male;82;Single;Other/Sub Degree;5,200 to 10,400;No
+1666;Male;27;Married;A Levels;15,600 to 20,800;No
+1667;Female;62;Divorced;GCSE/CSE;2,600 to 5,200;Yes
+1668;Male;39;Married;Higher/Sub Degree;20,800 to 28,600;No
+1669;Male;44;Separated;No Qualification;2,600 to 5,200;No
+1670;Female;43;Single;No Qualification;10,400 to 15,600;Yes
+1671;Male;31;Single;GCSE/O Level;2,600 to 5,200;Yes
+1672;Male;77;Divorced;Other/Sub Degree;5,200 to 10,400;Yes
+1673;Female;20;Single;GCSE/O Level;5,200 to 10,400;No
+1674;Female;81;Widowed;Other/Sub Degree;5,200 to 10,400;No
+1675;Female;31;Single;GCSE/O Level;15,600 to 20,800;Yes
+1676;Female;78;Married;Other/Sub Degree;2,600 to 5,200;No
+1677;Male;35;Married;A Levels;10,400 to 15,600;No
+1678;Female;67;Widowed;No Qualification;Under 2,600;No
+1679;Male;65;Divorced;Other/Sub Degree;10,400 to 15,600;No
+1680;Male;61;Married;Higher/Sub Degree;10,400 to 15,600;No
+1681;Male;24;Single;No Qualification;Under 2,600;Yes
+1682;Male;53;Single;No Qualification;20,800 to 28,600;No
+1683;Female;63;Married;No Qualification;Refused;No
+1684;Male;35;Married;No Qualification;10,400 to 15,600;Yes
+1685;Male;78;Widowed;No Qualification;Refused;No
+1686;Female;31;Single;Other/Sub Degree;5,200 to 10,400;No
+1687;Male;22;Single;No Qualification;2,600 to 5,200;No
+1688;Female;49;Divorced;Other/Sub Degree;2,600 to 5,200;Yes
+1689;Male;45;Married;Other/Sub Degree;5,200 to 10,400;No
+1690;Female;51;Married;No Qualification;2,600 to 5,200;Yes
+1691;Male;31;Married;Degree;10,400 to 15,600;No
