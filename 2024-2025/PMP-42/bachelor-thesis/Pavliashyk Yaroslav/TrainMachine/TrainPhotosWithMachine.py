@@ -5,14 +5,14 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import ReduceLROnPlateau
 import matplotlib.pyplot as plt
 
-# === Конфігурація ===
+
 IMG_SIZE = (128, 128)
 BATCH_SIZE = 32
 EPOCHS = 10
 #DATASET_PATH = "D:/Programming/Diploma/datasets/combined_dataset/train"
 DATASET_PATH = "D:/Programming/Diploma/NewDatasetDirectory/train_unique_modified"
 
-# === Генератор зображень ===
+
 datagen = ImageDataGenerator(
     validation_split=0.2,
     rescale=1./255,
@@ -43,7 +43,7 @@ val_gen = datagen.flow_from_directory(
     shuffle=False
 )
 
-# === Базова модель ===
+
 def build_base_model():
     model = models.Sequential([
         layers.Input(shape=(*IMG_SIZE, 3)),
@@ -60,7 +60,7 @@ def build_base_model():
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     return model
 
-# === Покращена модель ===
+
 def build_improved_model():
     model = models.Sequential([
         layers.Input(shape=(*IMG_SIZE, 3)),
@@ -86,11 +86,11 @@ def build_improved_model():
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     return model
 
-# === Побудова моделей ===
+
 base_model = build_base_model()
 improved_model = build_improved_model()
 
-# === LR Scheduler тільки для покращеної моделі
+
 lr_scheduler = ReduceLROnPlateau(
     monitor='val_accuracy',
     factor=0.5,
@@ -99,7 +99,7 @@ lr_scheduler = ReduceLROnPlateau(
     verbose=1
 )
 
-# === Навчання
+
 print("🚀 Навчання базової моделі...")
 history_base = base_model.fit(
     train_gen,
@@ -117,12 +117,12 @@ history_improved = improved_model.fit(
     verbose=1
 )
 
-# === Збереження обох моделей ===
+
 base_model.save("base_emotion_model_modified.keras")
 improved_model.save("improved_emotion_model_modified.keras")
 print("💾 Моделі збережено: base_emotion_model_modified.keras, improved_emotion_model_modified.keras")
 
-# === Візуалізація результатів
+
 plt.figure(figsize=(14, 6))
 
 # Accuracy
