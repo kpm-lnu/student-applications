@@ -2,25 +2,19 @@ import os
 import shutil
 from PIL import Image
 
-# Вхідна коренева папка
 ROOT_INPUT = r"D:\Programming\Diploma\datasets\black_white_dataset\images"
-# Вихідна папка
 ROOT_OUTPUT = r"D:\Programming\Diploma\NewDatasetDirectory\train"
-# Мінімальний розмір
 MIN_SIZE = 128
 IMG_EXTENSIONS = ('.jpg', '.jpeg', '.png')
 
-# Мапа для перейменування емоцій
 EMOTION_MAP = {
     "anger": "angry",
     "surprised": "surprise"
-    # інші залишаються без змін
 }
 
-# Лічильники імен
 rename_counters = {}
 
-# Обхід усіх вкладених папок (0, 1, 2, ...)
+
 for folder_name in os.listdir(ROOT_INPUT):
     folder_path = os.path.join(ROOT_INPUT, folder_name)
     if not os.path.isdir(folder_path):
@@ -28,8 +22,8 @@ for folder_name in os.listdir(ROOT_INPUT):
 
     for file in os.listdir(folder_path):
         if file.lower().endswith(IMG_EXTENSIONS):
-            emotion_raw = os.path.splitext(file)[0]       # Наприклад: "Anger"
-            emotion_key = emotion_raw.lower()             # "anger"
+            emotion_raw = os.path.splitext(file)[0]       
+            emotion_key = emotion_raw.lower()            
 
             # Визначаємо папку призначення через мапу
             emotion_folder = EMOTION_MAP.get(emotion_key, emotion_key)
