@@ -9,13 +9,12 @@ SOURCE_DIR = r"D:\Programming\Diploma\NewDatasetDirectory\train"
 DEST_DIR = r"D:\Programming\Diploma\NewDatasetDirectory\train_unique_modified"
 DUPLICATE_DIR = r"D:\Programming\Diploma\NewDatasetDirectory\train_duplicates_modified"
 
-HASH_DISTANCE_THRESHOLD = 1  # Чутливість до схожості (зменшити — суворіше)
+HASH_DISTANCE_THRESHOLD = 1  
 
 copied = 0
 duplicates = 0
 
 def normalize_name(name):
-    # Визначення ключа за іменем: cropped_emotions або color, або просто перші 8 символів
     match1 = re.search(r'cropped_emotions\.(.{6})', name)
     if match1:
         return match1.group(0)
@@ -37,7 +36,6 @@ for root, _, files in os.walk(SOURCE_DIR):
     file_to_hash = {}
     name_groups = defaultdict(list)
 
-    # === 1. Групування по normalized name ===
     for file in files:
         if not file.lower().endswith(('.jpg', '.jpeg', '.png')):
             continue
@@ -56,7 +54,6 @@ for root, _, files in os.walk(SOURCE_DIR):
 
     processed = set()
 
-    # === 2. Усередині кожної групи перевіряємо схожість ===
     for group_files in name_groups.values():
         visual_groups = []
         used = set()
@@ -76,7 +73,6 @@ for root, _, files in os.walk(SOURCE_DIR):
                         used.add(file2)
             visual_groups.append(current_group)
 
-        # === 3. Копіювання: перший залишаємо, решта — в дублікатну папку ===
         for group in visual_groups:
             for i, f in enumerate(group):
                 src_path = os.path.join(root, f)
@@ -89,7 +85,6 @@ for root, _, files in os.walk(SOURCE_DIR):
                     shutil.copy2(src_path, dup_path)
                     duplicates += 1
 
-# === РЕЗУЛЬТАТ ===
 print("\n🎯 Завершено:")
 print(f"✅ Залишено унікальних зображень: {copied}")
 print(f"🚫 Виявлено та переміщено дублікатів: {duplicates}")
