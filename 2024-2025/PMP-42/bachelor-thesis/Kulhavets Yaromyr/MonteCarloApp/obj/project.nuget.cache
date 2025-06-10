@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zH4BkNitka7v9rX6lFBwAwv5pd+G4NUnrxfZ9gaGHHgO4kXeeIWo/2nkZ/fak/RRGckD7s1ruIl3gwEEhYSRQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\MonteCarloApp\\MonteCarloApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\dynamicexpresso.core\\2.19.2\\dynamicexpresso.core.2.19.2.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

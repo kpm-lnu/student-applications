@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Бакалаврська робота</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: Georgia, serif;
+      padding: 30px;
+    }
+
+    .top-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      height: 140px;
+    }
+
+    .info-text {
+      text-align: right;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .main-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+    }
+
+    .form-container {
+      width: 48%;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      flex: 1;
+    }
+
+    input[type="text"] {
+      flex: 1.5;
+      padding: 10px;
+      margin-left: 20px;
+      border-radius: 10px;
+      border: none;
+      color: black;
+    }
+
+    .start-button {
+      margin-top: 10px;
+      padding: 12px 40px;
+      font-size: 18px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .start-button:hover {
+      background-color: #ddd;
+    }
+
+    .output-wrapper {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .output-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .output-container {
+      border: 1px solid #fff;
+      border-radius: 12px;
+      padding: 20px;
+      min-height: 310px;
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-section">
+    <img src="RASTR UKR BLACK_WHITE-01-01.png" alt="Логотип" class="logo">
+    <div class="info-text">
+      Бакалаврська робота<br>
+      студента групи ПМп-42с<br>
+      Кульгавця Яромира Мар’яновича<br>
+      <i>(Кафедра прикладної математики)</i>
+    </div>
+  </div>
+
+  <div class="title">
+    Розпаралелювання обчислень багатовимірних інтегралів методом Монте-Карло
+  </div>
+
+  <div class="main-section">
+    <div class="form-container">
+      <form id="integration-form">
+        <div class="form-group">
+          <label for="function">Введіть інтегровану функцію:</label>
+          <input type="text" id="function" name="function">
+        </div>
+        <div class="form-group">
+          <label for="points">Введіть кількість випадкових точок:</label>
+          <input type="text" id="points" name="points">
+        </div>
+        <div class="form-group">
+          <label for="dimensions">Введіть кількість вимірів:</label>
+          <input type="text" id="dimensions" name="dimensions">
+        </div>
+        <div class="form-group">
+          <label for="lower">Введіть нижню межу інтегрування:</label>
+          <input type="text" id="lower" name="lower">
+        </div>
+        <div class="form-group">
+          <label for="upper">Введіть верхню межу інтегрування:</label>
+          <input type="text" id="upper" name="upper">
+        </div>
+        <button type="submit" class="start-button">ПУСК</button>
+      </form>
+    </div>
+
+    <div class="output-wrapper">
+      <div class="output-title">Результат</div>
+      <div class="output-container" id="output">
+      </div>
+    </div>
+  </div>
+
+ <script>
+  document.getElementById("integration-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const func = document.getElementById("function").value;
+    const points = document.getElementById("points").value
+      .split(",")
+      .map(s => parseInt(s.trim()));
+    const dims = parseInt(document.getElementById("dimensions").value);
+    const lower = parseFloat(document.getElementById("lower").value);
+    const upper = parseFloat(document.getElementById("upper").value);
+
+    const request = {
+      nArray: points,
+      lowerBound: lower,
+      upperBound: upper,
+      dimensions: dims,
+      function: func
+    };
+
+    const output = document.getElementById("output");
+    output.innerHTML = "<em>Обчислення...</em>";
+
+    try {
+      const response = await fetch("/api/integration", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(request)
+      });
+
+      if (!response.ok) throw new Error("Помилка сервера");
+
+      const result = await response.json();
+
+      output.innerHTML = result.map(r => `
+        <div>
+          <p><strong>n:</strong> ${r.n}</p>
+          <p>Наближене значення: <code>${r.i.toFixed(10)}</code></p>
+          <p>Значення похибки: <code>${r.sigma.toFixed(10)}</code></p>
+          <p>Час виконання: <code>${r.timeSeconds.toFixed(4)} сек</code></p>
+        </div><hr>
+      `).join("");
+    } catch (err) {
+      output.innerHTML = `<span style="color: red">Помилка: ${err.message}</span>`;
+    }
+  });
+
+ document.getElementById("cancel-button").addEventListener("click", function () {
+    if (abortController) {
+      abortController.abort();
+    }
+  });
+</script>
+
+
+</body>
+</html>
