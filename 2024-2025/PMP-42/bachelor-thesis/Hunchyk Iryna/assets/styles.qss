@@ -1,0 +1,102 @@
+QMainWindow {
+    background-image: url("assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content;
+    background-attachment: fixed;
+}
+
+QLabel, QLineEdit, QTextEdit, QPushButton {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+QPushButton {
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #a29bfe;
+    transform: scale(1.02);
+}
+
+QPushButton:pressed {
+    background-color: #574b90;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #f9f9f9;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+QDialog {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+QMessageBox QLabel {
+    font-size: 14px;
+}
+
+QPushButton.calc-btn {
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+QPushButton.calc-btn:hover {
+    background-color: #a29bfe;
+}
+
+QPushButton.calc-btn:pressed {
+    background-color: #574b90;
+}
+
+QLineEdit.calc-display {
+    font-size: 22px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+}
+
+#calc-display {
+    font-size: 20px;
+    padding: 8px;
+    border: 2px solid #666;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+#calc-btn {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 4px;
+}
+
+#calc-btn:hover {
+    background-color: #a29bfe;
+}
+
