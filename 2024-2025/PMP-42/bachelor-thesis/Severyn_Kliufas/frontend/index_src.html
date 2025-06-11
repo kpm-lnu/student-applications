@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP32 Web Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(145deg, #000, #111);
+      color: #ccc;
+      min-height: 100vh;
+    }
+    h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .content {
+      text-align: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #222;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.8);
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 40rem;
+      margin: 0 auto;
+      position: relative;
+    }
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4fc3f7;
+      margin-bottom: 1rem;
+    }
+    #camera-feed {
+      width: 100%;
+      height: 480px;
+      width: 480px;
+      object-fit: cover;
+      display: block;
+    }
+    #overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 480px;
+      width: 480px;
+      pointer-events: auto;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #4fc3f7;
+      border: none;
+      border-radius: 0.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #039be5;
+    }
+  </style>
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div class="content">
+    <h2>ESP32 Web Server</h2>
+    <div class="card">
+      <p class="card-title">Camera Stream</p>
+      <div style="position: relative;">
+        <img id="camera-feed" src="">
+        <canvas id="overlay" width="480" height="480"></canvas>
+      </div>
+      <button id="toggle-rect-mode">Select Rectangle</button>
+    </div>
+  </div>
+</body>
+<script>
+  let intervalId = null;
+  let isRectMode = false;
+  let startX, startY, endX, endY;
+  const canvas = document.getElementById('overlay');
+  const ctx = canvas.getContext('2d');
+
+  function updateImage() {
+    fetch('/camera')
+      .then(response => {
+        const sunData = JSON.parse(response.headers.get('sun-coords'));
+        return response.blob().then(blob => {
+          const img = document.getElementById('camera-feed');
+          img.src = URL.createObjectURL(blob);
+          console.log('Sun positions:', sunData);
+          drawSunPositions(sunData);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+  }
+
+  function drawSunPositions(sunData) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'red';
+    sunData.coords.forEach(coord => {
+      ctx.beginPath();
+      ctx.arc(coord.x * 5, coord.y * 5, 3, 0, 2 * Math.PI);
+      ctx.fill();
+    });
+    ctx.fillStyle = 'purple';
+    ctx.beginPath();
+    ctx.arc(sunData.center.x * 5, sunData.center.y * 5, 5, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+
+  function startImageUpdate() {
+    if (!intervalId) {
+      intervalId = setInterval(updateImage, 2000);
+    }
+  }
+
+  function stopImageUpdate() {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+
+  function drawRectangle(x1, y1, x2, y2) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = 'yellow';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.rect(x1, y1, x2 - x1, y2 - y1);
+    ctx.stroke();
+  }
+
+  function sendRectangleCoords(topLeftX, topLeftY, width, height) {
+    const data = {
+      topLeftX: Math.round(topLeftX),
+      topLeftY: Math.round(topLeftY),
+      width: Math.round(width),
+      height: Math.round(height)
+    };
+    fetch('/set-rect', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.text())
+    .then(text => console.log('Server response:', text))
+    .catch(error => console.error('Error sending coords:', error));
+  }
+
+  canvas.addEventListener('mousedown', (e) => {
+    if (!isRectMode) return;
+    
+    const rect = canvas.getBoundingClientRect();
+    startX = e.clientX - rect.left;
+    startY = e.clientY - rect.top;
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (!isRectMode || startX === undefined) return;
+    const rect = canvas.getBoundingClientRect();
+    endX = e.clientX - rect.left;
+    endY = e.clientY - rect.top;
+    drawRectangle(startX, startY, endX, endY);
+  });
+
+  canvas.addEventListener('mouseup', (e) => {
+    if (!isRectMode || startX === undefined) return;
+    const rect = canvas.getBoundingClientRect();
+    endX = e.clientX - rect.left;
+    endY = e.clientY - rect.top;
+
+    const topLeftX = Math.min(startX, endX) / 5;
+    const topLeftY = Math.min(startY, endY) / 5;
+    const bottomRightX = Math.max(startX, endX) / 5;
+    const bottomRightY = Math.max(startY, endY) / 5;
+    const width = bottomRightX - topLeftX;
+    const height = bottomRightY - topLeftY;
+
+    sendRectangleCoords(topLeftX, topLeftY, width, height);
+
+    isRectMode = false;
+    document.getElementById('toggle-rect-mode').textContent = 'Select Rectangle';
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    startImageUpdate();
+    startX = startY = endX = endY = undefined;
+  });
+
+  document.getElementById('toggle-rect-mode').addEventListener('click', () => {
+    if (!isRectMode) {
+      isRectMode = true;
+      document.getElementById('toggle-rect-mode').textContent = 'Selecting...';
+      stopImageUpdate();
+      fetch('/pause')
+        .then(response => response.text())
+        .then(text => console.log('Server paused:', text))
+        .catch(error => console.error('Error pausing:', error));
+    }
+  });
+
+  startImageUpdate();
+</script>
+</html>
