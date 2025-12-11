@@ -1,0 +1,28 @@
+{
+  "app_title": "cr_solver",
+  "languages": {
+    "en": "Англійська",
+    "uk": "Українська"
+  },
+  "home": {
+    "title": "CRSolver",
+    "new_simulation_button": "Нова Симуляція",
+    "load_simulation_button": "Завантажити Симуляцію",
+    "documentation_button": "Документація",
+    "settings_button": "Налаштування",
+    "exit_button": "Вийти"
+  },
+  "exit_dialog": {
+    "title": "Вихід із Аплікації",
+    "text": "Бажаєте вийти із Аплікації?",
+    "yes_button": "Так",
+    "no_button": "Ні"
+  },
+  "application_settings": {
+    "title": "Налаштування Аплікації",
+    "language_title": "Мова",
+    "color_theme_title": "Кольорова тема",
+    "save_button": "Зберегти",
+    "cancel_button": "Скасувати"
+  }
+}
