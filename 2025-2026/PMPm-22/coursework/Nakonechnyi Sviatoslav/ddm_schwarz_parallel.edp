@@ -1,0 +1,54 @@
+load "PETSc"
+macro dimension()2// EOM
+include "macro_ddm.idp"
+
+// include "problems/problem_1.edp"
+// include "problems/problem_2.edp"
+// include "problems/pbHeart.edp"
+include "problems/pbAnnulus.edp"
+// include "problems/pbTriangle.edp"
+
+real t0 = clock();
+
+Mat A;
+createMat(Mesh, A, P2);
+set(A, sparams = "-pc_type hypre -ksp_type cg -ksp_rtol 1e-6 -ksp_max_it 100 -ksp_monitor -ksp_converged_reason");
+
+fespace SpaceP2(Mesh, P2);
+
+real[int] b(SpaceP2.ndof);
+
+A = poisson(SpaceP2, SpaceP2);
+b = poisson(0, SpaceP2);
+
+SpaceP2 sol;
+SpaceP2 solExact;
+SpaceP2 err;
+
+solExact = uExact;
+sol[] = A^-1 * b;
+err = sol - solExact;
+
+real t1 = clock();
+real localTime = t1 - t0;
+
+real L2error = sqrt(int2d(Mesh)( err^2 ));
+real H1error = sqrt(int2d(Mesh)( dx(err)^2 + dy(err)^2 + err^2 ));
+
+real globalTime;
+mpiReduce(localTime, globalTime, processor(0), mpiMAX);
+
+int[int] orderOut = [1];
+savevtk("./fem_ddm/plots/" + problemName + "_es.vtu", Mesh, solExact, order=orderOut);
+savevtk("./fem_ddm/plots/" + problemName + "_s.vtu", Mesh, sol, order=orderOut);
+savevtk("./fem_ddm/plots/" + problemName + "_e.vtu", Mesh, err, order=orderOut);
+
+if (mpirank == 0) {
+    cout << "Global time of processing: " << globalTime << " seconds" << endl;
+    cout << "Global error ||u_h - u||_L2  = " << L2error << endl;
+    cout << "Global error ||u_h - u||_H1  = " << H1error << endl;
+
+    ofstream fout("fem_ddm/results/" + problemName + "_results.csv", append);
+    fout << mpisize << "," << globalTime << "," << L2error << "," << H1error << endl;
+    cout << "Results appended to results/" + problemName + "_results.csv" << endl;
+}
