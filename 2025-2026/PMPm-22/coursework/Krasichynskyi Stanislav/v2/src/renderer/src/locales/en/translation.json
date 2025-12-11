@@ -1,0 +1,17 @@
+{
+  "app_title": "cr_solver",
+  "languages": {
+    "en": "English",
+    "uk": "Ukrainian"
+  },
+  "home": {
+    "title": "CRSolver",
+    "new_simulation_button": "New Simulation"
+  },
+  "settings": {
+    "title": "Application Test",
+    "language": "Language",
+    "cancel": "Cancel1",
+    "save": "Save"
+  }
+}
