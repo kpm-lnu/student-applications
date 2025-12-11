@@ -1,0 +1,24 @@
+string problemName = "pbHeart";
+
+real a = 2.5;
+
+border Heart(t=0,2*pi){
+    real r = a * (1 - cos(t));
+    x = r*cos(t);
+    y = r*sin(t);
+    label = 1;
+}
+
+mesh Mesh = buildmesh(Heart(400));
+
+func uExact = x^2 - y^2;
+func f = 0;
+
+varf poisson(u,v) =
+    int2d(Mesh)(
+        dx(u)*dx(v) + dy(u)*dy(v)
+    )
+    - int2d(Mesh)(
+        f*v
+    )
+    + on(1, u=uExact);
