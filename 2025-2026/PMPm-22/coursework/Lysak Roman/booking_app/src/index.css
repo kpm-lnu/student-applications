@@ -1,0 +1,23 @@
+:root {
+  --main-bg-color: #141B4D;
+  --main-white-text-color: #fff;
+  --main-black-text-color: #000;
+  --accent-color: #0f1536;
+  --font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--main-black-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: var(--main-bg-color);
+  color: var(--main-white-text-color);
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
