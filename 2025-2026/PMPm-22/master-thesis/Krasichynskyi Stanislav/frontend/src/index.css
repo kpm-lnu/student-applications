@@ -1,0 +1,248 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f8fafc;
+  background: #020617;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.16), transparent 30%),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.14), transparent 25%),
+    linear-gradient(135deg, #020617 0%, #071426 45%, #0a1b2f 100%);
+  color: #f8fafc;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.88);
+  color: #f8fafc;
+  outline: none;
+}
+
+input:focus {
+  border-color: rgba(96, 165, 250, 0.9);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+}
+
+button {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9);
+  color: white;
+  cursor: pointer;
+  transition: 0.18s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.28);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+label span {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.page-container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.hero-block {
+  padding: 24px;
+  margin-bottom: 18px;
+  border-radius: 24px;
+  background: rgba(9, 18, 35, 0.74);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-block h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.hero-block p {
+  margin: 0;
+  color: #cbd5e1;
+  max-width: 900px;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.main-column {
+  display: grid;
+  gap: 18px;
+}
+
+.panel {
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(9, 18, 35, 0.74);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+.sticky-panel {
+  position: sticky;
+  top: 20px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.panel-header-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.muted-text {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  color: #cbd5e1;
+}
+
+.error-box {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(220, 38, 38, 0.14);
+  border: 1px solid rgba(248, 113, 113, 0.32);
+  color: #fecaca;
+}
+
+.checkbox-row {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.checkbox-row input {
+  width: auto;
+  margin: 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.info-label {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.info-value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 1280px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-header-row {
+    flex-direction: column;
+  }
+
+  .app-shell {
+    padding: 14px;
+  }
+
+  .hero-block h1 {
+    font-size: 28px;
+  }
+}
+
+.subsection-title {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  color: #93c5fd;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
