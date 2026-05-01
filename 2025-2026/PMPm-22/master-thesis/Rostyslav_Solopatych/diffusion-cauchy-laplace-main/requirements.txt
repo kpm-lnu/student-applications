@@ -1,0 +1,20 @@
+# Core scientific computing and visualization
+numpy==2.0.2
+matplotlib==3.9.4
+
+# Deep learning and machine learning
+torch==2.8.0
+torchvision==0.23.0
+diffusers==0.35.1
+datasets==4.0.0
+accelerate==1.10.1
+
+# Testing framework
+pytest==8.4.1
+
+# Optional dependencies for better performance and compatibility
+# Uncomment if needed:
+# accelerate>=0.20.0  # For faster model loading with diffusers
+# transformers>=4.21.0  # Often used with diffusers for some models
+# pillow>=8.0.0  # For image processing (usually comes with torchvision)
+# scipy>=1.7.0  # For additional scientific computing functions
