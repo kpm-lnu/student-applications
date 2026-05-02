@@ -1,0 +1,88 @@
+load "PETSc"
+macro dimension()2// EOM
+include "macro_ddm.idp"
+
+string problemName = "pbDiffusionPipe";
+
+// --- ПАРАМЕТРИ ---
+real nu = 0.01;   // коефіцієнт дифузії
+real bx = 1.0;    // швидкість потоку по x
+real by = 0.0;    // швидкість потоку по y
+real pipeHeight = 0.1; // висота труби як параметр
+
+// Концентрація спадає від центру труби до країв
+func uPipe = exp(-((y - 0.5)^2) / (pipeHeight^2));
+
+// --- ГЕОМЕТРІЯ ---
+border Bottom(t=0,4){ x=t;   y=0;   label=1; }
+border Right (t=0,1){ x=4;   y=t;   label=2; }
+border Top   (t=4,0){ x=t;   y=1;   label=3; }
+border Left  (t=1,0){ x=0;   y=t;   label=4; }
+
+border Pipe(t=0,2*pi){
+    x = 0.5 + 0.1*cos(t);
+    y = 0.5 + 0.1*sin(t);
+    label = 5;
+}
+
+mesh Mesh = buildmesh(
+    Bottom(400) + Right(100) + Top(400) + Left(100)
+  + Pipe(-80)
+);
+
+cout << "Number of mesh vertices = " << Mesh.nv << endl;
+
+fespace SpaceP2(Mesh, P2);
+
+// --- ВАРІАЦІЙНА ФОРМА ---
+// SUPG-стабілізація: delta = h/(2*|b|)
+real bNorm = sqrt(bx^2 + by^2);
+real hMesh = 4.0 / 200.0;  // характерний розмір елемента
+real delta;
+if (bNorm > 1e-10)
+    delta = hMesh / (2.0 * bNorm);
+else
+    delta = 0.0;
+
+varf varA(u, v) =
+    int2d(Mesh)(
+        // дифузія
+        nu * (dx(u)*dx(v) + dy(u)*dy(v))
+        // конвекція
+      + (bx*dx(u) + by*dy(u)) * v
+        // SUPG стабілізація
+      + delta * (bx*dx(u) + by*dy(u)) * (bx*dx(v) + by*dy(v))
+    )
+    // Діріхле: вхід зліва — нульова концентрація
+    + on(4, u=0)
+    // Діріхле: труба — одинична концентрація
+    + on(5, u=uPipe);
+
+real t0 = clock();
+
+Mat A;
+createMat(Mesh, A, P2);
+
+// GMRES для несиметричної задачі + ILU або HYPRE як передобумовлювач
+set(A, sparams = "-ksp_type gmres -ksp_gmres_restart 100 -pc_type hypre -pc_hypre_type boomeramg -ksp_rtol 1e-8 -ksp_max_it 500 -ksp_monitor -ksp_converged_reason");
+
+real[int] b(SpaceP2.ndof);
+
+A  = varA(SpaceP2, SpaceP2);
+b  = varA(0, SpaceP2);
+
+SpaceP2 sol;
+sol[] = A^-1 * b;
+
+real t1 = clock();
+real localTime = t1 - t0;
+
+real globalTime;
+mpiReduce(localTime, globalTime, processor(0), mpiMAX);
+
+int[int] orderOut = [1];
+savevtk("./fem_ddm/plots/" + problemName + "_sol.vtu", Mesh, sol, order=orderOut);
+
+if (mpirank == 0) {
+    cout << "Global time: " << globalTime << " s" << endl;
+}

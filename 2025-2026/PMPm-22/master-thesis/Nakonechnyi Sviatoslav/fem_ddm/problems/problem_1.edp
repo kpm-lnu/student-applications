@@ -1,0 +1,17 @@
+string problemName = "pb1";
+
+int u00 = 0;
+
+mesh Mesh = square(500, 500);
+
+func f = -2;
+func uExact = 0.5 * f * x * (1 - x);
+
+varf poisson(u, v)= 
+    int2d(Mesh)(
+        dx(u)*dx(v) + dy(u)*dy(v)
+    )
+    + int2d(Mesh)(
+        f * v
+    )
+    + on(2, 4, u = u00);
