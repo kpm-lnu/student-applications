@@ -1,0 +1,34 @@
+string problemName = "pbAnnulusNeumann";
+
+border Outer(t=0, 2*pi){
+    x = cos(t);
+    y = sin(t);
+    label = 1;
+}
+
+border Inner(t=0, 2*pi){
+    x = 0.3*cos(t);
+    y = 0.3*sin(t);
+    label = 2;
+}
+
+mesh Mesh = buildmesh(Outer(2000) + Inner(-500));
+
+// Точний розв'язок: u = ln(r) = ln(sqrt(x^2+y^2))
+func uExact = -log(sqrt(x^2 + y^2));
+
+// f = 0, бо ln(r) є гармонічною функцією
+func f = 0;
+
+// Нормальна похідна на внутрішній границі r=0.3:
+// ∂u/∂n = -1/r = -1/0.3  (мінус бо нормаль дивиться всередину)
+// func gNeumann = -1.0 / 0.3;
+
+varf poisson(u, v) =
+    int2d(Mesh)(
+        dx(u)*dx(v) + dy(u)*dy(v)
+    )
+    // Член Неймана: - ∫ (∂u/∂n) * v ds
+    - int1d(Mesh, 2)(gNeumann * v)
+    // Діріхле тільки на зовнішній границі
+    + on(1, u = uExact);

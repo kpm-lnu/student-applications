@@ -1,0 +1,40 @@
+string problemName = "pbMultiMaterial";
+
+// --- ПАРАМЕТРИ ---
+real k1 = 1.0;   // основний матеріал
+real k2 = 10.0;  // включення (спробуй 0.1 теж!)
+
+func f = 0;
+
+// --- ГЕОМЕТРІЯ ---
+
+border Bottom(t=0,1){ x=t; y=0; label=1; }
+border Right(t=0,1){ x=1; y=t; label=2; }
+border Top(t=1,0){ x=t; y=1; label=3; }
+border Left(t=1,0){ x=0; y=t; label=4; }
+
+// круг — інший матеріал
+border Inclusion(t=0,2*pi){
+    x = 0.5 + 0.2*cos(t);
+    y = 0.5 + 0.2*sin(t);
+    label = 5;
+}
+
+mesh Mesh = buildmesh(
+    Bottom(100) + Right(100) + Top(100) + Left(100)
+  + Inclusion(-200)
+);
+
+// --- ІНДИКАТОР МАТЕРІАЛУ ---
+func k =
+    ( (x-0.5)^2 + (y-0.5)^2 < 0.2^2 ) ? k2 : k1;
+
+// --- РІВНЯННЯ ---
+varf poisson(u,v) =
+    int2d(Mesh)(
+        k*(dx(u)*dx(v) + dy(u)*dy(v))
+    )
+    // граничні умови
+    + on(4, u=1) // ліва — гаряча
+    + on(2, u=0) // права — холодна
+;

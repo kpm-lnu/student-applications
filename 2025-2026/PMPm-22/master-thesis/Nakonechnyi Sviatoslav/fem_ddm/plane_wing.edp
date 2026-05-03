@@ -1,0 +1,86 @@
+load "PETSc"
+macro dimension()2// EOM
+include "macro_ddm.idp"
+
+string problemName = "pbAirfoil";
+
+// ── параметри задачі ──────────────────────────────────────────
+real U0  = 1.0;
+real AoA = 8.0*pi/180;
+real Rext= 8.0;
+int  Nfar= 120;
+int  Nfoil = 300;
+
+// ── профіль NACA 0012 ─────────────────────────────────────────
+func real nacaHalf(real xx){
+    real a0= 0.2969, a1=-0.1260, a2=-0.3516, a3= 0.2843, a4=-0.1015;
+    real xc= max(0.0, min(1.0, xx));
+    return 0.6*(a0*sqrt(xc) + a1*xc + a2*xc^2 + a3*xc^3 + a4*xc^4);
+}
+
+// ── межі ─────────────────────────────────────────────────────
+border farField(t=0, 2*pi){ x=Rext*cos(t); y=Rext*sin(t); label=1; }
+
+// ЗМІНА 1: один замкнений контур замість двох дуг
+border foil(t=0, 2*pi){
+    real xc = 0.5*(1.0 - cos(t));
+    real yc = (t <= pi) ? nacaHalf(xc) : -nacaHalf(xc);
+    x = xc*cos(AoA) - yc*sin(AoA);
+    y = xc*sin(AoA) + yc*cos(AoA);
+    label=2;
+}
+
+mesh Mesh = buildmesh(farField(Nfar) + foil(-Nfoil));
+
+func phiFar = U0*(x*cos(AoA) + y*sin(AoA));
+
+// ЗМІНА 2: прибрали on(2, u=0) → тепер Неймана ∂φ/∂n=0 на крилі
+varf laplace(u, v) =
+    int2d(Mesh)( dx(u)*dx(v) + dy(u)*dy(v) )
+    + on(1, u = phiFar);
+
+real t0 = clock();
+
+Mat A;
+createMat(Mesh, A, P2);
+set(A, sparams = "-pc_type hypre -ksp_type cg -ksp_rtol 1e-8"
+               + " -ksp_max_it 2000 -ksp_monitor -ksp_converged_reason");
+
+fespace Vh(Mesh, P2);
+real[int] b(Vh.ndof);
+
+A = laplace(Vh, Vh);
+b = laplace(0, Vh);
+
+Vh phi;
+phi[] = A^-1 * b;
+
+// ── постобробка ───────────────────────────────────────────────
+Vh ux, uy, Cp, speed;
+ux    = dx(phi);
+uy    = dy(phi);
+speed = sqrt(ux^2 + uy^2);
+Cp    = 1.0 - (speed/U0)^2;
+
+real t1 = clock();
+real localTime = t1 - t0;
+real globalTime;
+mpiReduce(localTime, globalTime, processor(0), mpiMAX);
+
+int[int] orderOut = [1];
+
+savevtk("./fem_ddm/plots/" + problemName + "_velocity.vtu",
+        Mesh, [ux, uy, 0], order=orderOut);
+savevtk("./fem_ddm/plots/" + problemName + "_phi.vtu",   Mesh, phi,   order=orderOut);
+savevtk("./fem_ddm/plots/" + problemName + "_Cp.vtu",    Mesh, Cp,    order=orderOut);
+savevtk("./fem_ddm/plots/" + problemName + "_speed.vtu", Mesh, speed, order=orderOut);
+
+if(mpirank == 0){
+    real CL = int1d(Mesh, 2)( Cp * N.y );
+
+    cout << "Time         : " << globalTime << " s" << endl;
+    cout << "Lift coeff CL: " << CL                 << endl;
+
+    ofstream fout("fem_ddm/results/" + problemName + "_results.csv", append);
+    fout << mpisize << "," << globalTime << "," << CL << endl;
+}

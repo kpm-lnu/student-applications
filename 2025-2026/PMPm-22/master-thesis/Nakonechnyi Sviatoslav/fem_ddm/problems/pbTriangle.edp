@@ -1,0 +1,14 @@
+string problemName = "pbTriangle";
+
+border AB(t=0,1){x=t; y=0; label=1;}
+border BC(t=0,1){x=1-t; y=t; label=2;}
+border CA(t=0,1){x=0; y=1-t; label=3;}
+
+mesh Mesh = buildmesh(AB(780) + BC(780) + CA(780));
+
+func uExact = cos(pi*x/2)*sin(pi*y);
+func f = ( (pi^2/4) + pi^2 )*cos(pi*x/2)*sin(pi*y);
+
+varf poisson(u,v) =
+    int2d(Mesh)( dx(u)*dx(v) + dy(u)*dy(v) )
+    + on(1,2,3, u=uExact);
