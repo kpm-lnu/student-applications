@@ -1,0 +1,10 @@
+# ByteTrack config optimized for static traffic sign detection
+# Key: minimal Kalman drift, aligned thresholds with predict(), tight association
+
+tracker_type: bytetrack
+track_high_thresh: 0.25  # Match predict()'s default conf threshold
+track_low_thresh: 0.1    # Second-stage recovery for partial occlusions
+new_track_thresh: 0.25   # Don't suppress detections that predict() would keep
+track_buffer: 3          # Traffic signs are static — no need for long re-ID buffer
+match_thresh: 0.8        # Standard IoU threshold, balanced for small objects
+fuse_score: True         # Helps disambiguate clustered signs
