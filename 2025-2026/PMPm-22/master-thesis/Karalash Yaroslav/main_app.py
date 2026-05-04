@@ -205,7 +205,6 @@ class App:
         self.selected_oblast_name = None 
         
         self.input_boxes = self._create_input_boxes()
-        # ЗМІЩЕНО ДОНИЗУ НА Y=420 ЩОБ НЕ НАКЛАДАЛОСЬ
         self.opt_checkbox = Checkbox(20, 420, 20, "Оптимальне керування", self.font_medium)
         self.active_input_box = None
  
@@ -369,17 +368,14 @@ class App:
             self.draw() 
             pygame.display.flip()
             
-            # ФУНКЦІЯ ФОНОВОГО ПОТОКУ
             def optimize_and_simulate():
                 print(f"\\n[App] Фоновий пошук оптимального керування (Інтерфейс не зависатиме)...")
-                # Для швидкого демо в UI встановлено M=8. Для курсової можна повернути M=20-50.
-                u1_opt, u2_opt = optimal_control.get_optimal_controls(self.sim_data, self.initial_conditions, start_day, sim_days, M=8)
+                u1_opt, u2_opt = optimal_control.get_optimal_controls(self.sim_data, self.initial_conditions, start_day, sim_days, M=80)
                 self.sim_results, self.t_eval = optimal_control.run_simulation_with_controls(
                     start_day, sim_days, self.initial_conditions, self.sim_data, simulation_engine.DEFAULT_PARAMS, u1_opt, u2_opt
                 )
                 self.optimization_done = True
             
-            # ЗАПУСК ФОНОВОГО ПОТОКУ
             threading.Thread(target=optimize_and_simulate, daemon=True).start()
         else:
             self.app_state = "SIMULATING"
@@ -504,7 +500,6 @@ class App:
                             self.start_simulation()
 
     def update(self, delta_time_ms):
-        # Перевірка завершення фонового потоку оптимізації
         if self.app_state == "OPTIMIZING" and getattr(self, 'optimization_done', False):
             start_day = self.input_boxes['start_day'].get_value(1)
             self._setup_animation_start(start_day)
