@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --color-primary:     #141B4D;
+  --color-secondary-1: #151F6D;
+  --color-secondary-2: #1E22AA;
+  --color-secondary-3: #485CC7;
+  --color-white:       #FFFFFF;
+  --color-bg:          #F4F6FB;
+  --color-text:        #141B4D;
+
+  /* Typography */
+  --font-brand:    'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif;
+  --font-document: 'Times New Roman', 'Georgia', serif;
+
+  /* Spacing & Shape */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(20, 27, 77, 0.12);
+  --shadow-nav:  0 2px 16px rgba(20, 27, 77, 0.10);
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-brand);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── Notification bell nav button ── */
+.notif-bell-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 20px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--font-brand);
+  font-size: 14px;
+  transition: background 0.15s, color 0.15s;
+  text-align: left;
+}
+.notif-bell-btn:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+  color: #fff;
+}
+
+/* ── Toast notifications ── */
+@keyframes toast-in {
+  from { transform: translateX(110%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes toast-out {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(110%); opacity: 0; }
+}
+.toast-entering { animation: toast-in  0.3s ease forwards; }
+.toast-leaving  { animation: toast-out 0.3s ease forwards; }
+
+/* ── Mobile responsive layout ── */
+@media (max-width: 640px) {
+  /* AppLayout: sidebar slides in from left */
+  .app-layout-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh !important;
+    z-index: 200 !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease !important;
+    overflow-y: auto !important;
+    width: 256px !important;
+  }
+  .app-layout-sidebar--open {
+    transform: translateX(0) !important;
+  }
+  /* AppLayout: mobile top bar */
+  .app-layout-mobile-header {
+    display: flex !important;
+  }
+  /* AppLayout: main content area */
+  .app-layout-content {
+    padding: 72px 16px 24px !important;
+  }
+
+  /* AdminLayout: horizontal scrollable nav bar */
+  .admin-layout-root {
+    flex-direction: column !important;
+  }
+  .admin-layout-sidebar {
+    width: 100% !important;
+    flex-direction: row !important;
+    padding: 0 !important;
+    overflow-x: auto !important;
+    flex-shrink: 0 !important;
+  }
+  .admin-layout-sidebar-header {
+    display: none !important;
+  }
+  .admin-layout-nav-item,
+  .admin-layout-nav-item-active {
+    padding: 12px 14px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+  .admin-layout-nav-item-active {
+    border-left: none !important;
+    border-bottom: 3px solid #fff !important;
+  }
+  .admin-layout-back-link {
+    margin-top: 0 !important;
+    padding: 12px 14px !important;
+    flex-shrink: 0 !important;
+  }
+  .admin-layout-content {
+    padding: 16px !important;
+  }
+}

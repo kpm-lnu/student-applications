@@ -1,0 +1,2 @@
+// Replaced by RoomsPage
+export {};
