@@ -321,7 +321,7 @@ class App:
             all_features_data[oblast_name_mapped] = oblast_geo_parts
  
         self._setup_scaling() 
-        print("Масштабування завершено. Генерую кеш цяток (це може зайняти час)...")
+        print("Масштабування завершено, генерую кеш цяток (це може зайняти час)...")
         
         sorted_oblast_names = sorted(all_features_data.keys(), key=lambda x: "м." in x)
 
