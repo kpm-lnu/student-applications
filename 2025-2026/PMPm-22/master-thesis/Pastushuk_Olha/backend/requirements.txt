@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+torch --index-url https://download.pytorch.org/whl/cpu
+librosa
+numpy<2.0.0
+webrtcvad-wheels
+python-multipart
