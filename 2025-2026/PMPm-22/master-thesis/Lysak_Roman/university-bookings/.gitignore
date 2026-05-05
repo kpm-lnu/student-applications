@@ -1,0 +1,38 @@
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/dist/
+
+# ========================
+# .NET / Backend
+# ========================
+backend/bin/
+backend/obj/
+backend/**/*.user
+backend/**/*.suo
+*.user
+*.suo
+.vs/
+backend/appsettings.Development.json
+
+# ========================
+# Playwright / E2E
+# ========================
+frontend/test-results/
+frontend/playwright-report/
+frontend/e2e/screenshots/
+e2e-screenshots/
+
+# ========================
+# General
+# ========================
+.DS_Store
+Thumbs.db
+*.log
