@@ -1,44 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-=============================================================================
-  2D P2 FEM — SH Wave Equation with Fracture Zone Study
-=============================================================================
-  Di Michele et al. (2022) "Fault shape effect on SH waves using FEM"
-  https://doi.org/10.1007/s10950-022-10075-y
-
-  EQUATION (eq. 1):   d²u/dt² - c²(∂²u/∂x² + ∂²u/∂y²) = S(x,y,t)
-
-  P2 BASIS:   Standard Lagrange on triangles (6 nodes per element).
-              Paper uses modified P2 with centroid (eq. 26); standard P2
-              gives O(h³) in L² (Aubin-Nitsche, p+1=3) and is used here.
-
-  ASSEMBLY:   Vectorised; mass via 6-pt Dunavant, stiffness via 3-pt midpoint.
-              c² can be scalar (uniform) or per-element array (fracture zone).
-  LUMPING:    HRZ lumping — row-sum fails for P2 on triangles (vertex rows = 0).
-  TIME:       Leapfrog (eq. 24); Dirichlet u=0 on all boundaries throughout.
-  BCs:        Dirichlet u=0 on all walls; T_FRAC chosen so boundary reflections never reach the fracture.
-
-  FRACTURE MODEL: Weak zone — reduced c² inside fault (c_frac = xi * c_bg).
-                  xi = V_FZ/V_O is the velocity ratio from the paper.
-
-  ──────────────────────────────────────────────────────────────────────────
-  PART 1  Static:      -c^2 * laplacian(u) = f,  verify O(h^3) L2 convergence
-  PART 2  Dynamic:     S = sin(πx)sin(πy)sin(ωt)  [standing-wave validation]
-  PART 3  Angle study: Vary θ ∈ {30°, 45°, 60°, 90°}  (paper uses 90°)
-  PART 4  Sensitivity: Vary fault thickness h_f and velocity ratio ξ
-  ──────────────────────────────────────────────────────────────────────────
-  AUDIT FIXES applied vs original code:
-    ✓ L2 error: proper 6-point Gauss integration (was: np.mean — RMS only)
-    ✓ assembly: c2 accepts scalar OR per-element (ne,) array (was: scalar only)
-    ✓ fracture: weak-zone model with xi² velocity reduction
-    ✓ angles:   30°, 45°, 60°, 90° studied (was: none)
-    ✓ thickness variation added (was: none)
-    ✓ velocity ratio variation added (was: none)
-    ✓ Ricker plane-wave source from left (was: standing-mode only)
-    ✓ comparison figures and text table added (was: none)
-=============================================================================
-"""
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 0.  AUTO-INSTALL
