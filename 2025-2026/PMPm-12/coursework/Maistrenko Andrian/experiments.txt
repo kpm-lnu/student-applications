@@ -1,0 +1,421 @@
+epochs = 200
+
+256-128-64
+dropout 0.2
+0.001
+
+Завантаження датасету 'fem_stress_dataset_method_b.csv'...
+Загальна кількість зібраних вузлів: 2700
+Кількість вхідних ознак (X): 36
+Кількість цільових змінних (Y): 4
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.3678 | Test Loss: 0.0767
+Епоха [20/200] | Train Loss: 0.0382 | Test Loss: 0.0315
+Епоха [40/200] | Train Loss: 0.0351 | Test Loss: 0.0287
+Епоха [60/200] | Train Loss: 0.0319 | Test Loss: 0.0299
+Епоха [80/200] | Train Loss: 0.0308 | Test Loss: 0.0297
+Епоха [100/200] | Train Loss: 0.0282 | Test Loss: 0.0312
+Епоха [120/200] | Train Loss: 0.0265 | Test Loss: 0.0302
+Епоха [140/200] | Train Loss: 0.0252 | Test Loss: 0.0305
+Епоха [160/200] | Train Loss: 0.0242 | Test Loss: 0.0320
+Епоха [180/200] | Train Loss: 0.0234 | Test Loss: 0.0337
+Епоха [200/200] | Train Loss: 0.0217 | Test Loss: 0.0355
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 9.51e-02
+  TARGET_szz: 2.43e-02
+  TARGET_srz: 1.59e-13
+  TARGET_stt: 1.68e-02
+
+256-128-64
+dropout 0.1
+0.001
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.3405 | Test Loss: 0.0826
+Епоха [20/200] | Train Loss: 0.0356 | Test Loss: 0.0296
+Епоха [40/200] | Train Loss: 0.0322 | Test Loss: 0.0293
+Епоха [60/200] | Train Loss: 0.0305 | Test Loss: 0.0312
+Епоха [80/200] | Train Loss: 0.0287 | Test Loss: 0.0311
+Епоха [100/200] | Train Loss: 0.0264 | Test Loss: 0.0309
+Епоха [120/200] | Train Loss: 0.0254 | Test Loss: 0.0312
+Епоха [140/200] | Train Loss: 0.0251 | Test Loss: 0.0318
+Епоха [160/200] | Train Loss: 0.0242 | Test Loss: 0.0335
+Епоха [180/200] | Train Loss: 0.0230 | Test Loss: 0.0329
+Епоха [200/200] | Train Loss: 0.0225 | Test Loss: 0.0351
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 7.81e-02
+  TARGET_szz: 1.87e-02
+  TARGET_srz: 1.64e-13
+  TARGET_stt: 1.91e-02
+
+256-128-64
+dropout 0.1
+0.0005
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.5253 | Test Loss: 0.1334
+Епоха [20/200] | Train Loss: 0.0372 | Test Loss: 0.0301
+Епоха [40/200] | Train Loss: 0.0341 | Test Loss: 0.0290
+Епоха [60/200] | Train Loss: 0.0316 | Test Loss: 0.0288
+Епоха [80/200] | Train Loss: 0.0299 | Test Loss: 0.0280
+Епоха [100/200] | Train Loss: 0.0282 | Test Loss: 0.0298
+Епоха [120/200] | Train Loss: 0.0265 | Test Loss: 0.0299
+Епоха [140/200] | Train Loss: 0.0267 | Test Loss: 0.0306
+Епоха [160/200] | Train Loss: 0.0243 | Test Loss: 0.0302
+Епоха [180/200] | Train Loss: 0.0229 | Test Loss: 0.0312
+Епоха [200/200] | Train Loss: 0.0222 | Test Loss: 0.0304
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 3.69e-02
+  TARGET_szz: 9.25e-03
+  TARGET_srz: 1.59e-13
+  TARGET_stt: 8.64e-03
+
+128-64-32
+dropout 0.1
+0.001
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.5766 | Test Loss: 0.1416
+Епоха [20/200] | Train Loss: 0.0440 | Test Loss: 0.0314
+Епоха [40/200] | Train Loss: 0.0393 | Test Loss: 0.0324
+Епоха [60/200] | Train Loss: 0.0348 | Test Loss: 0.0282
+Епоха [80/200] | Train Loss: 0.0323 | Test Loss: 0.0292
+Епоха [100/200] | Train Loss: 0.0311 | Test Loss: 0.0308
+Епоха [120/200] | Train Loss: 0.0303 | Test Loss: 0.0336
+Епоха [140/200] | Train Loss: 0.0292 | Test Loss: 0.0327
+Епоха [160/200] | Train Loss: 0.0283 | Test Loss: 0.0308
+Епоха [180/200] | Train Loss: 0.0273 | Test Loss: 0.0328
+Епоха [200/200] | Train Loss: 0.0265 | Test Loss: 0.0289
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 4.89e-02
+  TARGET_szz: 1.23e-02
+  TARGET_srz: 1.55e-13
+  TARGET_stt: 1.13e-02
+
+128-64-32
+dropout 0.2
+0.001
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.5679 | Test Loss: 0.1724
+Епоха [20/200] | Train Loss: 0.0486 | Test Loss: 0.0319
+Епоха [40/200] | Train Loss: 0.0404 | Test Loss: 0.0322
+Епоха [60/200] | Train Loss: 0.0366 | Test Loss: 0.0314
+Епоха [80/200] | Train Loss: 0.0337 | Test Loss: 0.0321
+Епоха [100/200] | Train Loss: 0.0312 | Test Loss: 0.0318
+Епоха [120/200] | Train Loss: 0.0296 | Test Loss: 0.0315
+Епоха [140/200] | Train Loss: 0.0293 | Test Loss: 0.0401
+Епоха [160/200] | Train Loss: 0.0295 | Test Loss: 0.0357
+Епоха [180/200] | Train Loss: 0.0285 | Test Loss: 0.0374
+Епоха [200/200] | Train Loss: 0.0262 | Test Loss: 0.0363
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 1.13e-01
+  TARGET_szz: 2.82e-02
+  TARGET_srz: 1.56e-13
+  TARGET_stt: 2.30e-02
+
+128-64-32
+dropout 0.2
+0.0005
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.7865 | Test Loss: 0.3887
+Епоха [20/200] | Train Loss: 0.0527 | Test Loss: 0.0330
+Епоха [40/200] | Train Loss: 0.0452 | Test Loss: 0.0297
+Епоха [60/200] | Train Loss: 0.0410 | Test Loss: 0.0294
+Епоха [80/200] | Train Loss: 0.0412 | Test Loss: 0.0329
+Епоха [100/200] | Train Loss: 0.0373 | Test Loss: 0.0288
+Епоха [120/200] | Train Loss: 0.0358 | Test Loss: 0.0280
+Епоха [140/200] | Train Loss: 0.0331 | Test Loss: 0.0273
+Епоха [160/200] | Train Loss: 0.0331 | Test Loss: 0.0288
+Епоха [180/200] | Train Loss: 0.0326 | Test Loss: 0.0297
+Епоха [200/200] | Train Loss: 0.0311 | Test Loss: 0.0285
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 5.34e-02
+  TARGET_szz: 1.30e-02
+  TARGET_srz: 1.51e-13
+  TARGET_stt: 1.55e-02
+
+128-64-32
+dropout 0.1
+0.0005
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.7869 | Test Loss: 0.4166
+Епоха [20/200] | Train Loss: 0.0471 | Test Loss: 0.0323
+Епоха [40/200] | Train Loss: 0.0414 | Test Loss: 0.0296
+Епоха [60/200] | Train Loss: 0.0388 | Test Loss: 0.0279
+Епоха [80/200] | Train Loss: 0.0366 | Test Loss: 0.0287
+Епоха [100/200] | Train Loss: 0.0354 | Test Loss: 0.0279
+Епоха [120/200] | Train Loss: 0.0342 | Test Loss: 0.0280
+Епоха [140/200] | Train Loss: 0.0326 | Test Loss: 0.0282
+Епоха [160/200] | Train Loss: 0.0308 | Test Loss: 0.0283
+Епоха [180/200] | Train Loss: 0.0300 | Test Loss: 0.0292
+Епоха [200/200] | Train Loss: 0.0291 | Test Loss: 0.0288
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 3.29e-02
+  TARGET_szz: 8.57e-03
+  TARGET_srz: 1.56e-13
+  TARGET_stt: 1.16e-02
+
+256-256
+dropout 0.2
+0.001
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.2542 | Test Loss: 0.0555
+Епоха [20/200] | Train Loss: 0.0356 | Test Loss: 0.0287
+Епоха [40/200] | Train Loss: 0.0321 | Test Loss: 0.0308
+Епоха [60/200] | Train Loss: 0.0334 | Test Loss: 0.0285
+Епоха [80/200] | Train Loss: 0.0288 | Test Loss: 0.0300
+Епоха [100/200] | Train Loss: 0.0263 | Test Loss: 0.0283
+Епоха [120/200] | Train Loss: 0.0255 | Test Loss: 0.0300
+Епоха [140/200] | Train Loss: 0.0235 | Test Loss: 0.0310
+Епоха [160/200] | Train Loss: 0.0224 | Test Loss: 0.0310
+Епоха [180/200] | Train Loss: 0.0208 | Test Loss: 0.0314
+Епоха [200/200] | Train Loss: 0.0205 | Test Loss: 0.0316
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 4.21e-02
+  TARGET_szz: 1.06e-02
+  TARGET_srz: 1.63e-13
+  TARGET_stt: 9.88e-03
+
+256-256
+dropout 0.2
+0.0005
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.3890 | Test Loss: 0.0948
+Епоха [20/200] | Train Loss: 0.0363 | Test Loss: 0.0294
+Епоха [40/200] | Train Loss: 0.0353 | Test Loss: 0.0323
+Епоха [60/200] | Train Loss: 0.0311 | Test Loss: 0.0288
+Епоха [80/200] | Train Loss: 0.0289 | Test Loss: 0.0286
+Епоха [100/200] | Train Loss: 0.0264 | Test Loss: 0.0302
+Епоха [120/200] | Train Loss: 0.0255 | Test Loss: 0.0325
+Епоха [140/200] | Train Loss: 0.0231 | Test Loss: 0.0315
+Епоха [160/200] | Train Loss: 0.0217 | Test Loss: 0.0299
+Епоха [180/200] | Train Loss: 0.0213 | Test Loss: 0.0315
+Епоха [200/200] | Train Loss: 0.0198 | Test Loss: 0.0325
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 4.33e-02
+  TARGET_szz: 9.59e-03
+  TARGET_srz: 1.62e-13
+  TARGET_stt: 1.36e-02
+
+256-256
+dropout 0.1
+0.001
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.2402 | Test Loss: 0.0509
+Епоха [20/200] | Train Loss: 0.0340 | Test Loss: 0.0338
+Епоха [40/200] | Train Loss: 0.0295 | Test Loss: 0.0305
+Епоха [60/200] | Train Loss: 0.0281 | Test Loss: 0.0302
+Епоха [80/200] | Train Loss: 0.0269 | Test Loss: 0.0337
+Епоха [100/200] | Train Loss: 0.0252 | Test Loss: 0.0301
+Епоха [120/200] | Train Loss: 0.0223 | Test Loss: 0.0322
+Епоха [140/200] | Train Loss: 0.0219 | Test Loss: 0.0337
+Епоха [160/200] | Train Loss: 0.0192 | Test Loss: 0.0336
+Епоха [180/200] | Train Loss: 0.0186 | Test Loss: 0.0322
+Епоха [200/200] | Train Loss: 0.0181 | Test Loss: 0.0343
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 3.87e-02
+  TARGET_szz: 1.06e-02
+  TARGET_srz: 1.70e-13
+  TARGET_stt: 7.40e-03
+
+256-256
+dropout 0.2 0.1
+0.0005
+
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.3767 | Test Loss: 0.0877
+Епоха [20/200] | Train Loss: 0.0360 | Test Loss: 0.0303
+Епоха [40/200] | Train Loss: 0.0308 | Test Loss: 0.0277
+Епоха [60/200] | Train Loss: 0.0289 | Test Loss: 0.0308
+Епоха [80/200] | Train Loss: 0.0269 | Test Loss: 0.0303
+Епоха [100/200] | Train Loss: 0.0255 | Test Loss: 0.0304
+Епоха [120/200] | Train Loss: 0.0225 | Test Loss: 0.0317
+Епоха [140/200] | Train Loss: 0.0217 | Test Loss: 0.0336
+Епоха [160/200] | Train Loss: 0.0200 | Test Loss: 0.0325
+Епоха [180/200] | Train Loss: 0.0191 | Test Loss: 0.0358
+Епоха [200/200] | Train Loss: 0.0178 | Test Loss: 0.0347
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 2.59e-02
+  TARGET_szz: 6.99e-03
+  TARGET_srz: 1.69e-13
+  TARGET_stt: 5.57e-03
+
+256-256
+dropout 0.2 0.1 0.05
+0.0005
+
+512-256-256
+dropout 0.2 0.1 
+0.0005
+self.network = nn.Sequential(
+            nn.Linear(input_size, 512),
+            nn.LeakyReLU(),
+            nn.Dropout(0.2), 
+            nn.Linear(512,256),
+            nn.LeakyReLU(),
+            nn.Dropout(0.1), 
+            nn.Linear(256,256),
+            nn.LeakyReLU(),
+            nn.Linear(256, output_size)
+        )
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.1174 | Test Loss: 0.0329
+Епоха [20/200] | Train Loss: 0.0297 | Test Loss: 0.0275
+Епоха [40/200] | Train Loss: 0.0285 | Test Loss: 0.0278
+Епоха [60/200] | Train Loss: 0.0276 | Test Loss: 0.0269
+Епоха [80/200] | Train Loss: 0.0272 | Test Loss: 0.0280
+Епоха [100/200] | Train Loss: 0.0269 | Test Loss: 0.0267
+Епоха [120/200] | Train Loss: 0.0268 | Test Loss: 0.0269
+Епоха [140/200] | Train Loss: 0.0268 | Test Loss: 0.0269
+Епоха [160/200] | Train Loss: 0.0266 | Test Loss: 0.0280
+Епоха [180/200] | Train Loss: 0.0269 | Test Loss: 0.0271
+Епоха [200/200] | Train Loss: 0.0262 | Test Loss: 0.0275
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 3.19e-02
+  TARGET_szz: 8.11e-03
+  TARGET_srz: 1.53e-13
+  TARGET_stt: 7.88e-03
+It took 148.7227771282196 seconds
+
+512-512-256
+dropout 0.2 0.1 
+0.0005
+self.network = nn.Sequential(
+            nn.Linear(input_size, 512),
+            nn.LeakyReLU(),
+            nn.Dropout(0.2), 
+            nn.Linear(512,512),
+            nn.LeakyReLU(),
+            nn.Dropout(0.1), 
+            nn.Linear(512,256),
+            nn.LeakyReLU(),
+            nn.Linear(256, output_size)
+        )
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.0999 | Test Loss: 0.0331
+Епоха [20/200] | Train Loss: 0.0291 | Test Loss: 0.0289
+Епоха [40/200] | Train Loss: 0.0278 | Test Loss: 0.0279
+Епоха [60/200] | Train Loss: 0.0275 | Test Loss: 0.0276
+Епоха [80/200] | Train Loss: 0.0274 | Test Loss: 0.0275
+Епоха [100/200] | Train Loss: 0.0270 | Test Loss: 0.0278
+Епоха [120/200] | Train Loss: 0.0270 | Test Loss: 0.0271
+Епоха [140/200] | Train Loss: 0.0266 | Test Loss: 0.0268
+Епоха [160/200] | Train Loss: 0.0265 | Test Loss: 0.0277
+Епоха [180/200] | Train Loss: 0.0263 | Test Loss: 0.0269
+Епоха [200/200] | Train Loss: 0.0261 | Test Loss: 0.0279
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 5.34e-02
+  TARGET_szz: 1.42e-02
+  TARGET_srz: 1.52e-13
+  TARGET_stt: 9.92e-03
+It took 250.1381640434265 seconds
+
+512-512-512
+dropout 0.2 0.1 
+0.0005
+self.network = nn.Sequential(
+            nn.Linear(input_size, 512),
+            nn.LeakyReLU(),
+            nn.Dropout(0.2), 
+            nn.Linear(512,512),
+            nn.LeakyReLU(),
+            nn.Dropout(0.1), 
+            nn.Linear(512,512),
+            nn.LeakyReLU(),
+            nn.Linear(512, output_size)
+        )
+🚀 Початок тренування...
+Епоха [1/200] | Train Loss: 0.0940 | Test Loss: 0.0326
+Епоха [20/200] | Train Loss: 0.0291 | Test Loss: 0.0275
+Епоха [40/200] | Train Loss: 0.0281 | Test Loss: 0.0272
+Епоха [60/200] | Train Loss: 0.0276 | Test Loss: 0.0271
+Епоха [80/200] | Train Loss: 0.0270 | Test Loss: 0.0270
+Епоха [100/200] | Train Loss: 0.0272 | Test Loss: 0.0269
+Епоха [120/200] | Train Loss: 0.0267 | Test Loss: 0.0272
+Епоха [140/200] | Train Loss: 0.0266 | Test Loss: 0.0286
+Епоха [160/200] | Train Loss: 0.0267 | Test Loss: 0.0271
+Епоха [180/200] | Train Loss: 0.0266 | Test Loss: 0.0278
+Епоха [200/200] | Train Loss: 0.0268 | Test Loss: 0.0270
+✅ Навчання завершено!
+
+💾 Модель збережено у 'fem_stress_model_method_b.pth'
+📊 Графік навчання збережено як 'training_loss_method_b.png'
+
+📈 Оцінка точності (Середня абсолютна похибка в Паскалях):
+  TARGET_srr: 2.98e-02
+  TARGET_szz: 7.20e-03
+  TARGET_srz: 1.52e-13
+  TARGET_stt: 8.49e-03
+It took 294.41901183128357 seconds
