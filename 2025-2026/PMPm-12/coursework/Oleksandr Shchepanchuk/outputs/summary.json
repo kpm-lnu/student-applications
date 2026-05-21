@@ -1,0 +1,311 @@
+{
+  "problems": [
+    "Branin",
+    "Heat-AMICon",
+    "AdvDiff-AMICon",
+    "RD-2D",
+    "RD-4D"
+  ],
+  "samplers": [
+    "Random",
+    "LHS",
+    "Halton",
+    "P-greedy",
+    "f-greedy",
+    "β-greedy(β=0.5)",
+    "MEPE",
+    "EIGF"
+  ],
+  "qois": {
+    "Branin": [
+      "f"
+    ],
+    "Heat-AMICon": [
+      "q"
+    ],
+    "AdvDiff-AMICon": [
+      "q"
+    ],
+    "RD-2D": [
+      "J",
+      "J2"
+    ],
+    "RD-4D": [
+      "J",
+      "J2"
+    ]
+  },
+  "tolerances": {
+    "Branin": 0.05,
+    "Heat-AMICon": 0.1,
+    "AdvDiff-AMICon": 0.1,
+    "RD-2D": 0.2,
+    "RD-4D": 0.2
+  },
+  "median_nrmse_at_max_budget": {
+    "Branin": {
+      "f": {
+        "Random": 0.09833272601976262,
+        "LHS": 0.03285100221065799,
+        "Halton": 0.023252745522982572,
+        "P-greedy": 0.007446481165154459,
+        "f-greedy": 0.06332840985576092,
+        "β-greedy(β=0.5)": 0.012382539188069216,
+        "MEPE": 0.012614573578939942,
+        "EIGF": 0.10416378002128215
+      }
+    },
+    "Heat-AMICon": {
+      "q": {
+        "Random": 0.46409164603587066,
+        "LHS": 0.6030476251855148,
+        "Halton": 0.5629124645542178,
+        "P-greedy": 0.23987016606862768,
+        "f-greedy": 0.6052561714343895,
+        "β-greedy(β=0.5)": 0.21366160955445682,
+        "MEPE": 0.2341435128602242,
+        "EIGF": 0.3157679648816361
+      }
+    },
+    "AdvDiff-AMICon": {
+      "q": {
+        "Random": 0.637061719141591,
+        "LHS": 0.6316129688897311,
+        "Halton": 0.7094533539990988,
+        "P-greedy": 0.24124937959001838,
+        "f-greedy": 0.2784565726033972,
+        "β-greedy(β=0.5)": 0.2594532317025189,
+        "MEPE": 0.37740081542479514,
+        "EIGF": 0.49621798400085154
+      }
+    },
+    "RD-2D": {
+      "J": {
+        "Random": 0.05842665597143476,
+        "LHS": 0.05534394791628149,
+        "Halton": 0.06000761298994,
+        "P-greedy": 0.053148354835030165,
+        "f-greedy": 0.2584466271879553,
+        "β-greedy(β=0.5)": 0.07631962831580237,
+        "MEPE": 0.05420604557245326,
+        "EIGF": 0.05491892207893412
+      },
+      "J2": {
+        "Random": 0.10933049880701065,
+        "LHS": 0.1015455341612681,
+        "Halton": 0.10953324783559054,
+        "P-greedy": 0.09924971535725645,
+        "f-greedy": 0.11964749556238673,
+        "β-greedy(β=0.5)": 0.09748380955079307,
+        "MEPE": 0.0995286915895127,
+        "EIGF": 0.09769326125234369
+      }
+    },
+    "RD-4D": {
+      "J": {
+        "Random": 0.08269815200659582,
+        "LHS": 0.07852703642248546,
+        "Halton": 0.07667420605697499,
+        "P-greedy": 0.06453743334575467,
+        "f-greedy": 0.08909973728120228,
+        "β-greedy(β=0.5)": 0.06317141672426059,
+        "MEPE": 0.07420220298174707,
+        "EIGF": 0.08763866347219752
+      },
+      "J2": {
+        "Random": 0.14645459887258924,
+        "LHS": 0.10135263924422419,
+        "Halton": 0.14263718752767,
+        "P-greedy": 0.07698531172360941,
+        "f-greedy": 0.10325349638468426,
+        "β-greedy(β=0.5)": 0.09277859392576866,
+        "MEPE": 0.08573132476971451,
+        "EIGF": 0.08340460420151023
+      }
+    }
+  },
+  "samples_to_tolerance": {
+    "Branin": {
+      "f": {
+        "Random": null,
+        "LHS": 60.0,
+        "Halton": 50.0,
+        "P-greedy": 45.0,
+        "f-greedy": null,
+        "β-greedy(β=0.5)": 45.0,
+        "MEPE": 45.0,
+        "EIGF": null
+      }
+    },
+    "Heat-AMICon": {
+      "q": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      }
+    },
+    "AdvDiff-AMICon": {
+      "q": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      }
+    },
+    "RD-2D": {
+      "J": {
+        "Random": 5.0,
+        "LHS": 5.0,
+        "Halton": 15.0,
+        "P-greedy": 5.0,
+        "f-greedy": 5.0,
+        "β-greedy(β=0.5)": 5.0,
+        "MEPE": 5.0,
+        "EIGF": 5.0
+      },
+      "J2": {
+        "Random": 20.0,
+        "LHS": 5.0,
+        "Halton": 20.0,
+        "P-greedy": 5.0,
+        "f-greedy": 5.0,
+        "β-greedy(β=0.5)": 5.0,
+        "MEPE": 5.0,
+        "EIGF": 5.0
+      }
+    },
+    "RD-4D": {
+      "J": {
+        "Random": 50.0,
+        "LHS": 20.0,
+        "Halton": 60.0,
+        "P-greedy": 10.0,
+        "f-greedy": 20.0,
+        "β-greedy(β=0.5)": 20.0,
+        "MEPE": 20.0,
+        "EIGF": 50.0
+      },
+      "J2": {
+        "Random": 30.0,
+        "LHS": 20.0,
+        "Halton": 20.0,
+        "P-greedy": 20.0,
+        "f-greedy": 80.0,
+        "β-greedy(β=0.5)": 20.0,
+        "MEPE": 20.0,
+        "EIGF": 30.0
+      }
+    }
+  },
+  "speedup_vs_LHS": {
+    "Branin": {
+      "f": {
+        "Random": null,
+        "LHS": 1.0,
+        "Halton": 1.2,
+        "P-greedy": 1.3333333333333333,
+        "f-greedy": null,
+        "β-greedy(β=0.5)": 1.3333333333333333,
+        "MEPE": 1.3333333333333333,
+        "EIGF": null
+      }
+    },
+    "Heat-AMICon": {
+      "q": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      }
+    },
+    "AdvDiff-AMICon": {
+      "q": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      }
+    },
+    "RD-2D": {
+      "J": {
+        "Random": 1.0,
+        "LHS": 1.0,
+        "Halton": 0.3333333333333333,
+        "P-greedy": 1.0,
+        "f-greedy": 1.0,
+        "β-greedy(β=0.5)": 1.0,
+        "MEPE": 1.0,
+        "EIGF": 1.0
+      },
+      "J2": {
+        "Random": 0.25,
+        "LHS": 1.0,
+        "Halton": 0.25,
+        "P-greedy": 1.0,
+        "f-greedy": 1.0,
+        "β-greedy(β=0.5)": 1.0,
+        "MEPE": 1.0,
+        "EIGF": 1.0
+      }
+    },
+    "RD-4D": {
+      "J": {
+        "Random": 0.4,
+        "LHS": 1.0,
+        "Halton": 0.3333333333333333,
+        "P-greedy": 2.0,
+        "f-greedy": 1.0,
+        "β-greedy(β=0.5)": 1.0,
+        "MEPE": 1.0,
+        "EIGF": 0.4
+      },
+      "J2": {
+        "Random": 0.6666666666666666,
+        "LHS": 1.0,
+        "Halton": 1.0,
+        "P-greedy": 1.0,
+        "f-greedy": 0.25,
+        "β-greedy(β=0.5)": 1.0,
+        "MEPE": 1.0,
+        "EIGF": 0.6666666666666666
+      }
+    }
+  },
+  "config": {
+    "nugget": 1e-10,
+    "kernel": "gaussian",
+    "eps_selection": "rippa_loocv",
+    "pde_nx_production": 81,
+    "pde_nx": 81,
+    "n_seeds": 1,
+    "n_seeds_explanation": "1 seed for time budget; deterministic comparison at fixed initial configuration (vs AMICon-2026 paper which used 10 seeds for IQR estimation)",
+    "log_transform": true,
+    "log_transform_per_problem": {
+      "Branin": false,
+      "Heat-AMICon": true,
+      "AdvDiff-AMICon": true,
+      "RD-2D": true,
+      "RD-4D": true
+    },
+    "min_distance": 0.01
+  },
+  "wall_clock_seconds": 2313.3,
+  "total_fom_solves": 7017
+}

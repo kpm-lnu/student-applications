@@ -1,0 +1,8 @@
+problem,qoi,winner_sampler,winner_nrmse,lhs_nrmse,improvement_vs_lhs
+Branin,f,P-greedy,0.0074,0.0329,4.41
+Heat-AMICon,q,β-greedy(β=0.5),0.2137,0.603,2.82
+AdvDiff-AMICon,q,P-greedy,0.2412,0.6316,2.62
+RD-2D,J,P-greedy,0.0531,0.0553,1.04
+RD-2D,J2,β-greedy(β=0.5),0.0975,0.1015,1.04
+RD-4D,J,β-greedy(β=0.5),0.0632,0.0785,1.24
+RD-4D,J2,P-greedy,0.077,0.1014,1.32
