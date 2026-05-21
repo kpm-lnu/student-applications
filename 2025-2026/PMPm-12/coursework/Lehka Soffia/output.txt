@@ -1,0 +1,9 @@
+Sparse SLAR coursework benchmark (.NET + C#)
+Repeats per method: 1
+Tolerance: 1.0e-6
+Max iterations: 50000
+LU max n: 80
+
+[Fill-in] n=10
+[Fill-in] n=20
+[Fill-in] n=50
