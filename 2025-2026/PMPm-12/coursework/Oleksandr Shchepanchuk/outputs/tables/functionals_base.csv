@@ -1,0 +1,9 @@
+quantity,value
+"J  (ODE, time integral)",2668.7921988342887
+"J1 (PDE, final-time space integral)",16.30529250956419
+"J2 (PDE, mid-point time integral)",4176.769083483244
+ratio J2 / J,1.5650409519735669
+y1(te) ODE,2.023954667729216
+y2(te) ODE,3.6210387205564887
+"max y1(x,t) PDE",122.25452680249812
+"max y2(x,t) PDE",304.47452132717046

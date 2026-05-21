@@ -1,0 +1,9 @@
+qoi,sampler,tol,n_star_median,n_star_q25,n_star_q75,n_reached,n_censored
+q,EIGF,0.1,,,,0,1
+q,Halton,0.1,,,,0,1
+q,LHS,0.1,,,,0,1
+q,MEPE,0.1,,,,0,1
+q,P-greedy,0.1,,,,0,1
+q,Random,0.1,,,,0,1
+q,f-greedy,0.1,,,,0,1
+q,β-greedy(β=0.5),0.1,,,,0,1

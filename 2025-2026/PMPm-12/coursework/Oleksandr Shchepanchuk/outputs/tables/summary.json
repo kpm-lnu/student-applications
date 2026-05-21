@@ -1,0 +1,236 @@
+{
+  "problems": [
+    "RD-2D",
+    "RD-4D",
+    "Heat-1D"
+  ],
+  "samplers": [
+    "Random",
+    "LHS",
+    "Halton",
+    "P-greedy",
+    "f-greedy",
+    "f/P-greedy",
+    "β-greedy(β=0.5)",
+    "MEPE",
+    "EIGF"
+  ],
+  "samples_to_tolerance": {
+    "RD-2D": {
+      "Random": 20.0,
+      "LHS": 20.0,
+      "Halton": null,
+      "P-greedy": 10.0,
+      "f-greedy": null,
+      "f/P-greedy": null,
+      "β-greedy(β=0.5)": 10.0,
+      "MEPE": 20.0,
+      "EIGF": 20.0
+    },
+    "RD-4D": {
+      "Random": null,
+      "LHS": null,
+      "Halton": null,
+      "P-greedy": 20.0,
+      "f-greedy": 20.0,
+      "f/P-greedy": null,
+      "β-greedy(β=0.5)": null,
+      "MEPE": 20.0,
+      "EIGF": null
+    },
+    "Heat-1D": {
+      "Random": null,
+      "LHS": null,
+      "Halton": null,
+      "P-greedy": null,
+      "f-greedy": null,
+      "f/P-greedy": null,
+      "β-greedy(β=0.5)": null,
+      "MEPE": null,
+      "EIGF": null
+    }
+  },
+  "speedup_vs_LHS": {
+    "RD-2D": {
+      "Random": 1.0,
+      "LHS": 1.0,
+      "Halton": null,
+      "P-greedy": 2.0,
+      "f-greedy": null,
+      "f/P-greedy": null,
+      "β-greedy(β=0.5)": 2.0,
+      "MEPE": 1.0,
+      "EIGF": 1.0
+    },
+    "RD-4D": {
+      "Random": null,
+      "LHS": null,
+      "Halton": null,
+      "P-greedy": null,
+      "f-greedy": null,
+      "f/P-greedy": null,
+      "β-greedy(β=0.5)": null,
+      "MEPE": null,
+      "EIGF": null
+    },
+    "Heat-1D": {
+      "Random": null,
+      "LHS": null,
+      "Halton": null,
+      "P-greedy": null,
+      "f-greedy": null,
+      "f/P-greedy": null,
+      "β-greedy(β=0.5)": null,
+      "MEPE": null,
+      "EIGF": null
+    }
+  },
+  "problem_summaries": {
+    "RD-2D": {
+      "qois": [
+        "J"
+      ],
+      "n_grid": [
+        10,
+        20
+      ],
+      "seeds": [
+        0
+      ],
+      "nrmse_at_nmax": {
+        "Random": 0.09812483598335117,
+        "LHS": 0.08797888730039143,
+        "Halton": 0.12031047849884047,
+        "P-greedy": 0.04312980840086798,
+        "f-greedy": 0.19796284390226326,
+        "f/P-greedy": 0.5655699360373009,
+        "β-greedy(β=0.5)": 0.06954492749925788,
+        "MEPE": 0.049557083365272175,
+        "EIGF": 0.06029440293850887
+      },
+      "samples_to_tolerance": {
+        "Random": 20.0,
+        "LHS": 20.0,
+        "Halton": null,
+        "P-greedy": 10.0,
+        "f-greedy": null,
+        "f/P-greedy": null,
+        "β-greedy(β=0.5)": 10.0,
+        "MEPE": 20.0,
+        "EIGF": 20.0
+      },
+      "speedup_vs_LHS": {
+        "Random": 1.0,
+        "LHS": 1.0,
+        "Halton": null,
+        "P-greedy": 2.0,
+        "f-greedy": null,
+        "f/P-greedy": null,
+        "β-greedy(β=0.5)": 2.0,
+        "MEPE": 1.0,
+        "EIGF": 1.0
+      },
+      "n_solver_calls": 169
+    },
+    "RD-4D": {
+      "qois": [
+        "J"
+      ],
+      "n_grid": [
+        10,
+        20
+      ],
+      "seeds": [
+        0
+      ],
+      "nrmse_at_nmax": {
+        "Random": 0.2973207202237564,
+        "LHS": 0.1312347193516264,
+        "Halton": 0.5435153964193825,
+        "P-greedy": 0.09028426462659843,
+        "f-greedy": 0.09543560694185818,
+        "f/P-greedy": 0.8360507350603061,
+        "β-greedy(β=0.5)": 0.13635441420216413,
+        "MEPE": 0.09487218163043523,
+        "EIGF": 0.3669659996134103
+      },
+      "samples_to_tolerance": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": 20.0,
+        "f-greedy": 20.0,
+        "f/P-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": 20.0,
+        "EIGF": null
+      },
+      "speedup_vs_LHS": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "f/P-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      },
+      "n_solver_calls": 232
+    },
+    "Heat-1D": {
+      "qois": [
+        "q"
+      ],
+      "n_grid": [
+        10,
+        20
+      ],
+      "seeds": [
+        0
+      ],
+      "nrmse_at_nmax": {
+        "Random": 0.718839930265418,
+        "LHS": 0.8080967013411534,
+        "Halton": 0.7834214729478777,
+        "P-greedy": 0.46005494653692947,
+        "f-greedy": 0.6404904721758611,
+        "f/P-greedy": 1.0660328148320835,
+        "β-greedy(β=0.5)": 0.47289855664208186,
+        "MEPE": 0.4096195345022928,
+        "EIGF": 0.462268965913182
+      },
+      "samples_to_tolerance": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "f/P-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      },
+      "speedup_vs_LHS": {
+        "Random": null,
+        "LHS": null,
+        "Halton": null,
+        "P-greedy": null,
+        "f-greedy": null,
+        "f/P-greedy": null,
+        "β-greedy(β=0.5)": null,
+        "MEPE": null,
+        "EIGF": null
+      },
+      "n_solver_calls": 168
+    }
+  },
+  "config": {
+    "nugget": 1e-10,
+    "kernel": "gaussian",
+    "eps": 1.0,
+    "pde_nx": 41,
+    "heat_n_nodes": 51
+  },
+  "runtime_seconds": 94.8
+}
