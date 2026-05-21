@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/backend/" />
+  <Folder Name="/backend/src/">
+    <Project Path="backend/src/SylvesterApi/SylvesterApi.csproj" />
+    <Project Path="backend/src/SylvesterSolver.FSharp/SylvesterSolver.FSharp.fsproj" />
+  </Folder>
+</Solution>

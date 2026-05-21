@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --text: #c8d5df;
+  --heading: #eef5fb;
+  --accent-1: #ff8a5b;
+  --accent-2: #5ac8f2;
+  --edge-soft: rgba(131, 165, 191, 0.28);
+  --surface-1: rgba(17, 25, 36, 0.9);
+  --surface-2: rgba(22, 33, 46, 0.82);
+  --surface-3: rgba(8, 18, 29, 0.88);
+  --input-bg: rgba(10, 20, 33, 0.92);
+  --error-text: #ff9fa3;
+  --error-border: rgba(255, 98, 113, 0.45);
+  --error-bg: rgba(150, 27, 49, 0.2);
+
+  --sans: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
+
+  font: 16px/1.45 var(--sans);
+  color: var(--text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 15%, rgba(90, 200, 242, 0.24), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgba(255, 138, 91, 0.22), transparent 30%),
+    linear-gradient(180deg, #05080f 0%, #0b1320 55%, #04070d 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  color: var(--heading);
+  font-family: var(--sans);
+}
